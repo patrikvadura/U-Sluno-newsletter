@@ -1,0 +1,55 @@
+/*! purgecss start ignore */
+body {
+  @apply m-0 p-0 w-full;
+  word-break: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif !important;
+}
+td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif !important; mso-line-height-rule: exactly;}
+
+img {
+  border: 0;
+  @apply max-w-full leading-full align-middle;
+}
+.circle {
+  background: #fff !important;
+  box-shadow: 0 17px 24px 0 rgba(0,0,0,.07) !important;
+  border-radius: 50% !important;
+  text-align: center !important;
+  transition: all .2s ease-in-out !important;
+  outline: none !important;
+}
+.btn {
+  background-color: #4f8aff !important;
+  box-shadow: 0 2px 24px 0 rgba(79,138,255,.62) !important;
+  color: #fff !important;
+  border-radius: 7px !important;
+  letter-spacing: .9px !important;
+  text-align: center !important;
+  padding: 3px 25px !important;
+  transition: all .2s ease-in-out !important;
+  line-height: 1.9 !important;
+  outline: none !important;
+}
+.btn:hover {
+  box-shadow: 0 2px 24px 0 rgba(79,138,255,1) !important;
+}
+.btn-light {
+  background: rgba(0,0,0,.2) !important;
+  box-shadow: 0 2px 24px 0 rgba(79,138,255,.62) !important;
+  border-radius: 7px !important;
+  text-align: center !important;
+  transition: all .2s ease-in-out !important;
+  outline: none !important;
+  color: #fff !important;
+  font-size: .8rem !important;
+  letter-spacing: .8px !important;
+  line-height: 2.5em !important;
+  text-transform: uppercase !important;
+  padding: 25px 25px !important;
+}
+.btn-light:hover {
+  box-shadow: 0 2px 24px 0 rgba(79,138,255,1) !important;
+}
+
+/*! purgecss end ignore */

@@ -1,0 +1,23 @@
+.mso-leading-exactly {
+  mso-line-height-rule: exactly;
+}
+
+.bg-opac {
+  background: rgba(0,0,0,0.5) !important;
+}
+.bg-gradient-dark {
+  background: linear-gradient(54.11deg,#4f8aff,#4f8aff) !important;
+}
+.bg-gradient-light {
+  background: linear-gradient(180deg,#4f8aff,#fff) !important;
+}
+.text-opac {
+  color: rgba(255,255,255,0.6) !important;
+}
+.video-shadow {
+  box-shadow: 0 2px 24px 0 rgba(79,138,255,.62) !important;
+  color: #fff !important;
+  border-radius: 7px !important;
+  outline: none !important;
+}
+
