@@ -11,13 +11,13 @@
   </div>
 </div>
 
-## About
+## Projekt
 
-Maizzle is an email framework that helps you quickly build HTML emails with [Tailwind CSS](https://tailwindcss.com/).
+Emailový newsletter pro firmu U&Sluno, vyvíjený v emailovém frameworku Maizzle.
 
-## Documentation
+## Documentatace
 
-Maizzle documentation is available at https://maizzle.com
+Maizzle dokumentace je dostupná na adrese https://maizzle.com
 
 ## Issues
 
