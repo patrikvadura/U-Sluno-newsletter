@@ -1,5 +1,5 @@
 <div align="center">
-  <p><a href="https://maizzle.com" target="_blank"><img src="https://res.cloudinary.com/maizzle/image/upload/v1553710263/maizzle.svg" width="200" alt="Maizzle"></a></p>
+  <p><a href="https://maizzle.com" target="_blank"><img src="https://www.s5.cz/images/logo-new.jpg" width="200" alt="Maizzle"></a></p>
   <p>HTML email development framework</p>
   <div>
 
