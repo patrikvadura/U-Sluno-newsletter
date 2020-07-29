@@ -19,6 +19,20 @@ Emailový newsletter pro firmu U&Sluno, vyvíjený v emailovém frameworku Maizz
 
 Maizzle dokumentace je dostupná na adrese https://maizzle.com
 
+## Setup
+<b>Při prvním pull requestu</b>
+npm install
+<br>
+<b>Spuštění a vývoj</b>
+maizzle serve
+<br>
+<b>Build procedura</b>
+maizzle build
+<br>
+<b>Produkce</b>
+maizzle build production
+<br>
+
 ## Issues
 
 Please open all issues in the [framework repository](https://github.com/maizzle/framework).
