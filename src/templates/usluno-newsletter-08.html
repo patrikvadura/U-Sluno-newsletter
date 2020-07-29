@@ -1,7 +1,7 @@
 ---
 ReleaseN: "08"
 title: "Newsletter {{ page.ReleaseN }}/20"
-preheader: "Propojte firmu jediným komunikačním nástrojem"
+preheader: "{{ page.HeaderText }}"
 
 tableReset: "w-600 sm:w-full"
 smReset: "sm:px-32"
@@ -25,7 +25,7 @@ social_in: "https://www.linkedin.com/company/354076/"
 unsub: "https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734bf3e2&id=ef1d76ea37&e=&c=2bec3fc9ba"
 
 TopBar: "Zobrazit newsletter v prohlížeči"
-HeaderText: "Propojte se ve firmě jediným komunikačním nástrojem"
+HeaderText: "Propojte firmu jediným komunikačním nástrojem"
 textIntro: "Workforce Connect spojuje veškerou komunikaci zaměstnanců do jednoho a snadno spravovatelného zařízení.
             Systém pracuje na vnitřní Wi-Fi síti a využijete jej například ve skladech, v logistice, na prodejnách, v dopravě a nemocnicích.
             Bez problému můžete také použít svá stávající zařízení Zebra nebo jiné mobilní telefony se systémem iOS či Android,
@@ -50,10 +50,10 @@ benefit_h: "Benefity z pohledu uživatele"
 benefit1_p: "úspora času"
 benefit1_img: "images/usluno/time_save_alt.png"
 
-benefit2_p: "zvýšení efektivity v logistice"
+benefit2_p: "zvýšení efektivity"
 benefit2_img: "images/usluno/logistic.png"
 
-benefit3_p: "zlepšení v komunikaci ve skladu"
+benefit3_p: "zlepšení komunikace"
 benefit3_img: "images/usluno/communication.png"
 
 email_mailto: "robotics@u-sluno.cz"
@@ -83,17 +83,16 @@ phone: "+420 596 134 157"
     <table class="{{ page.tableReset }}">
       <tr>
         <td class="bg-top bg-no-repeat bg-cover text-left {{ page.smReset }}" style="background-image: url('{{ page.HeaderImage }}');height:300px;">
-          <table class="w-full py-32 text-center">
+          <table class="w-full pb-64">
             <tr>
-              <td class="text-center">
-                <div class="h-48 sm:h-32">&zwnj;</div>
+              <td class="text-left pl-32 sm:pl-0">
                 <a
                   href="{{ page.PrimaryLink }}"
                   class="no-underline"
                   target="_blank">
                   <img
                     src="{{ page.Logo }}"
-                    class=""
+                    class="align-top"
                     width="200"
                     alt="">
                 </a>

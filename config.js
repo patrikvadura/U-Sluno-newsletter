@@ -29,10 +29,5 @@ module.exports = {
     },
     googleFonts: 'Open+Sans:wght@300;400;600;700;800&display=swap',
   },
-  purgeCSS: {
-    content: [
-      'src/content',
-    ],
-  }
 }
 
