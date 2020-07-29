@@ -24,6 +24,9 @@ module.exports = {
     templates: {
       root: 'src/templates',
     },
+    components: {
+      root: 'src/components',
+    },
     googleFonts: 'Open+Sans:wght@300;400;600;700;800&display=swap',
   },
 }

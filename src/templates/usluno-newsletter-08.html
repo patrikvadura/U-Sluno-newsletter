@@ -1,0 +1,252 @@
+---
+ReleaseN: "08"
+title: "Newsletter {{ page.ReleaseN }}/20"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-blue-400"
+primaryColor: "text-blue-400"
+secondaryBg: "bg-black"
+secondaryColor: "text-black"
+googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
+
+HeaderImage: "images/usluno/photo_man.jpg"
+Logo: "images/usluno/logo-negative.png"
+imgZebra: "images/usluno/zebra_logo_alt.png"
+dividerDark: "images/usluno/divider_gray_dark.png"
+dividerLight: "images/usluno/divider_gray_light.png"
+social_fb_img: "images/usluno/facebook-negative.png"
+social_yt_img: "images/usluno/youtube-negative.png"
+social_in_img: "images/usluno/linkedin-negative.png"
+
+PrimaryLink: "https://www.u-sluno.eu/"
+YouTube: "https://www.youtube.com/embed/QoBs0OZPjTM"
+social_fb: "https://www.facebook.com/slunocz/"
+social_yt: "https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw"
+social_in: "https://www.linkedin.com/company/354076/"
+unsub: "https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734bf3e2&id=ef1d76ea37&e=&c=2bec3fc9ba"
+
+TopBar: "Zobrazit newsletter v prohlížeči"
+HeaderText: "Propojte firmu jediným komunikačním nástrojem"
+textIntro: "Workforce Connect spojuje veškerou komunikaci zaměstnanců do jednoho snadno spravovatelného zařízení. Systém pracuje na vnitřní Wi-Fi síti a využijete jej například ve skladech, v logistice, na prodejnách, v dopravě a nemocnicích. Bez problému můžete také použít svá stávající zařízení Zebra nebo jiné mobilní telefony se systémem iOS či Android, popřípadě stolní a přenosné počítače. Využitím Workforce Connect nevznikají žádné dodatečné náklady, nepotřebujete ani placené služby mobilních operátorů."
+
+icon1_h: "Profile manager"
+icon1_p: "Správa profilů. Určete role svých zaměstnanců. Propojte je s konkrétními uživateli, skupinami a aplikacemi."
+icon1_img: "images/usluno/profile_manager.png"
+
+icon2_h: "Push to talk"
+icon2_p: "Zvyšte efektivitu práce prostřednictvím integrování bezpečné hlasové komunikace typu push-to-talk a její předávání pomocí jakéhokoli mobilního zařízení."
+icon2_img: "images/usluno/voice_client.png"
+
+icon3_h: "Voice client"
+icon3_p: "Proměňte svá mobilní zařízení Zebra na vysoce výkonné stolní telefony s celou řadou různých funkcí. Již nemusíte být neustále u svého pracovního stolu; vaše hovory mohou být přesměrovány z PBX a můžete snadněji komunikovat se svými spolupracovníky, nadřízenými a zákazníky."
+icon3_img: "images/usluno/push_to_talk.png"
+
+benefit_h: "Benefity z pohledu uživatele"
+
+benefit1_p: "úspora času"
+benefit1_img: "images/usluno/time_save_alt.png"
+
+benefit2_p: "zvýšení efektivity"
+benefit2_img: "images/usluno/logistic.png"
+
+benefit3_p: "zlepšení komunikace"
+benefit3_img: "images/usluno/communication.png"
+
+gallery_img_1: "images/usluno/gallery_image.jpg"
+gallery_img_2: "images/usluno/gallery_image_1.jpg"
+gallery_img_3: "images/usluno/gallery_image_2.jpg"
+gallery_img_4: "images/usluno/gallery_image_3.jpg"
+
+email_mailto: "u-sluno@u-sluno.eu"
+email_subject: "Mám zájem o ukázku autonomního robota HMIShelf"
+email_body: ""
+email_cc: "marketing@u-sluno.cz"
+
+website: "www.u-sluno.eu"
+email: "u-sluno@u-sluno.cz"
+phone: "+420 596 134 157"
+---
+
+<extends src="src/layouts/master.html">
+  <block align="center" name="template">
+    <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
+      <component src="topbar.html"></component>
+    </table>
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="bg-top bg-no-repeat bg-cover text-left {{ page.smReset }}" style="background-image: url('{{ page.HeaderImage }}');height:300px;">
+          <table class="w-full">
+            <component src="brand/logo-top-left.html"></component>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table class="{{ page.tableReset }} text-center py-32">
+      <tr>
+        <td class="w-full {{ page.smReset }}">
+          <a href="{{ page.PrimaryLink }}workforce-connect-od-zebra-technologies/"
+             class="no-underline bg-blue-400"
+             target="_blank">
+             <h1 class="{{ page.primaryColor }} text-3xl font-black uppercase leading-normal sm:leading-normal ">
+               {{ page.HeaderText }}
+             </h1>
+          </a>
+          <a href="{{ page.PrimaryLink }}"
+             class="no-underline"
+             target="_blank">
+            <img
+              src="{{ page.imgZebra }}"
+              class=""
+              width="250"
+              alt="">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="w-full px-32 {{ page.smReset }}">
+          <p class="text-cool-gray-900 text-center text-justify text-lg font-light leading-relaxed">
+            {{ page.textIntro }}
+          </p>
+        </td>
+      </tr>
+    </table>
+    <table class="{{ page.tableReset }} py-32">
+      <component src="videoYT.html"></component>
+    </table>
+    <table class="{{ page.tableReset }} px-32 py-32">
+      <tr class="text-center">
+        <td class="w-4/12 align-top">
+          <img
+            src="{{ page.dividerDark }}"
+            class=""
+            width="">
+        </td>
+      </tr>
+      <tr class="text-center">
+        <td align="center" class="py-32 pb-32 px-32 bg-gray-700 w-4/12 align-top">
+          <img
+            src="{{ page.icon1_img }}"
+            class=""
+            width="40">
+          <h4 class="m-0 text-lg font-bold uppercase text-white pt-20">
+            {{ page.icon1_h }}
+          </h4>
+          <p class="text-white text-sm font-light leading-24">
+            {{ page.icon1_p }}
+          </p>
+        </td>
+      </tr>
+      <tr class="text-center">
+        <td align="center" class="w-4/12 align-top">
+          <img
+            src="{{ page.dividerDark }}"
+            class="rotate-180"
+            width="">
+        </td>
+      </tr>
+      <tr class="text-center">
+        <td align="center" class="py-32 pb-32 px-32 bg-white w-4/12 align-top">
+          <img
+            src="{{ page.icon2_img }}"
+            class=""
+            width="40">
+          <h4 class="m-0 text-lg font-bold uppercase {{ page.primaryColor }} pt-20">
+            {{ page.icon2_h }}
+          </h4>
+          <p class="text-cool-gray-900 text-sm font-light leading-24">
+            {{ page.icon2_p }}
+          </p>
+        </td>
+      </tr>
+      <tr class="text-center">
+        <td align="center" class="w-4/12 align-top">
+          <img
+            src="{{ page.dividerLight }}"
+            class=""
+            width="">
+        </td>
+      </tr>
+      <tr class="text-center">
+        <td align="center" class="py-32 px-32 bg-gray-600 w-4/12 align-top">
+          <img
+            src="{{ page.icon3_img }}"
+            class=""
+            width="40">
+          <h4 class="m-0 text-lg font-bold uppercase {{ page.primaryColor }} pt-20">
+            {{ page.icon3_h }}
+          </h4>
+          <p class="text-cool-gray-900 text-sm font-light leading-24">
+            {{ page.icon3_p }}
+          </p>
+        </td>
+      </tr>
+      <tr class="text-center">
+        <td class="w-4/12 align-top">
+          <img
+            src="{{ page.dividerLight }}"
+            class="rotate-180"
+            width="">
+        </td>
+      </tr>
+    </table>
+    <table align="center" class="w-600 pb-32 sm:w-full">
+      <component src="gallery/gallery2x2.html"></component>
+    </table>
+    <table class="w-full sm:w-full {{ page.secondaryBg }} px-32 py-20 flex justify-center">
+      <tr>
+        <td>
+          <table class="{{ page.tableReset }} py-32">
+            <th>
+              <td class="w-full text-center">
+                <h3 class="m-0 text-center text-white text-2xl font-extrabold leading-normal sm:leading-full">
+                  {{ page.benefit_h }}
+                </h3>
+              </td>
+            </th>
+          <table class="{{ page.tableReset }} bg-black px-32 py-32">
+            <tr class="text-center">
+              <td class="w-4/12 sm:w-full sm:block align-top">
+                <img
+                  src="{{ page.benefit1_img }}"
+                  class=""
+                  width="150">
+                <p class="text-white text-sm font-light leading-24">
+                  {{ page.benefit1_p }}
+                </p>
+              </td>
+              <td class="w-4/12 sm:w-full sm:block align-top">
+                <img
+                  src="{{ page.benefit2_img }}"
+                  class=""
+                  width="150">
+                <p class="text-white text-sm font-light leading-24">
+                  {{ page.benefit2_p }}
+                </p>
+              </td>
+              <td class="w-4/12 sm:w-full sm:block align-top">
+                <img
+                  src="{{ page.benefit3_img }}"
+                  class=""
+                  width="150">
+                <p class="text-white text-sm font-light leading-24">
+                  {{ page.benefit3_p }}
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <table class="w-full sm:w-full {{ page.secondaryBg }}">
+      <component src="buttons/btnNoRounded.html"></component>
+    </table>
+    <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
+      <component src="footer.html"></component>
+    </table>
+  </block>
+</extends>
