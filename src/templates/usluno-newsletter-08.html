@@ -6,6 +6,10 @@ preheader: "{{ page.HeaderText }}"
 tableReset: "w-600 sm:w-full"
 smReset: "sm:px-32"
 bodyClass: "bg-white"
+primaryBg: "bg-blue-400"
+primaryColor: "text-blue-400"
+secondaryBg: "bg-black"
+secondaryColor: "text-black"
 googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 
 HeaderImage: "images/usluno/photo_man.jpg"
@@ -26,23 +30,18 @@ unsub: "https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734b
 
 TopBar: "Zobrazit newsletter v prohlížeči"
 HeaderText: "Propojte firmu jediným komunikačním nástrojem"
-textIntro: "Workforce Connect spojuje veškerou komunikaci zaměstnanců do jednoho a snadno spravovatelného zařízení.
-            Systém pracuje na vnitřní Wi-Fi síti a využijete jej například ve skladech, v logistice, na prodejnách, v dopravě a nemocnicích.
-            Bez problému můžete také použít svá stávající zařízení Zebra nebo jiné mobilní telefony se systémem iOS či Android,
-            popřípadě stolní a přenosné počítače. Využitím Workforce Connect nevznikají žádné dodatečné náklady, nepotřebujete
-            ani placené služby mobilních operátorů."
+textIntro: "Workforce Connect spojuje veškerou komunikaci zaměstnanců do jednoho snadno spravovatelného zařízení. Systém pracuje na vnitřní Wi-Fi síti a využijete jej například ve skladech, v logistice, na prodejnách, v dopravě a nemocnicích. Bez problému můžete také použít svá stávající zařízení Zebra nebo jiné mobilní telefony se systémem iOS či Android, popřípadě stolní a přenosné počítače. Využitím Workforce Connect nevznikají žádné dodatečné náklady, nepotřebujete ani placené služby mobilních operátorů."
 
 icon1_h: "Profile manager"
 icon1_p: "Správa profilů. Určete role svých zaměstnanců. Propojte je s konkrétními uživateli, skupinami a aplikacemi."
 icon1_img: "images/usluno/profile_manager.png"
 
 icon2_h: "Push to talk"
-icon2_p: "Zvyšte efektivitu práce prostřednictvím integrování bezpečných hlasových zpráv typu push-to-talk a jejich předávání pomocí jakéhokoli mobilního zařízení."
+icon2_p: "Zvyšte efektivitu práce prostřednictvím integrování bezpečné hlasové komunikace typu push-to-talk a její předávání pomocí jakéhokoli mobilního zařízení."
 icon2_img: "images/usluno/voice_client.png"
 
 icon3_h: "Voice client"
-icon3_p: "Proměňte svá mobilní zařízení Zebra na vysoce výkonné stolní telefony s celou řadou různých funkcí.
-          Již nemusíte být neustále u svého pracovního stolu; vaše hovory mohou být přesměrovány z PBX a můžete snadněji komunikovat se svými spolupracovníky, nadřízenými a zákazníky."
+icon3_p: "Proměňte svá mobilní zařízení Zebra na vysoce výkonné stolní telefony s celou řadou různých funkcí. Již nemusíte být neustále u svého pracovního stolu; vaše hovory mohou být přesměrovány z PBX a můžete snadněji komunikovat se svými spolupracovníky, nadřízenými a zákazníky."
 icon3_img: "images/usluno/push_to_talk.png"
 
 benefit_h: "Benefity z pohledu uživatele"
@@ -56,7 +55,12 @@ benefit2_img: "images/usluno/logistic.png"
 benefit3_p: "zlepšení komunikace"
 benefit3_img: "images/usluno/communication.png"
 
-email_mailto: "robotics@u-sluno.cz"
+gallery_img_1: "images/usluno/gallery_image.jpg"
+gallery_img_2: "images/usluno/gallery_image_1.jpg"
+gallery_img_3: "images/usluno/gallery_image_2.jpg"
+gallery_img_4: "images/usluno/gallery_image_3.jpg"
+
+email_mailto: "u-sluno@u-sluno.eu"
 email_subject: "Mám zájem o ukázku autonomního robota HMIShelf"
 email_body: ""
 email_cc: "marketing@u-sluno.cz"
@@ -68,37 +72,14 @@ phone: "+420 596 134 157"
 
 <extends src="src/layouts/master.html">
   <block align="center" name="template">
-    <table class="{{ page.tableReset }} bg-black">
-      <tr>
-        <th class="text-center p-12 {{ page.smReset }}">
-          <a href="http://www.s5.cz/emaily/USluno/Mailchimp/{{ page.ReleaseN }}_20/usluno-newsletter-{{ page.ReleaseN }}.html"
-             class="text-white text-sm font-medium no-underline
-                   hover:underline hover:text-blue-400 hover:font-bold"
-             target="_blank">
-            {{ page.TopBar }}
-          </a>
-        </th>
-      </tr>
+    <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
+      <component src="topbar.html"></component>
     </table>
     <table class="{{ page.tableReset }}">
       <tr>
         <td class="bg-top bg-no-repeat bg-cover text-left {{ page.smReset }}" style="background-image: url('{{ page.HeaderImage }}');height:300px;">
-          <table class="w-full pb-64">
-            <tr>
-              <td class="text-left pl-32 sm:pl-0">
-                <a
-                  href="{{ page.PrimaryLink }}"
-                  class="no-underline"
-                  target="_blank">
-                  <img
-                    src="{{ page.Logo }}"
-                    class="align-top"
-                    width="200"
-                    alt="">
-                </a>
-                <div class="h-48 sm:h-32">&zwnj;</div>
-              </td>
-            </tr>
+          <table class="w-full">
+            <component src="brand/logo-top-left.html"></component>
           </table>
         </td>
       </tr>
@@ -106,10 +87,10 @@ phone: "+420 596 134 157"
     <table class="{{ page.tableReset }} text-center py-32">
       <tr>
         <td class="w-full {{ page.smReset }}">
-          <a href="{{ page.PrimaryLink }}"
+          <a href="{{ page.PrimaryLink }}workforce-connect-od-zebra-technologies/"
              class="no-underline bg-blue-400"
              target="_blank">
-             <h1 class="text-blue-400 text-3xl font-black uppercase leading-normal sm:leading-normal ">
+             <h1 class="{{ page.primaryColor }} text-3xl font-black uppercase leading-normal sm:leading-normal ">
                {{ page.HeaderText }}
              </h1>
           </a>
@@ -135,18 +116,7 @@ phone: "+420 596 134 157"
       </tr>
     </table>
     <table class="{{ page.tableReset }} py-32">
-      <tr>
-        <td align="center" class="w-full sm:w-full">
-          <iframe
-            width="450"
-            height="250"
-            src="{{ page.YouTube }}"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </td>
-      </tr>
+      <component src="videoYT.html"></component>
     </table>
     <table class="{{ page.tableReset }} px-32 py-32">
       <tr class="text-center">
@@ -158,7 +128,7 @@ phone: "+420 596 134 157"
         </td>
       </tr>
       <tr class="text-center">
-        <td align="center" class="pt-32 pb-32 px-32 bg-gray-700 w-4/12 align-top">
+        <td align="center" class="py-32 pb-32 px-32 bg-gray-700 w-4/12 align-top">
           <img
             src="{{ page.icon1_img }}"
             class=""
@@ -180,12 +150,12 @@ phone: "+420 596 134 157"
         </td>
       </tr>
       <tr class="text-center">
-        <td align="center" class="pt-32 pb-32 px-32 bg-white w-4/12 align-top">
+        <td align="center" class="py-32 pb-32 px-32 bg-white w-4/12 align-top">
           <img
             src="{{ page.icon2_img }}"
             class=""
             width="40">
-          <h4 class="m-0 text-lg font-bold uppercase text-blue-900 pt-20">
+          <h4 class="m-0 text-lg font-bold uppercase {{ page.primaryColor }} pt-20">
             {{ page.icon2_h }}
           </h4>
           <p class="text-cool-gray-900 text-sm font-light leading-24">
@@ -202,12 +172,12 @@ phone: "+420 596 134 157"
         </td>
       </tr>
       <tr class="text-center">
-        <td align="center" class="pt-32 px-32 bg-gray-600 w-4/12 align-top">
+        <td align="center" class="py-32 px-32 bg-gray-600 w-4/12 align-top">
           <img
             src="{{ page.icon3_img }}"
             class=""
             width="40">
-          <h4 class="m-0 text-lg font-bold uppercase text-blue-900 pt-20">
+          <h4 class="m-0 text-lg font-bold uppercase {{ page.primaryColor }} pt-20">
             {{ page.icon3_h }}
           </h4>
           <p class="text-cool-gray-900 text-sm font-light leading-24">
@@ -225,36 +195,9 @@ phone: "+420 596 134 157"
       </tr>
     </table>
     <table align="center" class="w-600 pb-32 sm:w-full">
-      <tr class="text-center">
-        <td align="center" class="pt-20 px-6 w-6/12 sm:w-full sm:block align-top">
-          <img
-            src="images/usluno/gallery_image.jpg"
-            class=""
-            width="300">
-        </td>
-        <td align="center" class="pt-20 px-6 w-6/12 sm:w-full sm:block align-top">
-          <img
-            src="images/usluno/gallery_image_1.jpg"
-            class=""
-            width="300">
-        </td>
-      </tr>
-      <tr class="text-center">
-        <td align="center" class="pt-20 px-6 w-6/12 sm:w-full sm:block align-top">
-          <img
-            src="images/usluno/gallery_image_2.jpg"
-            class=""
-            width="300">
-        </td>
-        <td align="center" class="pt-20 px-6 w-6/12 sm:w-full sm:block align-top">
-          <img
-            src="images/usluno/gallery_image_3.jpg"
-            class=""
-            width="300">
-        </td>
-      </tr>
+      <component src="gallery/gallery2x2.html"></component>
     </table>
-    <table class="w-full sm:w-full bg-black px-32 py-20 flex justify-center">
+    <table class="w-full sm:w-full {{ page.secondaryBg }} px-32 py-20 flex justify-center">
       <tr>
         <td>
           <table class="{{ page.tableReset }} py-32">
@@ -299,77 +242,11 @@ phone: "+420 596 134 157"
         </td>
       </tr>
     </table>
-    <table class="w-full sm:w-full ">
-      <tr>
-        <td class="w-full pb-48 px-48 sm:px-32 bg-black text-center">
-          <a
-            href="{{ page.PrimaryLink }}workforce-connect-od-zebra-technologies/"
-            class="bg-blue-400 inline-block text-sm leading-none no-underline text-white font-semibold py-16 px-24
-                   hover:bg-white hover:text-black"
-            target="_blank">
-            <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-            <span style="mso-text-raise: 13pt;">
-                Více o Workforce Connect
-            </span>
-            <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-          </a>
-        </td>
-      </tr>
+    <table class="w-full sm:w-full {{ page.secondaryBg }}">
+      <component src="buttons/btnNoRounded.html"></component>
     </table>
-    <table class="w-full bg-blue-400 p-32 sm:w-full">
-      <tr>
-        <td align="center">
-          <img src="images/usluno/logo-negative.png" class="p-8 block" width="100" alt="">
-          <a
-            href="{{ page.PrimaryLink }}"
-            class="text-lg text-white font-bold no-underline block"
-            target="_blank">
-            <h4>
-              {{ page.website }}
-            </h4>
-          </a>
-          <p class="text-sm text-white leading-20 font-bold no-underline block">
-            <a href="mailto:{{ page.email_mailto }}
-                  ?subject={{ page.email_subject }}
-                  &body={{ page.email_body }}
-                  &cc={{ page.email_cc }}
-                  "
-               class="text-white no-underline">
-              {{ page.email }}
-            </a>
-            | {{ page.phone }}</p>
-          <table class="flex justify-center">
-            <tr>
-              <td>
-                <a href="{{ page.social_fb }}" target="_blank">
-                  <img src="{{ page.social_fb_img }}" class="p-8" width="15" alt="">
-                </a>
-              </td>
-              <td>
-                <a href="{{ page.social_yt }}" target="_blank">
-                  <img src="{{ page.social_yt_img }}" class="p-8" width="15" alt="">
-                </a>
-              </td>
-              <td>
-                <a href="{{ page.social_in }}" target="_blank">
-                  <img src="{{ page.social_in_img }}" class="p-8" width="15" alt="">
-                </a>
-              </td>
-            </tr>
-          </table>
-          <p class="text-xxs text-white">
-            Nechcete dostávat naše newslettery?
-            <span class="block">Můžete se kdykoli
-              <a
-                href="{{ page.unsub }}"
-                class="font-bold text-white no-underline hover:text-orange-900"
-                target="_blank">
-                odhlásit.
-              </a>
-            </span>
-          </p>
-        </td>
-      </tr>
+    <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
+      <component src="footer.html"></component>
     </table>
   </block>
 </extends>
