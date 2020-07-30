@@ -8,7 +8,7 @@
         {{ page.website }}
       </h4>
     </a>
-    <p class="text-sm text-white leading-20 font-bold no-underline block">
+    <p class="text-sm text-white font-bold no-underline block">
       <a href="mailto:{{ page.email_mailto }}
                     ?subject={{ page.email_subject }}
                     &body={{ page.email_body }}
@@ -18,21 +18,21 @@
         {{ page.email }}
       </a>
       | {{ page.phone }}</p>
-    <table class="flex justify-center">
+    <table>
       <tr>
-        <td>
+        <td class="p-8">
           <a href="{{ page.social_fb }}" target="_blank">
-            <img src="{{ page.social_fb_img }}" class="p-8" width="15" alt="">
+            <img src="{{ page.social_fb_img }}" width="15" alt="">
           </a>
         </td>
-        <td>
+        <td class="p-8">
           <a href="{{ page.social_yt }}" target="_blank">
-            <img src="{{ page.social_yt_img }}" class="p-8" width="15" alt="">
+            <img src="{{ page.social_yt_img }}" width="15" alt="">
           </a>
         </td>
-        <td>
+        <td class="p-8">
           <a href="{{ page.social_in }}" target="_blank">
-            <img src="{{ page.social_in_img }}" class="p-8" width="15" alt="">
+            <img src="{{ page.social_in_img }}" width="15" alt="">
           </a>
         </td>
       </tr>
