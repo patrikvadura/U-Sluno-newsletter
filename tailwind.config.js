@@ -13,6 +13,7 @@ module.exports = {
       black: '#000000',
       white: '#ffffff',
       gradient: 'linear-gradient(54.11deg,#4f8aff,#4f8aff)',
+      gradient_green: 'linear-gradient(90deg,#2D864D,#18552D)',
 
       gray: {
         '50': '#f9fafb',
@@ -79,9 +80,9 @@ module.exports = {
         '100': '#def7ec',
         '200': '#bcf0da',
         '300': '#84e1bc',
-        '400': '#31c48d',
-        '500': '#0e9f6e',
-        '600': '#057a55',
+        '400': '#2D864D',
+        '500': '#2B8048',
+        '600': '#18552D',
         '700': '#046c4e',
         '800': '#03543f',
         '900': '#014737',
