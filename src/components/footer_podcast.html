@@ -1,0 +1,54 @@
+<tr>
+  <td align="center">
+    <img src="images/usluno/logo-negative.png" class="p-8 block" width="100" alt="">
+    <a href="{{ page.PrimaryLink }}"
+       class="text-lg text-white font-bold no-underline block"
+       target="_blank">
+      <h4>
+        {{ page.website }}
+      </h4>
+    </a>
+    <p class="pb-8 text-sm text-white font-normal no-underline block">
+      {{ page.footerText }}
+    </p>
+    <p class="text-sm text-white font-bold no-underline block">
+      <a href="mailto:{{ page.email_mailto }}
+               ?subject={{ page.email_subject }}
+               &body={{ page.email_body }}
+               &cc={{ page.email_cc }}"
+         class="text-white no-underline">
+        {{ page.email }}
+      </a>
+      | {{ page.phone }}</p>
+    <table>
+      <tr>
+        <td class="p-8">
+          <a href="{{ page.social_fb }}" target="_blank">
+            <img src="{{ page.social_fb_img }}" width="15" alt="">
+          </a>
+        </td>
+        <td class="p-8">
+          <a href="{{ page.social_yt }}" target="_blank">
+            <img src="{{ page.social_yt_img }}" width="15" alt="">
+          </a>
+        </td>
+        <td class="p-8">
+          <a href="{{ page.social_in }}" target="_blank">
+            <img src="{{ page.social_in_img }}" width="15" alt="">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <p class="text-xxs text-white">
+      Nechcete dostávat naše newslettery?
+      <span class="block">Můžete se kdykoli
+        <a
+          href="{{ page.unsub }}"
+          class="font-bold text-white no-underline hover:{{ page.secondaryColor }}"
+          target="_blank">
+          odhlásit.
+        </a>
+      </span>
+    </p>
+  </td>
+</tr>
