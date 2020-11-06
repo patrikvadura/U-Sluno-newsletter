@@ -27,6 +27,6 @@ module.exports = {
   removeUnusedCSS: {
     enabled: true,
   },
-  baseImageURL: 'http://s5.cz/emaily/assets/',
+  baseImageURL: 'https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/',
 }
 
