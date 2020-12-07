@@ -1,0 +1,156 @@
+---
+ReleaseN: "12"
+title: "Newsletter {{ page.ReleaseN }}/20"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-blue-900"
+primaryColor: "text-purple-400"
+secondaryBg: "bg-orange-900"
+secondaryColor: "text-black"
+googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
+
+HeaderImage: "images/usluno/12/header_bg.jpg"
+HeaderImage2: "images/usluno/12/header_tree_1.png"
+Logo: "images/usluno/logo-negative.png"
+social_fb_img: "images/usluno/facebook-negative.png"
+social_yt_img: "images/usluno/youtube-negative.png"
+social_in_img: "images/usluno/linkedin-negative.png"
+
+PrimaryLink: "https://www.uslunorobotics.eu/"
+social_fb: "https://www.facebook.com/slunocz/"
+social_yt: "https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw"
+social_in: "https://www.linkedin.com/company/354076/"
+unsub: "https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734bf3e2&id=ef1d76ea37&e=&c=2bec3fc9ba"
+
+TopBar: "Zobrazit newsletter v prohlížeči"
+HeaderText: "Co se dělo ve Slunu v roce 2020?"
+playPodcast: "Přehrajte si podcasty hned"
+allPodcast: "Seznam podcastů"
+footerText: "Chcete se dozvědět více o Autonomních robotech? Neváhejte nás kontaktovat."
+oslava30: "Příští rok se máme na co těšit."
+oslava30_sub: "Oslavíme 30 let."
+oslava30_img: "images/usluno/12/oslava30-negative.png"
+
+icon1_h: "Patricia Jakešová moderovala New Retail Operations na Retail Summitu v Praze."
+icon1_link: "https://www.linkedin.com/feed/update/urn:li:activity:6633331666410582017"
+icon1_img: "images/usluno/12/1.jpg"
+
+icon2_h: "Na pražskou pobočku jsme přijali nového čtyřnohého kolegu."
+icon2_link: "https://www.facebook.com/slunocz/posts/3053036488122243"
+icon2_img: "images/usluno/12/2.png"
+
+icon3_h: "Nechali jsme si ušít 400 roušek ve firemních barvách."
+icon3_link: "https://www.facebook.com/slunocz/posts/2954934247932468"
+icon3_img: "images/usluno/12/3.jpg"
+
+icon4_h: "V nouzovém režimu jsme pracovali z domu a fungovalo to."
+icon4_link: "https://fb.watch/2dLAWYyBSp/"
+icon4_img: "images/usluno/12/4.png"
+
+icon5_h: "V červnu jsme pokořili loňský rekord a společně ujeli, uběhli a ušli 3 365 km."
+icon5_link: "https://www.facebook.com/slunocz/posts/3034291679996724"
+icon5_img: "images/usluno/12/5.jpg"
+
+icon6_h: "Na All Staff Meetingu jsme sociální distanc brali vážně."
+icon6_link: "https://fb.watch/2dLJprWxG6/"
+icon6_img: "images/usluno/12/6.jpg"
+
+icon7_h: "Nahráli jsme 36 českých a ruských podcastů o retailovém světě."
+icon7_link: "https://anchor.fm/usluno"
+icon7_img: "images/usluno/12/7.png"
+
+icon8_h: "Naši roboti se umístili v TOP 3 jako Technická a technologická inovace roku Ocenění LOG-IN."
+icon8_link: "https://www.linkedin.com/feed/update/urn:li:activity:6715166208922017793"
+icon8_img: "images/usluno/12/8.jpg"
+
+icon9_h: "Zaměstnanci podpořili sbírku Bílá pastelka pro zrakové postižené částkou 4 665 Kč."
+icon9_link: "https://www.linkedin.com/feed/update/urn:li:activity:6734732535760228352"
+icon9_img: "images/usluno/12/9.jpg"
+
+icon10_h: "U&SLUNO se účastnilo konferencí na Ukrajině."
+icon10_link: "https://www.linkedin.com/feed/update/urn:li:activity:6730039551168978944"
+icon10_img: "images/usluno/12/10.jpg"
+
+icon11_h: "A zapojili jsme se do Potravinové sbírky 168 kg trvanlivých potravin a drogerie."
+icon11_link: "https://www.facebook.com/slunocz/posts/3535277589898128"
+icon11_img: "images/usluno/12/11.jpg"
+
+email_mailto: "robotics@u-sluno.cz"
+email_subject: "Dobrý den, mám dotaz ohledně newsletteru!"
+email_body: ""
+email_cc: "marketing@u-sluno.cz"
+
+website: "www.uslunorobotics.eu"
+email: "robotics@u-sluno.cz"
+phone: "+420 596 134 157"
+---
+
+<extends src="src/layouts/master.html">
+  <block align="center" name="template">
+    <table class="w-full sm:w-full {{ page.tableReset }} {{ page.secondaryBg }}">
+      <component src="topbar.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover rounded text-left px-32 py-32 flex justify-center"
+           style="background-image: url('{{ page.HeaderImage }}');">
+      <tr>
+        <td>
+          <table class="{{ page.tableReset }} py-32">
+            <th>
+              <td class="w-full {{ page.smReset }} px-32 text-center">
+                <a href="{{ page.PrimaryLink }}"
+                   class="no-underline"
+                   target="_blank">
+                  <img src="{{ page.Logo }}"
+                       class="align-top"
+                       width="200"
+                       alt="">
+                </a>
+                <a href="{{ page.podcast_page }}"
+                   class="no-underline"
+                   target="_blank">
+                  <h1 class="text-white text-5xl font-black uppercase leading-sm sm:leading-sm ">
+                    {{ page.HeaderText }}
+                  </h1>
+                </a>
+              </td>
+            </th>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="w-full text-center pt-20 px-32 {{ page.smReset }}">
+          <img
+            src="{{ page.HeaderImage2 }}"
+            width="200"
+            style="margin-top: -100px;">
+        </td>
+      </tr>
+    </table>
+    <table class="{{ page.tableReset }} pt-32">
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="{{ page.tableReset }} pb-32 px-32" style="margin-top: -35px;">
+      <component src="timeline/timeline.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full {{ page.secondaryBg }} p-32 sm:w-full">
+      <component src="ruzne/oslava30.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
+      <component src="footer_podcast.html"></component>
+    </table>
+  </block>
+</extends>
