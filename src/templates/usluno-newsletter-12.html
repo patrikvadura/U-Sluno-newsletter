@@ -33,6 +33,7 @@ footerText: "Přejeme Vám krásné vánoce. Jsme rádi že jste s námi."
 oslava30: "Příští rok se máme na co těšit."
 oslava30_sub: "Oslavíme 30 let."
 oslava30_img: "images/usluno/12/oslava30-negative.png"
+pf2021_img: "images/usluno/12/pf2021_landscape.jpg"
 
 icon1_h: "Patricia Jakešová moderovala New Retail Operations na Retail Summitu v Praze."
 icon1_link: "https://www.linkedin.com/feed/update/urn:li:activity:6633331666410582017"
@@ -143,6 +144,17 @@ phone: "+420 596 134 157"
       <component src="timeline/timeline.html"></component>
     </table>
 
+    <table class="{{ page.tableReset }} pt-64 pb-32 px-32">
+      <tr>
+        <td class="w-full text-center pt-64 pt-20 {{ page.smReset }}">
+          <img
+            src="{{ page.pf2021_img }}"
+            class="rounded-medium"
+            style="margin-top: -100px;">
+        </td>
+      </tr>
+    </table>
+
     <!----------------------------------------------------------------------------------------------------->
     <table class="w-full {{ page.secondaryBg }} p-32 sm:w-full">
       <component src="ruzne/oslava30.html"></component>
@@ -150,7 +162,7 @@ phone: "+420 596 134 157"
 
     <!----------------------------------------------------------------------------------------------------->
     <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
-      <component src="footer_podcast.html"></component>
+      <component src="footer.html"></component>
     </table>
   </block>
 </extends>
