@@ -1,8 +1,3 @@
-<div align="center">
-  <p><a href="https://maizzle.com" target="_blank"><img src="https://www.s5.cz/images/logo-new.jpg" width="200" alt="Maizzle"></a></p>
-  <p>HTML email development framework</p>
-</div>
-
 ## Releases
 
 [Newsletter 12/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-12.html)<br>
