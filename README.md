@@ -13,11 +13,11 @@
 
 ## Releases
 
-[Newsletter 12/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-12.html)
-[Newsletter 11/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-11.html)
-[Newsletter 10/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-10.html)
-[Newsletter 08/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-08.html)
-[Newsletter 07/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-07.html)
+[Newsletter 12/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-12.html)<br>
+[Newsletter 11/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-11.html)<br>
+[Newsletter 10/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-10.html)<br>
+[Newsletter 08/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-08.html)<br>
+[Newsletter 07/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-07.html)<br>
 [Newsletter 05/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-05.html)
 
 ## Projekt
