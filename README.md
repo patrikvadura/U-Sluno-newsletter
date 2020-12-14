@@ -21,11 +21,3 @@ npm install<br>
 maizzle serve<br>
 maizzle build<br>
 maizzle build production
-
-## Issues
-
-Please open all issues in the [framework repository](https://github.com/maizzle/framework).
-
-## License
-
-The Maizzle framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
