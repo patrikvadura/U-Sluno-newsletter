@@ -11,6 +11,6 @@
   color: rgba(255, 255, 255, .6) !important;
 }
 .video-shadow {
-  @apply rounded-lg border-none text-center text-white;
+  @apply rounded border-none text-center text-white;
   box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
 }
