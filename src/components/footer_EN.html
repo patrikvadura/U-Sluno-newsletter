@@ -1,52 +1,49 @@
 <tr>
   <td align="center">
-    <img src="images/usluno/logo-negative.png" class="p-8 block" width="100" alt="">
-    <a href="{{ page.PrimaryLink }}"
+    <img src="{{ page.global_en.images.brand.logo_negative }}" class="p-8 block" width="100" alt="">
+    <a href="{{ page.global_en.usluno.links.PrimaryLink }}"
        class="text-lg text-white font-bold no-underline block"
        target="_blank">
       <h4>
-        {{ page.website }}
+        {{ page.global_en.usluno.brand.website }}
       </h4>
     </a>
     <p class="text-sm text-white font-bold no-underline block">
-      <a href="mailto:{{ page.email_mailto }}
-                    ?subject={{ page.email_subject }}
-                    &body={{ page.email_body }}
-                    &cc={{ page.email_cc }}
-                    "
+      <a href="mailto:{{ page.global.usluno.links.email_mailto }} ?subject={{ page.global.usluno.links.email_subject }} &cc={{ page.global.usluno.links.email_cc }}"
          class="text-white no-underline">
-        {{ page.email }}
+        {{ page.global_en.usluno.brand.email }}
       </a>
-      | {{ page.phone }}</p>
+      | {{ page.global_en.usluno.brand.phone }}</p>
     <table>
       <tr>
         <td class="p-8">
-          <a href="{{ page.social_fb }}" target="_blank">
-            <img src="{{ page.social_fb_img }}" width="15" alt="">
+          <a href="{{ page.global_en.usluno.links.social.fb }}" target="_blank">
+            <img src="{{ page.global_en.images.social.fb }}" width="15" alt="">
           </a>
         </td>
         <td class="p-8">
-          <a href="{{ page.social_yt }}" target="_blank">
-            <img src="{{ page.social_yt_img }}" width="15" alt="">
+          <a href="{{ page.global_en.usluno.links.social.yt }}" target="_blank">
+            <img src="{{ page.global_en.images.social.yt }}" width="15" alt="">
           </a>
         </td>
         <td class="p-8">
-          <a href="{{ page.social_in }}" target="_blank">
-            <img src="{{ page.social_in_img }}" width="15" alt="">
+          <a href="{{ page.global_en.usluno.links.social.in }}" target="_blank">
+            <img src="{{ page.global_en.images.social.in }}" width="15" alt="">
           </a>
         </td>
       </tr>
     </table>
     <p class="text-xxs text-white">
-      You do not want our emails?
-      <span class="block">Feel free to
-              <a
-                href="{{ page.unsub }}"
-                class="font-bold text-white no-underline hover:{{ page.secondaryColor }}"
-                target="_blank">
-                unsubscribe.
-              </a>
-            </span>
+      {{ page.global_en.lang.footer.newsletter }}
+      <span class="block">
+        {{ page.global_en.lang.footer.newsletter_1 }}
+          <a
+            href="{{ page.global_en.usluno.links.unsub }}"
+            class="font-bold text-white no-underline hover:{{ page.secondaryColor }}"
+            target="_blank">
+            {{ page.global_en.lang.footer.newsletter_logout }}.
+          </a>
+      </span>
     </p>
   </td>
 </tr>
