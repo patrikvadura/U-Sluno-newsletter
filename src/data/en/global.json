@@ -23,11 +23,11 @@
 
   "lang": {
     "footer": {
-      "newsletter": "Nechcete dostávat naše newslettery?",
-      "newsletter_1": "Klikněte na",
-      "newsletter_logout": "odhlásit"
+      "newsletter": "You do not want our emails?",
+      "newsletter_1": "Feel free to",
+      "newsletter_logout": "unsubscribe."
     },
-    "topbar": "Zobrazit newsletter v prohlížeči"
+    "topbar": "Show newsletter in explorer"
   },
 
   "images": {
