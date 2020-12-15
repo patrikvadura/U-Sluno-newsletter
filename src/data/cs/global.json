@@ -24,8 +24,8 @@
   "lang": {
     "footer": {
       "newsletter": "Nechcete dostávat naše newslettery?",
-      "newsletter_1": "Klikněte na",
-      "newsletter_logout": "odhlásit"
+      "newsletter_1": "Nechcete dostávat naše newslettery?",
+      "newsletter_logout": "Odhlásit"
     },
     "topbar": "Zobrazit newsletter v prohlížeči"
   },
