@@ -6,28 +6,36 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-  <outlook>
-    <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
-    <style>
-      td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif !important; mso-line-height-rule: exactly;}
-    </style>
-  </outlook>
+
   <if condition="page.title">
     <title>{{ page.title }}</title>
   </if>
+
   <if condition="page.googleFonts">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" media="screen">
+    <link href="https://fonts.googleapis.com/css?family={{ page.googleFonts }}" rel="stylesheet" media="screen">
   </if>
+
+  <!--[if mso]>
+  <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
+  <style>
+    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
+  </style>
+  <![endif]-->
+
   <if condition="page.css">
     <style>{{{ page.css }}}</style>
   </if>
+
   <block name="head"></block>
 </head>
+
 <body class="{{ page.bodyClass || '' }}">
   <if condition="page.preheader">
-    <div class="hidden">{{ page.preheader }}</div>
+    <raw>
+      <div class="hidden">{{ page.preheader }}</div>
+    </raw>
   </if>
-  <div role="article" aria-roledescription="email" aria-label="{{ page.title || '' }}" lang="{{ page.language || 'en'}}">
+  <div role="article" aria-roledescription="email" aria-label="{{ page.title || '' }}" lang="{{ page.language || 'cs-cz'}}">
     <table align="center" class="w-full sm:w-full">
       <tr>
         <td align="center">

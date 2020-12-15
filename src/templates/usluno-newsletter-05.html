@@ -2,8 +2,36 @@
 title: "The Website Weekly Newsletter"
 preheader: "Hlasem řízený sklad"
 image: https://i.giphy.com/f6hTTH9okVhfmlxoZW.gif
-bodyClass: bg-cool-gray-100
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-cool-gray-100"
+primaryBg: "bg-orange-900"
+primaryColor: "bg-orange-900"
+secondaryBg: "bg-blue-900"
+secondaryColor: "text-blue-900"
 googleFonts: "Exo:400,500,600,700;subset=latin-ext"
+
+TopBar: "Zobrazit newsletter v prohlížeči"
+
+email_mailto: "robotics@u-sluno.cz"
+email_subject: "Dobrý den, mám dotaz ohledně newsletteru!"
+email_body: ""
+email_cc: "marketing@u-sluno.cz"
+
+PrimaryLink: "https://www.u-sluno.eu/"
+social_fb: "https://www.facebook.com/slunocz/"
+social_yt: "https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw"
+social_in: "https://www.linkedin.com/company/354076/"
+unsub: "https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734bf3e2&id=34499fdab6&e=d94144be41&c=ee107271a1"
+
+social_fb_img: "images/usluno/05/facebook.png"
+social_yt_img: "images/usluno/05/youtube.png"
+social_in_img: "images/usluno/05/linkedin.png"
+
+website: "www.u-sluno.eu"
+email: "marketing@u-sluno.cz"
+phone: "+420 596 134 157"
 ---
 
 <extends src="src/layouts/master.html">
@@ -11,38 +39,36 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
     <table class="w-full font-sans ">
       <tr>
         <td align="center" class="bg-cool-gray-100 sm:px-16">
+          <table class="w-600 sm:w-full {{ page.tableReset }} {{ page.primaryBg }}">
+            <component src="topbar.html"></component>
+          </table>
+
           <table class="w-600 sm:w-full">
-            <tr class="bg-orange-900">
-              <td class="p-16 sm:py-32 sm:px-24 text-center">
-                <a href="http://s5.cz/emaily/USluno/Mailchimp/05_20/usluno-newsletter-full.html" class="text-white text-sm font-medium no-underline hover:underline hover:font-bold">
-                  Zobrazit newsletter v prohlížeči
-                </a>
-              </td>
-            </tr>
             <tr>
-              <td class="bg-top bg-no-repeat bg-cover rounded text-left" style="background-image: url('{{ page.image }}');">
-                  <table class="w-full py-32 text-center bg-opac">
+              <td class="bg-top bg-no-repeat bg-cover"
+                  style="background-image: url('{{ page.image }}');">
+                  <table class="w-full pt-32 text-center bg-opac">
                     <tr>
                       <td class="w-48 sm:w-16"></td>
                       <td>
-                        <img 
-                          src="images/usluno/logo-negative.png" 
-                          class="pb-20" 
-                          width="200" 
+                        <img
+                          src="images/usluno/logo-negative.png"
+                          class="pb-20"
+                          width="200"
                           alt="">
                         <a href="https://www.u-sluno.eu/rizeny-sklad/hlasem-rizeny-sklad/" class="no-underline">
                           <h1 class="m-0 mb-0 text-5xl text-orange-900 font-bold sm:leading-40">
                             Hlasem řízený sklad
                           </h1>
-                        </a>  
-                        <h2 class="m-0 mb-16 text-4xl text-white font-normal sm:leading-40">zvedne produktivitu až o 20 %</h2>
+                        </a>
+                        <h2 class="m-0 text-4xl text-white font-normal sm:leading-40">zvedne produktivitu až o 20 %</h2>
                         <p class="pt-16 text-white text-base leading-24 text-opac">
                           Náklady na logistiku a řízení skladů jsou zejména pro velké retailery stěžejním bodem, kde mohou získat výhodu oproti konkurenci. Jedna z nejefektivnějších cest, jak toho dosáhnout, je díky zapojení technologie hlasového vychystávání — robustního nástroje pro maloobchodní, velkoobchodní, logistické a distribuční společnosti, který výrazně zvyšuje produktivitu i celkovou kvalitu práce.
                         </p>
                         <div class="pt-32 sm:h-32">&zwnj;</div>
-                        <img 
-                          src="images/usluno/icon-scroll-alt.png" 
-                          width="40" 
+                        <img
+                          src="images/usluno/icon-scroll-alt.png"
+                          width="40"
                           alt="">
                       </td>
                       <td class="w-48 sm:w-16"></td>
@@ -75,7 +101,8 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
                     <td class="w-full pb-40 sm:w-full sm:inline-block">
                       <table class="w-full pb-32 pt-0 sm:w-full font-sans rounded">
                         <tr>
-                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center" style="background-image: url('images/usluno/slice1.png');">
+                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center"
+                              style="background-image: url('images/usluno/05/slice1.png');">
                             <h3 class="mb-16 text-md text-orange-900 font-bold sm:leading-40">
                               Co je Hlasem řízený sklad?
                             </h3>
@@ -87,7 +114,8 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
                       </table>
                       <table class="w-full pb-32 pt-0 sm:w-full font-sans rounded">
                         <tr>
-                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center" style="background-image: url('images/usluno/slice3.png');">
+                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center"
+                              style="background-image: url('images/usluno/05/slice3.png');">
                             <h3 class="mb-16 text-md text-blue-900 font-bold sm:leading-40">
                               Proč je dobré mít Hlasem řízený sklad?
                             </h3>
@@ -99,7 +127,8 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
                       </table>
                       <table class="w-full pb-32 pt-0 sm:w-full font-sans rounded">
                         <tr>
-                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center" style="background-image: url('images/usluno/slice2.png');">
+                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center"
+                              style="background-image: url('images/usluno/05/slice2.png');">
                             <h3 class="mb-16 text-md text-orange-900 font-bold sm:leading-40">
                               Pro koho je Hlasem řízený sklad určený?
                             </h3>
@@ -111,7 +140,8 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
                       </table>
                       <table class="w-full pb-32 pt-0 sm:w-full font-sans rounded">
                         <tr>
-                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center" style="background-image: url('images/usluno/slice4.png');">
+                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center"
+                              style="background-image: url('images/usluno/05/slice4.png');">
                             <h3 class="mb-16 text-md text-blue-900 font-bold sm:leading-40">
                               Jak náročná je implementace?
                             </h3>
@@ -123,12 +153,13 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
                       </table>
                       <table class="w-full pb-32 pt-0 sm:w-full font-sans rounded">
                         <tr>
-                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center" style="background-image: url('images/usluno/slice3.png');">
+                          <td class="py-16 px-20 shadow-xl rounded-medium bg-center"
+                              style="background-image: url('images/usluno/05/slice3.png');">
                             <h3 class="mb-16 text-md text-orange-900 font-bold sm:leading-40">
-                              Jak rychlá je návratnost investice? 
+                              Jak rychlá je návratnost investice?
                             </h3>
                             <p class="text-cool-gray-900 text-sm leading-24">
-                              U některých našich projektů byla návratnost investice v řádech měsíců. 
+                              U některých našich projektů byla návratnost investice v řádech měsíců.
                             </p>
                           </td>
                         </tr>
@@ -150,30 +181,30 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
                             <table>
                               <tr>
                                 <td class="w-4/12 p-8 align-top">
-                                  <img 
-                                    src="images/usluno/icon-checklist-alt.png" 
-                                    class="pb-20" 
-                                    width="50" 
+                                  <img
+                                    src="images/usluno/05/icon-checklist-alt.png"
+                                    class="pb-20"
+                                    width="50"
                                     alt="">
                                   <h3 class="font-bold text-sm">
                                     Zvýšení produktivity
                                   </h3>
                                 </td>
                                 <td class="w-4/12 p-8 align-top">
-                                  <img 
-                                    src="images/usluno/icon-no-connection-alt.png" 
-                                    class="pb-20" 
-                                    width="50" 
+                                  <img
+                                    src="images/usluno/05/icon-no-connection-alt.png"
+                                    class="pb-20"
+                                    width="50"
                                     alt="">
                                   <h3 class="font-bold text-sm">
                                     Snížení chybovosti při přípravě objednávek
                                   </h3>
                                 </td>
                                 <td class="w-4/12 p-8 align-top">
-                                  <img 
-                                    src="images/usluno/icon-education-alt.png" 
-                                    class="pb-20" 
-                                    width="50" 
+                                  <img
+                                    src="images/usluno/05/icon-education-alt.png"
+                                    class="pb-20"
+                                    width="50"
                                     alt="">
                                   <h3 class="font-bold text-sm">
                                     Rychlé zaškolení nových uživatelů
@@ -182,30 +213,30 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
                               </tr>
                               <tr>
                                 <td class="w-4/12 p-8 align-top">
-                                  <img 
-                                    src="images/usluno/icon-support-alt.png" 
-                                    class="pb-20" 
-                                    width="50" 
+                                  <img
+                                    src="images/usluno/05/icon-support-alt.png"
+                                    class="pb-20"
+                                    width="50"
                                     alt="">
                                   <h3 class="font-bold text-sm">
                                     100% úspěšnost rozpoznání hlasu
                                   </h3>
                                 </td>
                                 <td class="w-4/12 p-8 align-top">
-                                  <img 
-                                    src="images/usluno/icon-testing-alt.png" 
-                                    class="pb-20" 
-                                    width="50" 
+                                  <img
+                                    src="images/usluno/05/icon-testing-alt.png"
+                                    class="pb-20"
+                                    width="50"
                                     alt="">
                                   <h3 class="font-bold text-sm">
                                     Rychlá implementace
                                   </h3>
                                 </td>
                                 <td class="w-4/12 p-8 align-top">
-                                  <img 
-                                    src="images/usluno/icon-genetics-alt.png" 
-                                    class="pb-20" 
-                                    width="50" 
+                                  <img
+                                    src="images/usluno/05/icon-genetics-alt.png"
+                                    class="pb-20"
+                                    width="50"
                                     alt="">
                                   <h3 class="font-bold text-sm">
                                     Jednoduchá modifikace podle potřeb zákazníka
@@ -257,54 +288,28 @@ googleFonts: "Exo:400,500,600,700;subset=latin-ext"
               <td class="h-64 sm:h-32"></td>
             </tr>
             <tr>
-              <td style="background-image: url('images/usluno/pre-footer-bg.png');" class="w-full pb-0 px-48 sm:px-24 py-16 bg-cool-gray-100 rounded text-center bg-center bg-no-repeat bg-cover">
+              <td style="background-image: url('images/usluno/05/pre-footer-bg.png');"
+                  class="w-full pb-0 px-48 sm:px-24 py-16 bg-cool-gray-100 rounded text-center bg-center bg-no-repeat bg-cover">
                 <h3 class="mt-32 mb-16 text-2xl text-orange-900 font-bold sm:leading-40">
                   Pokyny od Pamely přímo do ucha
-                </h3>  
+                </h3>
                 <h1 class="m-0 mb-0 text-4xl leading-48 text-center text-blue-900 font-bold sm:leading-40">
                   Tak se pracuje ve skladu <br>Albertu
                 </h1>
-                <a 
+
+                <a
                   href="https://www.idnes.cz/ekonomika/domaci/albert-distribucni-centrum-pamela-automatizovany-hlasovy-system.A190712_152438_ekonomika_are"
-                  class="mt-32 shadow-xl inline-block py-16 px-24 text-sm leading-none no-underline text-white font-semibold rounded-full bg-orange-900 hover:bg-blue-900">
+                  class="{{ page.primaryBg }} hover:{{ page.secondaryBg }} mt-32 shadow-xl inline-block py-16 px-24 text-sm leading-none no-underline text-white font-semibold rounded-full">
                   <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-                    <span style="mso-text-raise: 13pt;"><img src="images/usluno/icon-click-alt.png" class="pr-8" width="25" alt=""> Zobrazit celý článek</span>
+                    <span style="mso-text-raise: 13pt;">
+                      <img src="images/usluno/05/icon-click-alt.png" class="pr-8" width="25" alt="">
+                      Zobrazit celý článek
+                    </span>
                   <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
                 </a>
-                <table align="center" class="bg-blue-900 text-white w-full p-20 mt-64 rounded-t-lg">
-                  <tr class="text-center">
-                    <td>
-                      <img src="images/usluno/logo-negative.png" class="p-8" width="100" alt="">
-                      <a href="https://u-sluno.eu" class="text-lg text-white font-bold no-underline hover:text-orange-900 block">www.u-sluno.eu</a>
-                      <table class="flex justify-center">
-                        <tr>
-                          <td>
-                            <a href="https://www.facebook.com/slunocz/">
-                              <img src="images/usluno/facebook.png" class="p-8" width="15" alt="">
-                            </a>  
-                          </td>
-                          <td>
-                            <a href="https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw">
-                              <img src="images/usluno/youtube.png" class="p-8" width="15" alt="">
-                            </a>   
-                          </td>
-                          <td>
-                            <a href="https://www.linkedin.com/company/354076/">
-                              <img src="images/usluno/linkedin.png" class="p-8" width="15" alt="">
-                            </a> 
-                          </td>
-                        </tr>
-                      </table>
-                      <p class="text-xxs">
-                        Nechcete dostávat naše newslettery?
-                        <span class="block">Můžete se kdykoli 
-                          <a href="https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734bf3e2&id=34499fdab6&e=d94144be41&c=ee107271a1" class="font-bold text-white no-underline hover:text-orange-900">
-                            odhlásit
-                          </a>.
-                        </span>
-                      </p>
-                    </td>
-                  </tr>
+
+                <table align="center" class="{{ page.secondaryBg }} text-white w-full p-20 mt-64 rounded-t-lg">
+                  <component src="footer_special.html"></component>
                 </table>
               </td>
             </tr>
