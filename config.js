@@ -26,6 +26,9 @@ let newsletter_12 = JSON.parse(rawdata_2);
 let rawdata_2_en = fs.readFileSync('src/data/en/newsletter_12.json');
 let newsletter_12_en = JSON.parse(rawdata_2_en);
 
+let rawdata_3 = fs.readFileSync('src/data/cs/newsletter_03_21.json');
+let newsletter_03_21 = JSON.parse(rawdata_3);
+
 module.exports = {
 
   global: global,
@@ -33,6 +36,7 @@ module.exports = {
   components: components,
   newsletter_12: newsletter_12,
   newsletter_12_en: newsletter_12_en,
+  newsletter_03_21: newsletter_03_21,
 
   build: {
     assets: {
