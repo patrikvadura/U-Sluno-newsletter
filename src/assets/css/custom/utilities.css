@@ -14,3 +14,7 @@
   @apply rounded border-none text-center text-white;
   box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
 }
+
+.border-bottom {
+  border-bottom: 1px solid rgba(229,29,41,.2);
+}
