@@ -12,7 +12,7 @@ secondaryBg: "bg-red-50"
 secondaryColor: "text-red-50"
 googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 
-YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
+YouTube: "https://www.youtube.com/embed/3iBeco17Xcw"
 ---
 
 <extends src="src/layouts/master.html">
@@ -111,17 +111,14 @@ YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
     <table class="{{ page.tableReset }} px-32 mb-32">
       <tr class="text-center">
         <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
-          <h4 class="m-0 text-lg font-bold uppercase text-white pt-20">
-            {{ page.newsletter_03_21.reference.first.title }}
-          </h4>
-          <p class="text-white text-sm font-light leading-24">
-            {{ page.newsletter_03_21.reference.first.description }}
-          </p>
           <img
             src="{{ page.newsletter_03_21.reference.first.image }}"
             width="180"
             class="py-16"
           >
+          <p class="text-white text-sm font-light leading-24">
+            {{ page.newsletter_03_21.reference.first.description }}
+          </p>
         </td>
       </tr>
     </table>
@@ -129,17 +126,14 @@ YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
     <table class="{{ page.tableReset }} px-32 mb-32">
       <tr class="text-center">
         <td align="center" class="p-20 {{ page.secondaryBg }} rounded-medium w-4/12 align-top">
-          <h4 class="m-0 text-lg font-bold uppercase {{ page.primaryColor }} pt-20">
-            {{ page.newsletter_03_21.reference.second.title }}
-          </h4>
-          <p class="{{ page.primaryColor }} text-sm font-base leading-24">
-            {{ page.newsletter_03_21.reference.second.description }}
-          </p>
           <img
             src="{{ page.newsletter_03_21.reference.second.image }}"
             width="70"
             class="py-16"
           >
+          <p class="{{ page.primaryColor }} text-sm font-base leading-24">
+            {{ page.newsletter_03_21.reference.second.description }}
+          </p>
         </td>
       </tr>
     </table>
@@ -147,17 +141,14 @@ YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
     <table class="{{ page.tableReset }} px-32 mb-32">
       <tr class="text-center">
         <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
-          <h4 class="m-0 text-lg font-bold uppercase text-white pt-20">
-            {{ page.newsletter_03_21.reference.third.title }}
-          </h4>
-          <p class="text-white text-sm font-light leading-24">
-            {{ page.newsletter_03_21.reference.third.description }}
-          </p>
           <img
             src="{{ page.newsletter_03_21.reference.third.image }}"
             width="180"
             class="py-16"
           >
+          <p class="text-white text-sm font-light leading-24">
+            {{ page.newsletter_03_21.reference.third.description }}
+          </p>
         </td>
       </tr>
     </table>
