@@ -12,7 +12,7 @@ secondaryBg: "bg-red-50"
 secondaryColor: "text-red-50"
 googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 
-YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
+YouTube: "https://www.youtube.com/embed/3iBeco17Xcw"
 ---
 
 <extends src="src/layouts/master.html">
@@ -68,9 +68,19 @@ YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
     <!----------------------------------------------------------------------------------------------------->
     <table class="{{ page.tableReset }}">
       <tr>
-        <td class="w-full pt-32 px-16 {{ page.smReset }}">
-          <p class="text-cool-gray-900 text-center text-base font-light leading-relaxed">
-            Není to pouze o fungujícím e-shopu, důležitější je propojení s ERP, sklady a CRM systémy. Díky personalizaci nabídnete svým zákazníkům produkty, o které mají zájem, na místě, v čase a za cenu, kterou preferují. Zvýšit obrat můžete až o 30 %.
+        <td class="w-full pt-32 {{ page.smReset }} text-center">
+          <a
+            href="https://www.grandeshop.cz/"
+            class="no-underline"
+            target="_blank"
+          >
+            <h2 class="{{ page.primaryColor }} text-2xl font-extrabold pb-20">
+              Jeden eshop pro B2C i B2B zákazníky
+            </h2>
+          </a>
+
+          <p class="text-cool-gray-900 text-base font-light leading-relaxed">
+            Není to pouze o fungujícím e-shopu, důležitější je propojení s ERP, sklady a CRM systémy. Díky personalizaci nabídnete svým zákazníkům produkty, o které mají zájem, na místě, v čase a za cenu, kterou preferují. Zvyšte svůj obrat až o 30 %.
           </p>
         </td>
       </tr>
@@ -82,11 +92,16 @@ YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
+    <table align="center" class="w-600 bg-white mt-32 p-32 sm:w-full border-bottom">
+      <component src="ruzne/CTA_eshop.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
     <table class="{{ page.tableReset }} px-32 pt-32">
       <tr>
         <td class="w-full px-32 {{ page.smReset }}">
           <h2
-            class="{{ page.primaryColor }} text-center text-xl font-bold leading-relaxed pb-20">
+            class="{{ page.primaryColor }} text-center text-2xl font-extrabold leading-relaxed pb-20">
             Reference
           </h2>
         </td>
@@ -95,83 +110,57 @@ YouTube: "https://www.youtube.com/watch?v=pBg8OrPk9Ow"
 
     <table class="{{ page.tableReset }} px-32 mb-32">
       <tr class="text-center">
-        <td align="center" class="p-16 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
-          <h4 class="m-0 text-lg font-bold uppercase text-white pt-20">
-            {{ page.newsletter_03_21.reference.first.title }}
-          </h4>
-          <p class="text-white text-sm font-light leading-24">
-            {{ page.newsletter_03_21.reference.first.description }}
-          </p>
-          <p class="text-white text-sm font-light leading-24">
-            <span class="font-bold">{{ page.newsletter_03_21.reference.first.name }}:</span>
-            {{ page.newsletter_03_21.reference.first.position }}
-          </p>
+        <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
           <img
             src="{{ page.newsletter_03_21.reference.first.image }}"
             width="180"
             class="py-16"
           >
+          <p class="text-white text-sm font-light leading-24">
+            {{ page.newsletter_03_21.reference.first.description }}
+          </p>
         </td>
       </tr>
     </table>
 
     <table class="{{ page.tableReset }} px-32 mb-32">
       <tr class="text-center">
-        <td align="center" class="p-16 {{ page.secondaryBg }} rounded-medium w-4/12 align-top">
-          <h4 class="m-0 text-lg font-bold uppercase {{ page.primaryColor }} pt-20">
-            {{ page.newsletter_03_21.reference.second.title }}
-          </h4>
-          <p class="{{ page.primaryColor }} text-sm font-base leading-24">
-            {{ page.newsletter_03_21.reference.second.description }}
-          </p>
-          <p class="{{ page.primaryColor }} text-sm font-base leading-24">
-            <span class="font-bold">{{ page.newsletter_03_21.reference.second.name }}:</span>
-            {{ page.newsletter_03_21.reference.second.position }}
-          </p>
+        <td align="center" class="p-20 {{ page.secondaryBg }} rounded-medium w-4/12 align-top">
           <img
             src="{{ page.newsletter_03_21.reference.second.image }}"
             width="70"
             class="py-16"
           >
+          <p class="{{ page.primaryColor }} text-sm font-base leading-24">
+            {{ page.newsletter_03_21.reference.second.description }}
+          </p>
         </td>
       </tr>
     </table>
 
     <table class="{{ page.tableReset }} px-32 mb-32">
       <tr class="text-center">
-        <td align="center" class="p-16 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
-          <h4 class="m-0 text-lg font-bold uppercase text-white pt-20">
-            {{ page.newsletter_03_21.reference.third.title }}
-          </h4>
-          <p class="text-white text-sm font-light leading-24">
-            {{ page.newsletter_03_21.reference.third.description }}
-          </p>
-          <p class="text-white text-sm font-light leading-24">
-            <span class="font-bold">{{ page.newsletter_03_21.reference.third.name }}:</span>
-            {{ page.newsletter_03_21.reference.third.position }}
-          </p>
+        <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
           <img
             src="{{ page.newsletter_03_21.reference.third.image }}"
             width="180"
             class="py-16"
           >
+          <p class="text-white text-sm font-light leading-24">
+            {{ page.newsletter_03_21.reference.third.description }}
+          </p>
         </td>
       </tr>
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
-    <table align="center" class="w-full bg-white p-32 sm:w-full">
-      <component src="ruzne/CTA_eshop.html"></component>
-    </table>
-
-    <!----------------------------------------------------------------------------------------------------->
-    <table align="center" class="w-full {{ page.secondaryBg }} p-32 sm:w-full">
+    <table align="center" class="w-full p-32 sm:w-full">
       <component src="ruzne/CTA_demo.html"></component>
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
     <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
-      <component src="footer.html"></component>
+      <component src="footer_grandeshop.html"></component>
     </table>
   </block>
 </extends>
