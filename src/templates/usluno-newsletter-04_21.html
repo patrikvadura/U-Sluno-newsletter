@@ -8,11 +8,11 @@ smReset: "sm:px-32"
 bodyClass: "bg-white"
 primaryBg: "bg-orange-900"
 primaryColor: "text-orange-900"
-secondaryBg: "bg-orange-400"
+secondaryBg: "bg-gray-800"
 secondaryColor: "text-orange-900"
 googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 
-YouTube: "https://www.youtube.com/embed/3iBeco17Xcw"
+YouTube: "https://www.youtube.com/embed/RNmFAVr4Wzs"
 ---
 
 <extends src="src/layouts/master.html">
@@ -22,7 +22,7 @@ YouTube: "https://www.youtube.com/embed/3iBeco17Xcw"
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
-    <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover text-left p-32 flex justify-center"
+    <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover text-left p-32 pb-64 flex justify-center"
            style="background-image: url('images/usluno/04_21/header_03.jpg');">
       <tr>
         <td>
@@ -37,11 +37,11 @@ YouTube: "https://www.youtube.com/embed/3iBeco17Xcw"
                        width="200"
                        alt="U&Sluno">
                 </a>
-                <a href="{{ page.newsletter_03_21.link }}"
+                <a href="{{ page.newsletter_04_21.link }}"
                    class="no-underline"
                    target="_blank">
-                  <h1 class="text-white text-4xl font-bold uppercase leading-sm sm:leading-sm ">
-                    {{ page.newsletter_03_21.title }}
+                  <h1 class="text-white text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
+                    {{ page.newsletter_04_21.title }}
                   </h1>
                 </a>
               </td>
@@ -52,126 +52,106 @@ YouTube: "https://www.youtube.com/embed/3iBeco17Xcw"
 
       <tr>
         <td>
-          <table class="{{ page.tableReset }} pb-32">
+          <table class="{{ page.tableReset }} pb-48">
             <th>
-            <td align="center" class="w-12/12 {{ page.smReset }} text-center">
-              <p class="text-white">
-                Změny skladových procesů a testování nových přístupů v retailu jsou obvykle časově náročné a nákladné. Efektivním řešením je proto využití 3D simulací, které umožní vše vyzkoušet velmi jednoduše ve virtuálním prostředí a bez nutnosti omezení reálného provozu.
-              </p>
+              <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+                <p class="text-white">
+                  {{ page.newsletter_04_21.post }}
+                </p>
 
-              <a
-                href=""
-                class="{{ page.primaryBg }} hover:bg-white text-white hover:text-orange-900 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-                target="_blank">
-                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-                <span style="mso-text-raise: 13pt;">
-                  Přečíst celý článek
-                </span>
-                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-              </a>
-            </td>
+                <a
+                  href=""
+                  class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+                  target="_blank">
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                  <span style="mso-text-raise: 13pt;">
+                    Přečíst celý článek
+                  </span>
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+                </a>
+              </td>
             </th>
           </table>
         </td>
       </tr>
-    </table>
 
-    <!----------------------------------------------------------------------------------------------------->
-    <table class="{{ page.tableReset }}">
-      <tr>
-        <td class="w-full pt-32 {{ page.smReset }} text-center">
-          <a
-            href="https://www.grandeshop.cz/"
-            class="no-underline"
-            target="_blank"
-          >
-            <h2 class="{{ page.primaryColor }} text-2xl font-extrabold pb-20">
-              Jeden eshop pro B2C i B2B zákazníky
-            </h2>
-          </a>
-
-          <p class="text-cool-gray-900 text-base font-light leading-relaxed">
-            Není to pouze o fungujícím e-shopu, důležitější je propojení s ERP, sklady a CRM systémy. Díky personalizaci nabídnete svým zákazníkům produkty, o které mají zájem, na místě, v čase a za cenu, kterou preferují. Zvyšte svůj obrat až o 30 %.
-          </p>
-        </td>
-      </tr>
-    </table>
-
-    <!----------------------------------------------------------------------------------------------------->
-    <table class="w-full {{ page.secondaryBg }} mt-32 p-32 sm:w-full">
       <component src="videoYT.html"></component>
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
-    <table align="center" class="w-600 bg-white mt-32 p-32 sm:w-full border-bottom">
-      <component src="ruzne/CTA_eshop.html"></component>
+    <table class="{{ page.tableReset }} my-48 px-32">
+      <tr class="text-center">
+        <td align="center" class="p-32 w-4/12 align-top">
+          <p class="text-sm font-light leading-24">
+            {{ page.newsletter_03_21.reference.first.description }}
+          </p>
+
+          <p class="text-sm font-bold leading-24">
+            Radoslav Jelínek, DHL Logistics (Slovakia) s.r.o.
+          </p>
+        </td>
+      </tr>
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
-    <table class="{{ page.tableReset }} px-32 pt-32">
+    <table class="w-600 bg-top bg-no-repeat bg-cover rounded-medium p-32 sm:w-full"
+           style="background-image: url('images/usluno/04_21/podcast.jpg');"
+    >
       <tr>
-        <td class="w-full px-32 {{ page.smReset }}">
-          <h2
-            class="{{ page.primaryColor }} text-center text-2xl font-extrabold leading-relaxed pb-20">
-            Reference
+        <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+          <h2 class="text-white text-2xl font-extrabold pb-20">
+            Poslechněte si naše tématické podcasty.
           </h2>
         </td>
       </tr>
-    </table>
 
-    <table class="{{ page.tableReset }} px-32 mb-32">
-      <tr class="text-center">
-        <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
-          <img
-            src="{{ page.newsletter_03_21.reference.first.image }}"
-            width="180"
-            class="py-16"
-          >
-          <p class="text-white text-sm font-light leading-24">
-            {{ page.newsletter_03_21.reference.first.description }}
-          </p>
-        </td>
-      </tr>
-    </table>
-
-    <table class="{{ page.tableReset }} px-32 mb-32">
-      <tr class="text-center">
-        <td align="center" class="p-20 {{ page.secondaryBg }} rounded-medium w-4/12 align-top">
-          <img
-            src="{{ page.newsletter_03_21.reference.second.image }}"
-            width="70"
-            class="py-16"
-          >
-          <p class="{{ page.primaryColor }} text-sm font-base leading-24">
-            {{ page.newsletter_03_21.reference.second.description }}
-          </p>
-        </td>
-      </tr>
-    </table>
-
-    <table class="{{ page.tableReset }} px-32 mb-32">
-      <tr class="text-center">
-        <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
-          <img
-            src="{{ page.newsletter_03_21.reference.third.image }}"
-            width="180"
-            class="py-16"
-          >
-          <p class="text-white text-sm font-light leading-24">
-            {{ page.newsletter_03_21.reference.third.description }}
-          </p>
+      <tr>
+        <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+          <a
+            href="https://anchor.fm/usluno/episodes/3D-Simulace-proces-1-V-em-vm-3D-simulace-proces-pome-et9org"
+            class="bg-orange-900 hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+            target="_blank">
+            <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+            <span style="mso-text-raise: 13pt;">
+              Poslechnout podcasty
+            </span>
+            <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+          </a>
         </td>
       </tr>
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
-    <table align="center" class="w-full p-32 sm:w-full">
-      <component src="ruzne/CTA_demo.html"></component>
+    <table class="w-600 bg-top bg-no-repeat bg-cover rounded-medium my-32 p-32 sm:w-full"
+           style="background-image: url('images/usluno/04_21/3dsimulation.jpg');"
+    >
+      <tr>
+        <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+          <h2 class="text-white text-2xl font-extrabold pb-20">
+            Na 3D simulaci procesů chystáme koncem dubna také webinář.
+          </h2>
+        </td>
+      </tr>
+
+      <tr>
+        <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+          <a
+            href="https://zoom.us/webinar/register/5016177023706/WN_-RaGzvoxSJWI0Yokk8NehA"
+            class="bg-orange-900 hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+            target="_blank">
+            <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+            <span style="mso-text-raise: 13pt;">
+              Registrace zdarma
+            </span>
+            <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+          </a>
+        </td>
+      </tr>
     </table>
 
     <!----------------------------------------------------------------------------------------------------->
     <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
-      <component src="footer_grandeshop.html"></component>
+      <component src="footer.html"></component>
     </table>
   </block>
 </extends>
