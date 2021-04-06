@@ -1,0 +1,177 @@
+---
+ReleaseN: "03_21"
+title: "Newsletter {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-orange-900"
+primaryColor: "text-orange-900"
+secondaryBg: "bg-orange-400"
+secondaryColor: "text-orange-900"
+googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
+
+YouTube: "https://www.youtube.com/embed/3iBeco17Xcw"
+---
+
+<extends src="src/layouts/master.html">
+  <block align="center" name="template">
+    <table class="w-full sm:w-full {{ page.tableReset }} {{ page.primaryBg }}">
+      <component src="topbar.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover text-left p-32 flex justify-center"
+           style="background-image: url('images/usluno/04_21/header_03.jpg');">
+      <tr>
+        <td>
+          <table class="{{ page.tableReset }} py-32">
+            <th>
+              <td class="w-full {{ page.smReset }} px-32 text-center">
+                <a href="{{ page.global.usluno.links.PrimaryLink }}"
+                   class="no-underline"
+                   target="_blank">
+                  <img src="{{ page.global.images.brand.logo_negative }}"
+                       class="align-top"
+                       width="200"
+                       alt="U&Sluno">
+                </a>
+                <a href="{{ page.newsletter_03_21.link }}"
+                   class="no-underline"
+                   target="_blank">
+                  <h1 class="text-white text-4xl font-bold uppercase leading-sm sm:leading-sm ">
+                    {{ page.newsletter_03_21.title }}
+                  </h1>
+                </a>
+              </td>
+            </th>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="{{ page.tableReset }} pb-32">
+            <th>
+            <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+              <p class="text-white">
+                Změny skladových procesů a testování nových přístupů v retailu jsou obvykle časově náročné a nákladné. Efektivním řešením je proto využití 3D simulací, které umožní vše vyzkoušet velmi jednoduše ve virtuálním prostředí a bez nutnosti omezení reálného provozu.
+              </p>
+
+              <a
+                href=""
+                class="{{ page.primaryBg }} hover:bg-white text-white hover:text-orange-900 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+                target="_blank">
+                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                <span style="mso-text-raise: 13pt;">
+                  Přečíst celý článek
+                </span>
+                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+              </a>
+            </td>
+            </th>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="w-full pt-32 {{ page.smReset }} text-center">
+          <a
+            href="https://www.grandeshop.cz/"
+            class="no-underline"
+            target="_blank"
+          >
+            <h2 class="{{ page.primaryColor }} text-2xl font-extrabold pb-20">
+              Jeden eshop pro B2C i B2B zákazníky
+            </h2>
+          </a>
+
+          <p class="text-cool-gray-900 text-base font-light leading-relaxed">
+            Není to pouze o fungujícím e-shopu, důležitější je propojení s ERP, sklady a CRM systémy. Díky personalizaci nabídnete svým zákazníkům produkty, o které mají zájem, na místě, v čase a za cenu, kterou preferují. Zvyšte svůj obrat až o 30 %.
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full {{ page.secondaryBg }} mt-32 p-32 sm:w-full">
+      <component src="videoYT.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table align="center" class="w-600 bg-white mt-32 p-32 sm:w-full border-bottom">
+      <component src="ruzne/CTA_eshop.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="{{ page.tableReset }} px-32 pt-32">
+      <tr>
+        <td class="w-full px-32 {{ page.smReset }}">
+          <h2
+            class="{{ page.primaryColor }} text-center text-2xl font-extrabold leading-relaxed pb-20">
+            Reference
+          </h2>
+        </td>
+      </tr>
+    </table>
+
+    <table class="{{ page.tableReset }} px-32 mb-32">
+      <tr class="text-center">
+        <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
+          <img
+            src="{{ page.newsletter_03_21.reference.first.image }}"
+            width="180"
+            class="py-16"
+          >
+          <p class="text-white text-sm font-light leading-24">
+            {{ page.newsletter_03_21.reference.first.description }}
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <table class="{{ page.tableReset }} px-32 mb-32">
+      <tr class="text-center">
+        <td align="center" class="p-20 {{ page.secondaryBg }} rounded-medium w-4/12 align-top">
+          <img
+            src="{{ page.newsletter_03_21.reference.second.image }}"
+            width="70"
+            class="py-16"
+          >
+          <p class="{{ page.primaryColor }} text-sm font-base leading-24">
+            {{ page.newsletter_03_21.reference.second.description }}
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <table class="{{ page.tableReset }} px-32 mb-32">
+      <tr class="text-center">
+        <td align="center" class="p-20 {{ page.primaryBg }} rounded-medium w-4/12 align-top">
+          <img
+            src="{{ page.newsletter_03_21.reference.third.image }}"
+            width="180"
+            class="py-16"
+          >
+          <p class="text-white text-sm font-light leading-24">
+            {{ page.newsletter_03_21.reference.third.description }}
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table align="center" class="w-full p-32 sm:w-full">
+      <component src="ruzne/CTA_demo.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
+      <component src="footer_grandeshop.html"></component>
+    </table>
+  </block>
+</extends>
