@@ -1,28 +1,20 @@
 {
   "title": "Zavádějte nové procesy bez omezení provozu",
-  "link": "https://www.u-sluno.eu",
+  "link": "https://www.u-sluno.eu/3d-simulace-pomahaji-retailerum-zavadet-nove-procesy-i-bez-omezeni-provozu/",
   "post": "Změny skladových procesů a testování nových přístupů v retailu jsou obvykle časově náročné a nákladné. Efektivním řešením je proto využití 3D simulací, které umožní vše vyzkoušet velmi jednoduše ve virtuálním prostředí a bez nutnosti omezení reálného provozu.",
+  "read_post": "Přečíst celý článek",
+  "podcast": {
+    "title": "Poslechněte si naše tématické podcasty.",
+    "podcast": "Poslechnout podcasty"
+  },
+  "simulation": {
+    "title": "Na 3D simulaci procesů chystáme koncem dubna také webinář.",
+    "registration": "Registrace zdarma"
+  },
   "reference": {
     "first": {
-      "title": "UNI HOBBY",
-      "description": "B2C e-shop sehrál klíčovou roli během koronavirových opatření. Díky rychlé reakci a spolupráci s U&SLUNO jsme se mohli adaptovat na změnu podmínek. Objem e-shopových objednávek nám v době uzavřených prodejen vzrostl v určitých momentech až na desetinásobek.",
-      "name": "Aleš Oulehla",
-      "position": "provozní ředitel společnosti UNI HOBBY",
-      "image": "images/usluno/03_21/logo-unihobby.png"
-    },
-    "second": {
-      "title": "GGT CZ",
-      "description": "Komplexní on-line B2B řešení od společnosti U&SLUNO a.s., které pro nás na míru vytvářeli s maximální orientací na zákazníka, pro nás představuje jeden z primárních kanálů pro příjem objednávek. Oceňujeme hlavně schopnost rychle reagovat na naše požadavky. Díky dlouholetým vztahům jsou pro nás stabilním partnerem s výbornými výsledky práce. E-shop pravidelně využívá přes 1 200 zákazníků a v loňském roce se přes něj realizovalo více jak 100 000 objednávek.",
-      "name": "Milan Parma",
-      "position": "IT specialista ve společnosti GGT",
-      "image": "images/usluno/03_21/logo-ggt.png"
-    },
-    "third": {
-      "title": "MAKRO ČR & METRO SR",
-      "description": "E-shopové řešení od firmy U&SLUNO, které používáme více jak 9 let, nám v Makru ČR a Metru SR umožňuje naplňovat naši obchodní strategii v oblasti distribuce a uspokojovat potřeby našich zákazníků.",
-      "name": "David Kutiš",
-      "position": "Senior e-Commerce Manager",
-      "image": "images/usluno/03_21/logo-makro-metro.png"
+      "description": "Vdaka nastroju 3d simulacie vieme vopred nasimulovat planovany presun a upravy v layoute, na zaklade coho vieme bez financneho dopadu vyhodnotit vplyv rozlozenia tovarov v sklade a aky dopad to bude mat na celkovu productivitu jednotlivych procesov. Sami si skusame rozlozenie skladu a tovarov cez jednoduche nahravanie excelovskych tabuliek, kde mame moznost menit pocty objednavok, poctu druhov tovarov ako aj rozlozenie regalov do jednotlivych velkosti. Prave tato simulacia nam odpoveda na otazky, aky vplyv a dopad bude mat dana zmena procesu/layoutu na celkovu produktivitu vychystavania, doplnovania s prepoctom travellingu medzi ulickami.",
+      "name": "Radoslav Jelínek, DHL Logistics (Slovakia) s.r.o."
     }
   }
 }
