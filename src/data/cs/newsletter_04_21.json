@@ -1,20 +1,23 @@
 {
-  "title": "Zavádějte nové procesy bez omezení provozu",
+  "title": "Zavádějte procesy bez omezení provozu",
   "link": "https://www.u-sluno.eu/3d-simulace-pomahaji-retailerum-zavadet-nove-procesy-i-bez-omezeni-provozu/",
   "post": "Změny skladových procesů a testování nových přístupů v retailu jsou obvykle časově náročné a nákladné. Efektivním řešením je proto využití 3D simulací, které umožní vše vyzkoušet velmi jednoduše ve virtuálním prostředí a bez nutnosti omezení reálného provozu.",
   "read_post": "Přečíst celý článek",
   "podcast": {
-    "title": "Poslechněte si naše tématické podcasty.",
-    "podcast": "Poslechnout podcasty"
+    "title": "Poslechněte si podcasty o 3D simulaci.",
+    "podcast": "Poslechnout podcasty",
+    "link": "https://anchor.fm/usluno/episodes/3D-Simulace-proces-1-V-em-vm-3D-simulace-proces-pome-et9org"
   },
   "simulation": {
-    "title": "Na 3D simulaci procesů chystáme koncem dubna také webinář.",
-    "registration": "Registrace zdarma"
+    "title": "Na 3D simulaci procesů chystáme koncem dubna webinář.",
+    "registration": "Registrace zdarma",
+    "link": "https://zoom.us/webinar/register/5016177023706/WN_-RaGzvoxSJWI0Yokk8NehA"
   },
   "reference": {
     "first": {
+      "logo": "images/usluno/04_21/dhl-logo.png",
       "description": "Vdaka nastroju 3d simulacie vieme vopred nasimulovat planovany presun a upravy v layoute, na zaklade coho vieme bez financneho dopadu vyhodnotit vplyv rozlozenia tovarov v sklade a aky dopad to bude mat na celkovu productivitu jednotlivych procesov. Sami si skusame rozlozenie skladu a tovarov cez jednoduche nahravanie excelovskych tabuliek, kde mame moznost menit pocty objednavok, poctu druhov tovarov ako aj rozlozenie regalov do jednotlivych velkosti. Prave tato simulacia nam odpoveda na otazky, aky vplyv a dopad bude mat dana zmena procesu/layoutu na celkovu produktivitu vychystavania, doplnovania s prepoctom travellingu medzi ulickami.",
-      "name": "Radoslav Jelínek, DHL Logistics (Slovakia) s.r.o."
+      "name": "DHL Logistics (Slovakia), spol. s r.o."
     }
   }
 }

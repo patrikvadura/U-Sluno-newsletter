@@ -17,7 +17,8 @@
       "social": {
         "fb": "https://www.facebook.com/slunocz/",
         "yt": "https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw",
-        "in": "https://www.linkedin.com/company/354076/"
+        "in": "https://www.linkedin.com/company/354076/",
+        "spotify": "https://open.spotify.com/show/4MfjBVF1JQCnarTLGN7ccf"
       }
     }
   },
@@ -46,7 +47,8 @@
     "social": {
       "fb": "images/usluno/facebook-negative.png",
       "yt": "images/usluno/youtube-negative.png",
-      "in": "images/usluno/linkedin-negative.png"
+      "in": "images/usluno/linkedin-negative.png",
+      "spotify": "images/usluno/spotify-negative.png"
     },
     "topbar": "Zobrazit newsletter v prohlížeči"
   }

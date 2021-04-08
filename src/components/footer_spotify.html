@@ -1,0 +1,57 @@
+<tr>
+  <td align="center">
+    <img src="{{ page.global.images.brand.logo_negative }}" class="p-8 block text-center" width="100" alt="">
+    <a href="{{ page.global.usluno.links.PrimaryLink }}"
+       class="text-lg text-white font-bold no-underline block text-center"
+       target="_blank">
+      <h4 class="text-center">
+        {{ page.global.usluno.brand.website }}
+      </h4>
+    </a>
+    <p class="text-sm text-white text-center font-bold no-underline block">
+      <a href="mailto:{{ page.global.usluno.links.email_mailto }}
+              ?subject={{ page.global.usluno.links.email_subject }}
+              &cc={{ page.global.usluno.links.email_cc }}
+              &body={{ page.global.usluno.links.email_body }}"
+         class="text-white no-underline">
+        {{ page.global.usluno.brand.email }}
+      </a>
+      | {{ page.global.usluno.brand.phone }}</p>
+    <table>
+      <tr>
+        <td class="p-8">
+          <a href="{{ page.global.usluno.links.social.fb }}" target="_blank">
+            <img src="{{ page.global.images.social.fb }}" width="15" alt="">
+          </a>
+        </td>
+        <td class="p-8">
+          <a href="{{ page.global.usluno.links.social.yt }}" target="_blank">
+            <img src="{{ page.global.images.social.yt }}" width="15" alt="">
+          </a>
+        </td>
+        <td class="p-8">
+          <a href="{{ page.global.usluno.links.social.in }}" target="_blank">
+            <img src="{{ page.global.images.social.in }}" width="15" alt="">
+          </a>
+        </td>
+        <td class="p-8">
+          <a href="{{ page.global.usluno.links.social.spotify }}" target="_blank">
+            <img src="{{ page.global.images.social.spotify }}" width="15" alt="">
+          </a>
+        </td>
+      </tr>
+    </table>
+    <p class="text-xxs text-white text-center">
+      {{ page.global.lang.footer.newsletter }}
+      <span class="block">
+        {{ page.global.lang.footer.newsletter_1 }}
+          <a
+            href="{{ page.global.usluno.links.unsub }}"
+            class="font-bold text-white no-underline hover:{{ page.secondaryColor }}"
+            target="_blank">
+            {{ page.global.lang.footer.newsletter_logout }}.
+          </a>
+      </span>
+    </p>
+  </td>
+</tr>
