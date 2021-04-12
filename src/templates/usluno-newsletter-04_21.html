@@ -1,0 +1,175 @@
+---
+ReleaseN: "04_21"
+title: "Newsletter {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-orange-900"
+primaryColor: "text-orange-900"
+secondaryBg: "bg-gray-800"
+secondaryColor: "text-orange-900"
+googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
+
+YouTube: "https://www.youtube.com/embed/RNmFAVr4Wzs"
+---
+
+<extends src="src/layouts/master.html">
+  <block align="center" name="template">
+    <table class="w-full sm:w-full {{ page.tableReset }} {{ page.primaryBg }}">
+      <component src="topbar.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover text-left p-32 pb-64 flex justify-center"
+           style="background-image: url('images/usluno/04_21/header_03.jpg');">
+      <tr>
+        <td>
+          <table class="{{ page.tableReset }} py-32">
+            <th>
+              <td class="w-full {{ page.smReset }} px-32 text-center">
+                <a href="{{ page.global.usluno.links.PrimaryLink }}"
+                   class="no-underline"
+                   target="_blank">
+                  <img src="{{ page.global.images.brand.logo_alt_neg }}"
+                       class="align-top"
+                       width="200"
+                       alt="U&Sluno">
+                </a>
+                <a href="{{ page.newsletter_04_21.link }}"
+                   class="no-underline"
+                   target="_blank">
+                  <h1 class="text-orange-900 text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
+                    {{ page.newsletter_04_21.title }}
+                  </h1>
+                </a>
+              </td>
+            </th>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <table class="{{ page.tableReset }} pb-48">
+            <th>
+              <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+                <p class="text-white font-light">
+                  {{ page.newsletter_04_21.post }}
+                </p>
+
+                <a
+                  href="https://www.u-sluno.eu/3d-simulace-pomahaji-retailerum-zavadet-nove-procesy-i-bez-omezeni-provozu/"
+                  class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+                  target="_blank">
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                  <span style="mso-text-raise: 13pt;">
+                    {{ page.newsletter_04_21.read_post }}
+                  </span>
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+                </a>
+              </td>
+            </th>
+          </table>
+        </td>
+      </tr>
+
+      <component src="videoYT_larger.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="{{ page.tableReset }} pt-48">
+      <tr class="text-center">
+        <td align="center">
+          <h2 class="{{ page.primaryColor }} font-bold">
+            Kde 3D simulaci používají
+          </h2>
+        </td>
+      </tr>
+    </table>
+
+    <table class="{{ page.tableReset }} bg-gray-100 rounded-medium mt-20 mb-20 px-32">
+      <tr class="text-center">
+        <td align="center" class="p-32 w-4/12 align-top">
+          <img src="{{ page.newsletter_04_21.reference.first.logo }}"
+               class="align-top mb-20"
+               alt="DHL">
+
+          <p class="text-sm font-light leading-24">
+            Vďaka nástrojom 3d simulácie vieme vopred nasimulovať plánovaný presun a úpravy v layoute, na základe čoho
+            vieme bez finančného dopadu vyhodnotiť vplyv rozloženia tovarov v sklade a aký dopad to bude mať na celkovú
+            produktivitu jednotlivých procesov. Sami si skúšame rozloženie skladu a tovarov cez jednoduché nahrávanie
+            excelovských tabuliek, kde máme možnosť meniť počty objednávok, počty druhov tovarov ako aj&nbsp;rozloženie regálov
+            do jednotlivých veľkostí. Práve táto simulácia nám odpovedá na otázky, aký vplyv a dopad bude mať daná
+            zmena procesu/layoutu na celkovú produktivitu vychystávania a doplňovania s&nbsp;prepočtom travellingu medzi uličkami.
+          </p>
+
+          <p class="text-sm font-bold leading-24" style="border-top: 1px solid rgba(0,0,0,.1); padding-top: 15px; margin-top: 20px;">
+            {{ page.newsletter_04_21.reference.first.name }}
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-600 sm:w-full">
+      <tr>
+        <td class="w-6/12 pr-8">
+          <table class="bg-top bg-no-repeat bg-cover rounded-medium p-32 sm:w-full"
+                 style="background-image: url('images/usluno/04_21/podcast.jpg'); height: 370px;"
+          >
+            <tr>
+              <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+                <h2 class="text-white text-2xl font-extrabold pb-20">
+                  {{ page.newsletter_04_21.podcast.title }}
+                </h2>
+
+                <a
+                  href=""
+                  class="bg-orange-900 hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+                  target="_blank">
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                  <span style="mso-text-raise: 13pt;">
+                    {{ page.newsletter_04_21.podcast.podcast }}
+                  </span>
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <td class="w-6/12 pl-8">
+          <table class="bg-top bg-no-repeat bg-cover rounded-medium my-32 p-32 sm:w-full"
+                 style="background-image: url('images/usluno/04_21/3dsimulation.jpg'); height: 370px;"
+          >
+            <tr>
+              <td align="center" class="w-12/12 {{ page.smReset }} text-center">
+                <h2 class="text-white text-2xl font-extrabold pb-20">
+                  {{ page.newsletter_04_21.simulation.title }}
+                </h2>
+
+                <a
+                  href=""
+                  class="bg-orange-900 hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+                  target="_blank">
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                  <span style="mso-text-raise: 13pt;">
+                    {{ page.newsletter_04_21.simulation.registration }}
+                  </span>
+                  <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="w-full {{ page.secondaryBg }} p-32 sm:w-full">
+      <component src="footer_spotify.html"></component>
+    </table>
+  </block>
+</extends>
