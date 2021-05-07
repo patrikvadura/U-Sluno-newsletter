@@ -43,9 +43,9 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
                    alt="U&Sluno">
             </a>
             <a href="{{ page.newsletter_05_21.link }}"
-               class="no-underline"
+               class="no-underline text-center"
                target="_blank">
-              <h1 class="text-blue-900 text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
+              <h1 class="text-blue-900 text-center text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
                 {{ page.newsletter_05_21.title }}
               </h1>
             </a>
@@ -55,32 +55,36 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
     </if>
 
     <else>
-      <table class="w-full sm:w-full bg-blue-100 text-left p-32 pb-32 flex justify-center">
+      <table class="w-full sm:w-full bg-blue-100 text-center p-32 pb-32 flex justify-center">
         <tr>
           <td>
             <table class="{{ page.tableReset }} pt-32">
               <th>
-              <td class="w-full {{ page.smReset }} px-32 text-center">
-                <a href="{{ page.global.usluno.links.PrimaryLink }}"
-                   class="no-underline"
-                   target="_blank">
-                  <img src="{{ page.global.images.brand.logo }}"
-                       class="align-top"
-                       width="400"
-                       alt="U&Sluno">
-                </a>
-                <a href="{{ page.newsletter_05_21.link }}"
-                   class="no-underline"
-                   target="_blank">
-                  <h1 class="text-blue-900 text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
-                    {{ page.newsletter_05_21.title }}
-                  </h1>
-                </a>
-              </td>
+                <td class="w-full {{ page.smReset }} px-32 text-center">
+                  <a href="{{ page.global.usluno.links.PrimaryLink }}"
+                     class="no-underline"
+                     target="_blank">
+                    <img src="{{ page.global.images.brand.logo }}"
+                         class="align-top"
+                         width="400"
+                         alt="U&Sluno">
+                  </a>
+                  <a href="{{ page.newsletter_05_21.link }}"
+                     class="no-underline text-center"
+                     target="_blank">
+                    <h1 class="text-blue-900 text-center text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+                      {{ page.newsletter_05_21.title }}
+                    </h1>
+                  </a>
+                </td>
               </th>
             </table>
           </td>
         </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacer_32.html"></component>
       </table>
     </else>
 
@@ -111,6 +115,10 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
 
     <!----------------------------------------------------------------------------------------------------->
     <if condition="page.env === 'mailchimp'">
+      <table class="w-full">
+        <component src="spacer_64.html"></component>
+      </table>
+
       <table class="{{ page.tableReset }} py-32 sm:px-32">
         <tr>
           <td align="center" class="text-center">
@@ -130,6 +138,10 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
             </a>
           </td>
         </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacer_32.html"></component>
       </table>
     </if>
 
@@ -196,8 +208,8 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
     <if condition="page.env === 'mailchimp'">
       <table class="{{ page.tableReset }} sm:px-32">
         <tr class="text-center">
-          <td align="center">
-            <h2 class="{{ page.primaryColor }} font-bold">
+          <td align="center" class="text-center">
+            <h2 class="{{ page.primaryColor }} font-bold text-center">
               Reference
             </h2>
           </td>
@@ -346,13 +358,23 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
         <tr>
           <td align="center">
             <img src="{{ page.global.images.brand.logo }}" class="p-8 block text-center" width="100" alt="">
+
+            <table class="w-full">
+              <component src="spacer_16.html"></component>
+            </table>
+
             <a href="{{ page.global.usluno.links.PrimaryLink }}"
                class="text-lg {{ page.primaryColor }} font-bold no-underline block text-center"
                target="_blank">
-              <h4 class="text-center">
+              <h4 class="text-center {{ page.primaryColor }}">
                 {{ page.global.usluno.brand.website }}
               </h4>
             </a>
+
+            <table class="w-full">
+              <component src="spacer_16.html"></component>
+            </table>
+
             <p class="text-sm {{ page.primaryColor }} text-center font-bold no-underline block">
               <a href="mailto:{{ page.global.usluno.links.email_mailto }}
               ?subject={{ page.global.usluno.links.email_subject }}
