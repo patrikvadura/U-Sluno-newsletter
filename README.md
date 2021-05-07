@@ -1,5 +1,6 @@
 ## Releases
 
+[Newsletter 05/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-05_21.html)<br>
 [Newsletter 04/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-04_21.html)<br>
 [Newsletter 03/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-03_21.html)<br>
 [Newsletter 12/20 - EN](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-12_EN.html)<br>
