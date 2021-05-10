@@ -32,6 +32,10 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
     <!----------------------------------------------------------------------------------------------------->
     <if condition="page.env === 'mailchimp'">
       <table class="{{ page.tableReset }} bg-blue-100">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
         <tr>
           <td align="center" class="{{ page.smReset }} px-32 text-center">
             <a href="{{ page.global.usluno.links.PrimaryLink }}"
@@ -51,6 +55,10 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
             </a>
           </td>
         </tr>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <component src="spacers/spacer_32.html"></component>
       </table>
     </if>
 
@@ -83,9 +91,6 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
         </tr>
       </table>
 
-      <table class="w-full">
-        <component src="spacer_32.html"></component>
-      </table>
     </else>
 
     <!----------------------------------------------------------------------------------------------------->
@@ -105,7 +110,6 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
         <tr class="text-center">
           <td align="center">
             <img src="images/usluno/05_21/ilustrace.svg"
-                 class="align-top"
                  alt="U&Sluno">
           </td>
         </tr>
@@ -116,7 +120,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
     <!----------------------------------------------------------------------------------------------------->
     <if condition="page.env === 'mailchimp'">
       <table class="w-full">
-        <component src="spacer_64.html"></component>
+        <component src="spacers/spacer_64.html"></component>
       </table>
 
       <table class="{{ page.tableReset }} py-32 sm:px-32">
@@ -141,7 +145,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
       </table>
 
       <table class="w-full">
-        <component src="spacer_32.html"></component>
+        <component src="spacers/spacer_32.html"></component>
       </table>
     </if>
 
@@ -187,7 +191,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
       </table>
 
       <table class="w-full">
-        <component src="spacer_32.html"></component>
+        <component src="spacers/spacer_32.html"></component>
       </table>
     </if>
 
@@ -217,7 +221,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
       </table>
 
       <table class="w-full">
-        <component src="spacer_16.html"></component>
+        <component src="spacers/spacer_16.html"></component>
       </table>
 
       <table class="{{ page.tableReset }} bg-blue-100 px-32">
@@ -240,7 +244,9 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
 
             </p>
 
-            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32" style="border-top: 1px solid rgba(0,0,0,.1); padding-top: 15px; margin-top: 20px;">
+            <hr class="border-0 bg-gray-300 text-gray-500 h-px">
+
+            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32">
               {{ page.newsletter_05_21.reference.first.name }}
             </p>
           </td>
@@ -248,7 +254,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
       </table>
 
       <table class="w-full">
-        <component src="spacer_32.html"></component>
+        <component src="spacers/spacer_32.html"></component>
       </table>
 
       <table class="{{ page.tableReset }} bg-blue-100 px-32">
@@ -265,7 +271,9 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
               Jsme rádi, že máme spolehlivého partnera jako je U&SLUNO.
             </p>
 
-            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32" style="border-top: 1px solid rgba(0,0,0,.1); padding-top: 15px; margin-top: 20px;">
+            <hr class="border-0 bg-gray-300 text-gray-500 h-px">
+
+            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32">
               {{ page.newsletter_05_21.reference.second.name }}
             </p>
           </td>
@@ -273,7 +281,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
       </table>
 
       <table class="w-full">
-        <component src="spacer_64.html"></component>
+        <component src="spacers/spacer_64.html"></component>
       </table>
     </if>
 
@@ -354,130 +362,20 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
 
     <!----------------------------------------------------------------------------------------------------->
     <if condition="page.env === 'mailchimp'">
-      <table class="{{ page.tableReset }}">
-        <tr>
-          <td align="center">
-            <img src="{{ page.global.images.brand.logo }}" class="p-8 block text-center" width="100" alt="">
-
-            <table class="w-full">
-              <component src="spacer_16.html"></component>
-            </table>
-
-            <a href="{{ page.global.usluno.links.PrimaryLink }}"
-               class="text-lg {{ page.primaryColor }} font-bold no-underline block text-center"
-               target="_blank">
-              <h4 class="text-center {{ page.primaryColor }}">
-                {{ page.global.usluno.brand.website }}
-              </h4>
-            </a>
-
-            <table class="w-full">
-              <component src="spacer_16.html"></component>
-            </table>
-
-            <p class="text-sm {{ page.primaryColor }} text-center font-bold no-underline block">
-              <a href="mailto:{{ page.global.usluno.links.email_mailto }}
-              ?subject={{ page.global.usluno.links.email_subject }}
-              &cc={{ page.global.usluno.links.email_cc }}
-              &body={{ page.global.usluno.links.email_body }}"
-                 class="{{ page.primaryColor }} no-underline">
-                {{ page.global.usluno.brand.email }}
-              </a>
-              | {{ page.global.usluno.brand.phone }}</p>
-          </td>
-        </tr>
-      </table>
-
-      <table>
-        <tr>
-          <td class="p-8">
-            <a href="{{ page.global.usluno.links.social.fb }}" target="_blank">
-              <img src="images/usluno/facebook-blue.png" width="15" alt="">
-            </a>
-          </td>
-          <td class="p-8">
-            <a href="{{ page.global.usluno.links.social.yt }}" target="_blank">
-              <img src="images/usluno/youtube-blue.png" width="15" alt="">
-            </a>
-          </td>
-          <td class="p-8">
-            <a href="{{ page.global.usluno.links.social.in }}" target="_blank">
-              <img src="images/usluno/linkedin-blue.png" width="15" alt="">
-            </a>
-          </td>
-        </tr>
-      </table>
+      <component src="_mailchimp/footer_plain.html"></component>
     </if>
 
     <else>
       <table class="w-full sm:w-full bg-bottom bg-no-repeat bg-cover text-left py-64 flex justify-center align-middle"
-             style="background-image: url('images/usluno/05_21/ilustrace_04.svg'); margin-bottom: -1px;">
-        <tr>
-          <td align="center" class="py-64">
-            <img src="{{ page.global.images.brand.logo }}" class="p-8 pt-64 block text-center" width="100" alt="">
-            <a href="{{ page.global.usluno.links.PrimaryLink }}"
-               class="text-lg {{ page.primaryColor }} font-bold no-underline block text-center"
-               target="_blank">
-              <h4 class="text-center">
-                {{ page.global.usluno.brand.website }}
-              </h4>
-            </a>
-            <p class="text-sm {{ page.primaryColor }} text-center font-bold no-underline block">
-              <a href="mailto:{{ page.global.usluno.links.email_mailto }}
-              ?subject={{ page.global.usluno.links.email_subject }}
-              &cc={{ page.global.usluno.links.email_cc }}
-              &body={{ page.global.usluno.links.email_body }}"
-                 class="{{ page.primaryColor }} no-underline">
-                {{ page.global.usluno.brand.email }}
-              </a>
-              | {{ page.global.usluno.brand.phone }}</p>
-            <table>
-              <tr>
-                <td class="p-8">
-                  <a href="{{ page.global.usluno.links.social.fb }}" target="_blank">
-                    <img src="images/usluno/facebook-blue.png" width="15" alt="">
-                  </a>
-                </td>
-                <td class="p-8">
-                  <a href="{{ page.global.usluno.links.social.yt }}" target="_blank">
-                    <img src="images/usluno/youtube-blue.png" width="15" alt="">
-                  </a>
-                </td>
-                <td class="p-8">
-                  <a href="{{ page.global.usluno.links.social.in }}" target="_blank">
-                    <img src="images/usluno/linkedin-blue.png" width="15" alt="">
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
+             style="background-image: url('images/usluno/05_21/ilustrace_04.svg'); margin-bottom: -2px;">
+        <component src="footer_plain.html"></component>
       </table>
     </else>
 
     <!----------------------------------------------------------------------------------------------------->
     <if condition="page.env === 'mailchimp'">
-      <table class="{{ page.tableReset }}">
-        <tr>
-          <td align="center">
-            <p class="text-xxs {{ page.primaryColor }} text-center">
-              {{ page.global.lang.footer.newsletter }}
-              <span class="block">
-                {{ page.global.lang.footer.newsletter_1 }}
-                <a
-                  href="{{ page.global.usluno.links.unsub }}"
-                  class="font-bold {{ page.primaryColor }} no-underline hover:{{ page.secondaryColor }}"
-                  target="_blank">
-                  {{ page.global.lang.footer.newsletter_logout }}.
-                </a>
-              </span>
-            </p>
-          </td>
-        </tr>
-      </table>
-
       <table class="w-full">
-        <component src="spacer_64.html"></component>
+        <component src="spacers/spacer_64.html"></component>
       </table>
 
       <table class="{{ page.tableReset }}">

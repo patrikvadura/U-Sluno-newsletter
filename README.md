@@ -1,5 +1,5 @@
 ## Releases
-
+### Desktop (full verison)
 [Newsletter 05/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-05_21.html)<br>
 [Newsletter 04/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-04_21.html)<br>
 [Newsletter 03/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-03_21.html)<br>
@@ -10,6 +10,9 @@
 [Newsletter 08/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-08.html)<br>
 [Newsletter 07/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-07.html)<br>
 [Newsletter 05/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-05.html)
+
+### Mailchimp
+[Newsletter 05/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-05_21.html)<br>
 
 ## Projekt
 
