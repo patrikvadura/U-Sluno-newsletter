@@ -15,59 +15,209 @@ googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
 ---
 
-<extends src="src/layouts/master.html">
-  <block align="center" class="bg-blue-100" name="template">
-    <if condition="page.env === 'mailchimp'">
+<!-----------------------------------------------------------------------------------------------------
+--- MAILCHIMP ---
+------------------------------------------------------------------------------------------------------>
+<if condition="page.env === 'local'">
+  <extends src="src/layouts/mailchimp.html">
+    <block align="center" class="bg-blue-100" name="template">
       <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
         <component src="topbar.html"></component>
       </table>
-    </if>
 
-    <else>
-      <table class="w-full sm:w-full {{ page.tableReset }} {{ page.secondaryBg }}">
-        <component src="topbar.html"></component>
-      </table>
-    </else>
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="{{ page.tableReset }} bg-blue-100">
+          <component src="spacers/spacer_32.html"></component>
+        </table>
 
-    <!----------------------------------------------------------------------------------------------------->
-    <if condition="page.env === 'mailchimp'">
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
+        <table class="{{ page.tableReset }} bg-blue-100">
+          <tr>
+            <td align="center" class="{{ page.smReset }} px-32 text-center">
+              <a href="{{ page.global.usluno.links.PrimaryLink }}"
+                 class="no-underline"
+                 target="_blank">
+                <img src="{{ page.global.images.brand.logo }}"
+                     class="align-top"
+                     width="200"
+                     alt="U&Sluno">
+              </a>
+              <a href="{{ page.newsletter_05_21.link }}"
+                 class="no-underline text-center"
+                 target="_blank">
+                <h1 class="text-blue-900 text-center text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
+                  {{ page.newsletter_05_21.title }}
+                </h1>
+              </a>
+            </td>
+          </tr>
+        </table>
 
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <tr>
-          <td align="center" class="{{ page.smReset }} px-32 text-center">
-            <a href="{{ page.global.usluno.links.PrimaryLink }}"
-               class="no-underline"
-               target="_blank">
-              <img src="{{ page.global.images.brand.logo }}"
-                   class="align-top"
-                   width="200"
+        <table class="{{ page.tableReset }} bg-blue-100">
+          <component src="spacers/spacer_32.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="{{ page.tableReset }} bg-blue-100">
+          <tr>
+            <td align="center" class="text-center">
+              <img src="images/usluno/05_21/ilustrace.png"
                    alt="U&Sluno">
-            </a>
-            <a href="{{ page.newsletter_05_21.link }}"
-               class="no-underline text-center"
-               target="_blank">
-              <h1 class="text-blue-900 text-center text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
-                {{ page.newsletter_05_21.title }}
-              </h1>
-            </a>
-          </td>
-        </tr>
-      </table>
+            </td>
+          </tr>
+        </table>
 
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-    </if>
 
-    <else>
-      <table class="w-full sm:w-full bg-blue-100 text-center p-32 pb-32 flex justify-center">
-        <tr>
-          <td>
-            <table class="{{ page.tableReset }} pt-32">
-              <th>
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full">
+          <component src="spacers/spacer_64.html"></component>
+        </table>
+
+        <table class="{{ page.tableReset }} py-32 sm:px-32">
+          <tr>
+            <td align="center" class="text-center">
+              <p class="{{ page.primaryColor }} font-light">
+                {{ page.newsletter_05_21.post }} <b>Produktivita práce z našich zkušeností poroste o 8–30&nbsp;%.</b>
+              </p>
+
+              <a
+                href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/"
+                class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+                target="_blank">
+                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                <span style="mso-text-raise: 13pt;">
+                    {{ page.newsletter_05_21.read_post }}
+                  </span>
+                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <table class="w-full">
+          <component src="spacers/spacer_32.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="{{ page.tableReset }} py-32">
+          <component src="videoYT_larger.html"></component>
+        </table>
+
+        <table class="w-full">
+          <component src="spacers/spacer_32.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="{{ page.tableReset }} sm:px-32">
+          <tr class="text-center">
+            <td align="center" class="text-center">
+              <h2 class="{{ page.primaryColor }} font-bold text-center">
+                Reference
+              </h2>
+            </td>
+          </tr>
+        </table>
+
+        <table class="w-full">
+          <component src="spacers/spacer_16.html"></component>
+        </table>
+
+        <table class="{{ page.tableReset }} bg-blue-100 px-32">
+          <tr class="text-center">
+            <td align="center" class="p-32 w-4/12 align-top">
+              <img src="{{ page.newsletter_05_21.reference.first.logo }}"
+                   class="align-top mb-20"
+                   width="100"
+                   alt="DHL">
+
+              <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
+                WMS běží v nepřetržitém režimu v našich skladech o velikosti přes 100 000 metrů čtverečních už od roku 1999.
+                Denně připravíme zhruba 15 000 palet pro více jak 300 prodejen. Na jedné směně se na tom podílí na 400 zaměstnanců.
+                Vlastní implementace WMS proběhla díky dobrému plánu velmi rychle. Všechny systémy se na prvním skladu převedly v průběhu jedné noci,
+                čímž došlo jen k minimálnímu omezení provozu. Dobrý systém zvyšuje produktivitu, snižuje chybovost a to celé se pak už přímo promítá do lepší dostupnosti zboží na našich prodejnách.
+                Od 2019 využíváme v našich skladech hlasové vychystávání. I v tomto případě proběhla implementace podle plánu velmi rychle.
+                Třetí měsíc po podepsání smlouvy odstartoval pilotní provoz. Začátek rolloutu na posledním skladu jsme pak uspíšili dokonce o celý kvartál.
+                Naši zaměstnanci novou technologii, která jim usnadňuje vychystávání, velmi pozitivně přijali. Odpadá držení terminálu, zvýšila se efektivita
+                i produktivita a také se urychlilo zaškolení nových zaměstnanců, které se zkrátilo na jednotky hodin.
+
+              </p>
+
+              <hr class="border-0 bg-gray-300 text-gray-500 h-px">
+
+              <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32">
+                {{ page.newsletter_05_21.reference.first.name }}
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table class="w-full">
+          <component src="spacers/spacer_32.html"></component>
+        </table>
+
+        <table class="{{ page.tableReset }} bg-blue-100 px-32">
+          <tr class="text-center">
+            <td align="center" class="p-32 w-4/12 align-top">
+              <img src="{{ page.newsletter_05_21.reference.second.logo }}"
+                   class="align-top mb-20"
+                   width="100"
+                   alt="DHL">
+
+              <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
+                Hlasem řízený sklad nám pomohl výrazně zvýšit produktivitu vychystávání. Nejunikátnější pro naši společnost je řešení implementované společností U&SLUNO,
+                které bylo absolutně vhodné pro náš nadnárodní tým, včetně vietnamského jazyka, který je k dispozici ve všech aplikacích WMS.
+                Jsme rádi, že máme spolehlivého partnera jako je U&SLUNO.
+              </p>
+
+              <hr class="border-0 bg-gray-300 text-gray-500 h-px">
+
+              <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32">
+                {{ page.newsletter_05_21.reference.second.name }}
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table class="w-full">
+          <component src="spacers/spacer_64.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+        <component src="_mailchimp/footer_plain.html"></component>
+
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full">
+          <component src="spacers/spacer_64.html"></component>
+        </table>
+
+        <table class="{{ page.tableReset }}">
+          <tr class="text-center">
+            <td align="center">
+              <img src="images/usluno/05_21/ilustrace_03.png"
+                   alt="U&Sluno">
+            </td>
+          </tr>
+        </table>
+    </block>
+  </extends>
+</if>
+
+<!-----------------------------------------------------------------------------------------------------
+--- DESKTOP (FULL VERSION) ---
+------------------------------------------------------------------------------------------------------>
+
+<else>
+  <extends src="src/layouts/master.html">
+    <block align="center" class="bg-blue-100" name="template">
+        <table class="w-full sm:w-full {{ page.tableReset }} {{ page.secondaryBg }}">
+          <component src="topbar.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full sm:w-full bg-blue-100 text-center p-32 pb-32 flex justify-center">
+          <tr>
+            <td>
+              <table class="{{ page.tableReset }} pt-32">
+                <th>
                 <td class="w-full {{ page.smReset }} px-32 text-center">
                   <a href="{{ page.global.usluno.links.PrimaryLink }}"
                      class="no-underline"
@@ -85,319 +235,158 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
                     </h1>
                   </a>
                 </td>
-              </th>
-            </table>
-          </td>
-        </tr>
-      </table>
+                </th>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-    </else>
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full sm:w-full bg-blue-100">
+          <tr class="text-center">
+            <td align="center">
+              <img src="images/usluno/05_21/ilustrace.svg"
+                   alt="U&Sluno">
+            </td>
+          </tr>
+        </table>
 
-    <!----------------------------------------------------------------------------------------------------->
-    <if condition="page.env === 'mailchimp'">
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <tr>
-          <td align="center" class="text-center">
-            <img src="images/usluno/05_21/ilustrace.png"
-                 alt="U&Sluno">
-          </td>
-        </tr>
-      </table>
-    </if>
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full sm:w-full bg-blue-100 py-64">
+          <tr class="text-center">
+            <td align="center">
+              <table class="w-600 sm:w-full mt-64 sm:px-32">
+                <tr>
+                  <td class="w-5/12 pr-32">
+                    <img src="images/usluno/05_21/ilustrace_01.svg"
+                         class="align-top"
+                         alt="U&Sluno">
+                  </td>
 
-    <else>
-      <table class="w-full sm:w-full bg-blue-100">
-        <tr class="text-center">
-          <td align="center">
-            <img src="images/usluno/05_21/ilustrace.svg"
-                 alt="U&Sluno">
-          </td>
-        </tr>
-      </table>
-    </else>
+                  <td class="w-6/12 sm:w-12/12 pl-16">
+                    <p class="{{ page.primaryColor }} font-light">
+                      {{ page.newsletter_05_21.post }} <b>Produktivita práce z našich zkušeností poroste o 8–30&nbsp;%.</b>
+                    </p>
 
-
-    <!----------------------------------------------------------------------------------------------------->
-    <if condition="page.env === 'mailchimp'">
-      <table class="w-full">
-        <component src="spacers/spacer_64.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }} py-32 sm:px-32">
-        <tr>
-          <td align="center" class="text-center">
-            <p class="{{ page.primaryColor }} font-light">
-              {{ page.newsletter_05_21.post }} <b>Produktivita práce z našich zkušeností poroste o 8–30&nbsp;%.</b>
-            </p>
-
-            <a
-              href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/"
-              class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-              target="_blank">
-              <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-              <span style="mso-text-raise: 13pt;">
+                    <a
+                      href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/"
+                      class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+                      target="_blank">
+                      <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                      <span style="mso-text-raise: 13pt;">
                     {{ page.newsletter_05_21.read_post }}
                   </span>
-              <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-            </a>
-          </td>
-        </tr>
-      </table>
+                      <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-      <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-    </if>
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full sm:w-full bg-center bg-no-repeat bg-cover text-left py-64 flex justify-center align-middle"
+               style="background-image: url('images/usluno/05_21/ilustrace_02.svg'); margin-bottom: -1px;">
+          <tr>
+            <td>
+              <table class="py-48 flex justify-center align-middle">
+                <component src="videoYT_larger.html"></component>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-    <else>
-      <table class="w-full sm:w-full bg-blue-100 py-64">
-        <tr class="text-center">
-          <td align="center">
-            <table class="w-600 sm:w-full mt-64 sm:px-32">
-              <tr>
-                <td class="w-5/12 pr-32">
-                  <img src="images/usluno/05_21/ilustrace_01.svg"
-                       class="align-top"
-                       alt="U&Sluno">
-                </td>
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full sm:w-full bg-blue-100 pt-64">
+          <tr>
+            <td align="center">
+              <table class="{{ page.tableReset }} sm:px-32">
+                <tr class="text-center">
+                  <td align="center">
+                    <h2 class="{{ page.primaryColor }} font-bold">
+                      Reference
+                    </h2>
+                  </td>
+                </tr>
+              </table>
 
-                <td class="w-6/12 sm:w-12/12 pl-16">
-                  <p class="{{ page.primaryColor }} font-light">
-                    {{ page.newsletter_05_21.post }} <b>Produktivita práce z našich zkušeností poroste o 8–30&nbsp;%.</b>
-                  </p>
+              <table class="{{ page.tableReset }}" style="position: relative; top: 0; margin-top: -32px; transform: translateY(32px); z-index: 10;">
+                <tr class="text-center">
+                  <td align="center">
+                    <img src="images/usluno/05_21/ilustrace_03.svg"
+                         alt="U&Sluno">
+                  </td>
+                </tr>
+              </table>
 
-                  <a
-                    href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/"
-                    class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-                    target="_blank">
-                    <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-                    <span style="mso-text-raise: 13pt;">
-                    {{ page.newsletter_05_21.read_post }}
-                  </span>
-                    <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </else>
+              <table class="{{ page.tableReset }} bg-white rounded-medium mb-20 px-32">
+                <tr class="text-center">
+                  <td align="center" class="p-32 w-4/12 align-top">
+                    <img src="{{ page.newsletter_05_21.reference.first.logo }}"
+                         class="align-top mb-20"
+                         width="100"
+                         alt="DHL">
 
-    <!----------------------------------------------------------------------------------------------------->
-    <if condition="page.env === 'mailchimp'">
-      <table class="{{ page.tableReset }} py-32">
-        <component src="videoYT_larger.html"></component>
-      </table>
+                    <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
+                      WMS běží v nepřetržitém režimu v našich skladech o velikosti přes 100 000 metrů čtverečních už od roku 1999.
+                      Denně připravíme zhruba 15 000 palet pro více jak 300 prodejen. Na jedné směně se na tom podílí na 400 zaměstnanců.
+                      Vlastní implementace WMS proběhla díky dobrému plánu velmi rychle. Všechny systémy se na prvním skladu převedly v průběhu jedné noci,
+                      čímž došlo jen k minimálnímu omezení provozu. Dobrý systém zvyšuje produktivitu, snižuje chybovost a to celé se pak už přímo promítá do lepší dostupnosti zboží na našich prodejnách.
+                      Od 2019 využíváme v našich skladech hlasové vychystávání. I v tomto případě proběhla implementace podle plánu velmi rychle.
+                      Třetí měsíc po podepsání smlouvy odstartoval pilotní provoz. Začátek rolloutu na posledním skladu jsme pak uspíšili dokonce o celý kvartál.
+                      Naši zaměstnanci novou technologii, která jim usnadňuje vychystávání, velmi pozitivně přijali. Odpadá držení terminálu, zvýšila se efektivita
+                      i produktivita a také se urychlilo zaškolení nových zaměstnanců, které se zkrátilo na jednotky hodin.
 
-      <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-    </if>
+                    </p>
 
-    <else>
-      <table class="w-full sm:w-full bg-center bg-no-repeat bg-cover text-left py-64 flex justify-center align-middle"
-             style="background-image: url('images/usluno/05_21/ilustrace_02.svg'); margin-bottom: -1px;">
-        <tr>
-          <td>
-            <table class="py-48 flex justify-center align-middle">
-              <component src="videoYT_larger.html"></component>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </else>
+                    <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32" style="border-top: 1px solid rgba(0,0,0,.1); padding-top: 15px; margin-top: 20px;">
+                      {{ page.newsletter_05_21.reference.first.name }}
+                    </p>
+                  </td>
+                </tr>
+              </table>
 
-    <!----------------------------------------------------------------------------------------------------->
-    <if condition="page.env === 'mailchimp'">
-      <table class="{{ page.tableReset }} sm:px-32">
-        <tr class="text-center">
-          <td align="center" class="text-center">
-            <h2 class="{{ page.primaryColor }} font-bold text-center">
-              Reference
-            </h2>
-          </td>
-        </tr>
-      </table>
+              <table class="{{ page.tableReset }} bg-white rounded-medium mt-20 mb-20 px-32">
+                <tr class="text-center">
+                  <td align="center" class="p-32 w-4/12 align-top">
+                    <img src="{{ page.newsletter_05_21.reference.second.logo }}"
+                         class="align-top mb-20"
+                         width="100"
+                         alt="DHL">
 
-      <table class="w-full">
-        <component src="spacers/spacer_16.html"></component>
-      </table>
+                    <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
+                      Hlasem řízený sklad nám pomohl výrazně zvýšit produktivitu vychystávání. Nejunikátnější pro naši společnost je řešení implementované společností U&SLUNO,
+                      které bylo absolutně vhodné pro náš nadnárodní tým, včetně vietnamského jazyka, který je k dispozici ve všech aplikacích WMS.
+                      Jsme rádi, že máme spolehlivého partnera jako je U&SLUNO.
+                    </p>
 
-      <table class="{{ page.tableReset }} bg-blue-100 px-32">
-        <tr class="text-center">
-          <td align="center" class="p-32 w-4/12 align-top">
-            <img src="{{ page.newsletter_05_21.reference.first.logo }}"
-                 class="align-top mb-20"
-                 width="100"
-                 alt="DHL">
+                    <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32" style="border-top: 1px solid rgba(0,0,0,.1); padding-top: 15px; margin-top: 20px;">
+                      {{ page.newsletter_05_21.reference.second.name }}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
-              WMS běží v nepřetržitém režimu v našich skladech o velikosti přes 100 000 metrů čtverečních už od roku 1999.
-              Denně připravíme zhruba 15 000 palet pro více jak 300 prodejen. Na jedné směně se na tom podílí na 400 zaměstnanců.
-              Vlastní implementace WMS proběhla díky dobrému plánu velmi rychle. Všechny systémy se na prvním skladu převedly v průběhu jedné noci,
-              čímž došlo jen k minimálnímu omezení provozu. Dobrý systém zvyšuje produktivitu, snižuje chybovost a to celé se pak už přímo promítá do lepší dostupnosti zboží na našich prodejnách.
-              Od 2019 využíváme v našich skladech hlasové vychystávání. I v tomto případě proběhla implementace podle plánu velmi rychle.
-              Třetí měsíc po podepsání smlouvy odstartoval pilotní provoz. Začátek rolloutu na posledním skladu jsme pak uspíšili dokonce o celý kvartál.
-              Naši zaměstnanci novou technologii, která jim usnadňuje vychystávání, velmi pozitivně přijali. Odpadá držení terminálu, zvýšila se efektivita
-              i produktivita a také se urychlilo zaškolení nových zaměstnanců, které se zkrátilo na jednotky hodin.
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full sm:w-full bg-bottom bg-no-repeat bg-cover text-left py-64 flex justify-center align-middle"
+               style="background-image: url('images/usluno/05_21/ilustrace_04.svg'); margin-bottom: -2px;">
+          <component src="footer_plain.html"></component>
+        </table>
 
-            </p>
-
-            <hr class="border-0 bg-gray-300 text-gray-500 h-px">
-
-            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32">
-              {{ page.newsletter_05_21.reference.first.name }}
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }} bg-blue-100 px-32">
-        <tr class="text-center">
-          <td align="center" class="p-32 w-4/12 align-top">
-            <img src="{{ page.newsletter_05_21.reference.second.logo }}"
-                 class="align-top mb-20"
-                 width="100"
-                 alt="DHL">
-
-            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
-              Hlasem řízený sklad nám pomohl výrazně zvýšit produktivitu vychystávání. Nejunikátnější pro naši společnost je řešení implementované společností U&SLUNO,
-              které bylo absolutně vhodné pro náš nadnárodní tým, včetně vietnamského jazyka, který je k dispozici ve všech aplikacích WMS.
-              Jsme rádi, že máme spolehlivého partnera jako je U&SLUNO.
-            </p>
-
-            <hr class="border-0 bg-gray-300 text-gray-500 h-px">
-
-            <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32">
-              {{ page.newsletter_05_21.reference.second.name }}
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_64.html"></component>
-      </table>
-    </if>
-
-    <else>
-      <table class="w-full sm:w-full bg-blue-100 pt-64">
-        <tr>
-          <td align="center">
-            <table class="{{ page.tableReset }} sm:px-32">
-              <tr class="text-center">
-                <td align="center">
-                  <h2 class="{{ page.primaryColor }} font-bold">
-                    Reference
-                  </h2>
-                </td>
-              </tr>
-            </table>
-
-            <table class="{{ page.tableReset }}" style="position: relative; top: 0; margin-top: -32px; transform: translateY(32px); z-index: 10;">
-              <tr class="text-center">
-                <td align="center">
-                  <img src="images/usluno/05_21/ilustrace_03.svg"
-                       alt="U&Sluno">
-                </td>
-              </tr>
-            </table>
-
-            <table class="{{ page.tableReset }} bg-white rounded-medium mb-20 px-32">
-              <tr class="text-center">
-                <td align="center" class="p-32 w-4/12 align-top">
-                  <img src="{{ page.newsletter_05_21.reference.first.logo }}"
-                       class="align-top mb-20"
-                       width="100"
-                       alt="DHL">
-
-                  <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
-                    WMS běží v nepřetržitém režimu v našich skladech o velikosti přes 100 000 metrů čtverečních už od roku 1999.
-                    Denně připravíme zhruba 15 000 palet pro více jak 300 prodejen. Na jedné směně se na tom podílí na 400 zaměstnanců.
-                    Vlastní implementace WMS proběhla díky dobrému plánu velmi rychle. Všechny systémy se na prvním skladu převedly v průběhu jedné noci,
-                    čímž došlo jen k minimálnímu omezení provozu. Dobrý systém zvyšuje produktivitu, snižuje chybovost a to celé se pak už přímo promítá do lepší dostupnosti zboží na našich prodejnách.
-                    Od 2019 využíváme v našich skladech hlasové vychystávání. I v tomto případě proběhla implementace podle plánu velmi rychle.
-                    Třetí měsíc po podepsání smlouvy odstartoval pilotní provoz. Začátek rolloutu na posledním skladu jsme pak uspíšili dokonce o celý kvartál.
-                    Naši zaměstnanci novou technologii, která jim usnadňuje vychystávání, velmi pozitivně přijali. Odpadá držení terminálu, zvýšila se efektivita
-                    i produktivita a také se urychlilo zaškolení nových zaměstnanců, které se zkrátilo na jednotky hodin.
-
-                  </p>
-
-                  <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32" style="border-top: 1px solid rgba(0,0,0,.1); padding-top: 15px; margin-top: 20px;">
-                    {{ page.newsletter_05_21.reference.first.name }}
-                  </p>
-                </td>
-              </tr>
-            </table>
-
-            <table class="{{ page.tableReset }} bg-white rounded-medium mt-20 mb-20 px-32">
-              <tr class="text-center">
-                <td align="center" class="p-32 w-4/12 align-top">
-                  <img src="{{ page.newsletter_05_21.reference.second.logo }}"
-                       class="align-top mb-20"
-                       width="100"
-                       alt="DHL">
-
-                  <p class="{{ page.primaryColor }} text-sm sm:text-lg font-light leading-24 sm:leading-32">
-                    Hlasem řízený sklad nám pomohl výrazně zvýšit produktivitu vychystávání. Nejunikátnější pro naši společnost je řešení implementované společností U&SLUNO,
-                    které bylo absolutně vhodné pro náš nadnárodní tým, včetně vietnamského jazyka, který je k dispozici ve všech aplikacích WMS.
-                    Jsme rádi, že máme spolehlivého partnera jako je U&SLUNO.
-                  </p>
-
-                  <p class="{{ page.primaryColor }} text-sm sm:text-lg font-bold leading-24 sm:leading-32" style="border-top: 1px solid rgba(0,0,0,.1); padding-top: 15px; margin-top: 20px;">
-                    {{ page.newsletter_05_21.reference.second.name }}
-                  </p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </else>
-
-    <!----------------------------------------------------------------------------------------------------->
-    <if condition="page.env === 'mailchimp'">
-      <component src="_mailchimp/footer_plain.html"></component>
-    </if>
-
-    <else>
-      <table class="w-full sm:w-full bg-bottom bg-no-repeat bg-cover text-left py-64 flex justify-center align-middle"
-             style="background-image: url('images/usluno/05_21/ilustrace_04.svg'); margin-bottom: -2px;">
-        <component src="footer_plain.html"></component>
-      </table>
-    </else>
-
-    <!----------------------------------------------------------------------------------------------------->
-    <if condition="page.env === 'mailchimp'">
-      <table class="w-full">
-        <component src="spacers/spacer_64.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }}">
-        <tr class="text-center">
-          <td align="center">
-            <img src="images/usluno/05_21/ilustrace_03.png"
-                 alt="U&Sluno">
-          </td>
-        </tr>
-      </table>
-    </if>
-
-    <else>
-      <table class="w-full sm:w-full bg-blue-200 pt-8 pb-64 flex justify-center align-middle">
-        <tr>
-          <td>
-            <table class="w-600 sm:w-full flex justify-center align-middle">
-              <tr>
-                <td align="center">
-                  <p class="text-xxs {{ page.primaryColor }} text-center">
-                    {{ page.global.lang.footer.newsletter }}
-                    <span class="block">
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="w-full sm:w-full bg-blue-200 pt-8 pb-64 flex justify-center align-middle">
+          <tr>
+            <td>
+              <table class="w-600 sm:w-full flex justify-center align-middle">
+                <tr>
+                  <td align="center">
+                    <p class="text-xxs {{ page.primaryColor }} text-center">
+                      {{ page.global.lang.footer.newsletter }}
+                      <span class="block">
                     {{ page.global.lang.footer.newsletter_1 }}
                       <a
                         href="{{ page.global.usluno.links.unsub }}"
@@ -406,13 +395,13 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
                         {{ page.global.lang.footer.newsletter_logout }}.
                       </a>
                   </span>
-                  </p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </else>
-  </block>
-</extends>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+    </block>
+  </extends>
+</else>
