@@ -14,23 +14,21 @@
   </style>
   <![endif]-->
 
-  <outlook>
-    <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
-    <style>
-      td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: 'Open Sans', sans-serif !important; mso-line-height-rule: exactly;}
-    </style>
-  </outlook>
   <if condition="page.title">
     <title>{{ page.title }}</title>
   </if>
+
   <if condition="page.googleFonts">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" media="screen">
   </if>
+
   <if condition="page.css">
     <style>{{{ page.css }}}</style>
   </if>
+
   <block name="head"></block>
 </head>
+
 <body class="{{ page.bodyClass || '' }}">
   <if condition="page.preheader">
     <div class="hidden">{{ page.preheader }}</div>
