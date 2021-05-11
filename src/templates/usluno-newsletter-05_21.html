@@ -18,7 +18,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
 <!-----------------------------------------------------------------------------------------------------
 --- MAILCHIMP ---
 ------------------------------------------------------------------------------------------------------>
-<if condition="page.env === 'mailchimp'">
+<if condition="page.env === 'local'">
   <extends src="src/layouts/mailchimp.html">
     <block align="center" class="bg-blue-100" name="template">
       <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
@@ -26,81 +26,109 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-        <table class="{{ page.tableReset }} bg-blue-100">
-          <component src="spacers/spacer_32.html"></component>
-        </table>
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
 
-        <table class="{{ page.tableReset }} bg-blue-100">
-          <tr>
-            <td align="center" class="{{ page.smReset }} px-32 text-center">
-              <a href="{{ page.global.usluno.links.PrimaryLink }}"
-                 class="no-underline"
-                 target="_blank">
-                <img src="{{ page.global.images.brand.logo }}"
-                     class="align-top"
-                     width="200"
-                     alt="U&Sluno">
-              </a>
-              <a href="{{ page.newsletter_05_21.link }}"
-                 class="no-underline text-center"
-                 target="_blank">
-                <h1 class="text-blue-900 text-center text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm ">
-                  {{ page.newsletter_05_21.title }}
-                </h1>
-              </a>
-            </td>
-          </tr>
-        </table>
-
-        <table class="{{ page.tableReset }} bg-blue-100">
-          <component src="spacers/spacer_32.html"></component>
-        </table>
-
-      <!----------------------------------------------------------------------------------------------------->
-        <table class="{{ page.tableReset }} bg-blue-100">
-          <tr>
-            <td align="center" class="text-center">
-              <img src="images/usluno/05_21/ilustrace.png"
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <tr>
+          <td align="center" class="{{ page.smReset }} px-32 text-center">
+            <a href="{{ page.global.usluno.links.PrimaryLink }}"
+               class="no-underline"
+               target="_blank">
+              <img src="{{ page.global.images.brand.logo }}"
+                   class="align-top"
+                   width="200"
                    alt="U&Sluno">
-            </td>
-          </tr>
-        </table>
+            </a>
+          </td>
+        </tr>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <tr>
+          <td align="center" class="{{ page.smReset }} px-32 text-center">
+            <a href="{{ page.newsletter_05_21.link }}"
+               class="no-underline text-center font-black"
+               target="_blank">
+              <h1 class="text-blue-900 text-center text-4xl font-black uppercase leading-sm sm:leading-sm ">
+                {{ page.newsletter_05_21.title }}
+              </h1>
+            </a>
+          </td>
+        </tr>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <tr>
+          <td align="center" class="text-center">
+            <img src="images/usluno/05_21/ilustrace.png"
+                 alt="U&Sluno">
+          </td>
+        </tr>
+      </table>
 
 
       <!----------------------------------------------------------------------------------------------------->
-        <table class="w-full">
-          <component src="spacers/spacer_64.html"></component>
-        </table>
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
 
-        <table class="{{ page.tableReset }} py-32 sm:px-32">
-          <tr>
-            <td align="center" class="text-center">
-              <p class="{{ page.primaryColor }} font-light">
-                {{ page.newsletter_05_21.post }} <b>Produktivita práce z našich zkušeností poroste o 8–30&nbsp;%.</b>
-              </p>
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td align="center" class="text-center">
+            <p class="{{ page.primaryColor }} font-light">
+              {{ page.newsletter_05_21.post }} <b>Produktivita práce z našich zkušeností poroste o 8–30&nbsp;%.</b>
+            </p>
+          </td>
+        </tr>
+      </table>
 
-              <a
-                href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/"
-                class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-                target="_blank">
-                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-                <span style="mso-text-raise: 13pt;">
+      <table class="w-full">
+        <component src="spacers/spacer_16.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td align="center" class="text-center">
+            <a
+              href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/"
+              class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+              target="_blank">
+              <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+              <span style="mso-text-raise: 13pt;">
                   {{ page.newsletter_05_21.read_post }}
                 </span>
-                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-              </a>
-            </td>
-          </tr>
-        </table>
+              <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+            </a>
+          </td>
+        </tr>
+      </table>
 
-        <table class="w-full">
-          <component src="spacers/spacer_32.html"></component>
-        </table>
+      <table class="w-full">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
 
       <!----------------------------------------------------------------------------------------------------->
-        <table class="{{ page.tableReset }} py-32">
-          <component src="videoYT_larger.html"></component>
-        </table>
+      <table class="{{ page.tableReset }}">
+        <tr>
+          <td align="center" class="text-center">
+            <a href="https://www.youtube.com/watch?v=f6bgiNYgEnQ" target="_blank">
+              <img src="images/usluno/05_21/ilustrace_04.png"
+                   alt="U&Sluno">
+            </a>
+          </td>
+        </tr>
+      </table>
 
         <table class="w-full">
           <component src="spacers/spacer_32.html"></component>
