@@ -1,0 +1,18 @@
+{
+  "title": "VÍCE VYCHYSTANÝCH PALET SE STEJNÝM POČTEM SKLADNÍKŮ",
+  "link": "https://www.u-sluno.eu/autonomni-roboti-eliminuji-az-70-neproduktivni-prace-skladniku/",
+  "post": "Uvolněte skladníkovi ruce, aby už nemusel řešit, kam si položil terminál. Ať nemusí nic dohledávat a nezdržuje se od práce. S hlasovým vychystáváním si vystačí s 20 příkazy včetně číslovek. Systém může běžet na každém zařízení v jiném jazyce.",
+  "read_post": "Přečíst celý článek",
+  "reference": {
+    "first": {
+      "logo": "images/usluno/05_21/albert-circle.png",
+      "description": "WMS běží v nepřetržitém režimu v našich skladech o velikosti přes 100 000 metrů čtverečních už od roku 1999. Denně připravíme zhruba 15 000 palet pro více jak 300 prodejen. Na jedné směně se na tom podílí na 400 zaměstnanců. Vlastní implementace WMS proběhla díky dobrému plánu velmi rychle. Všechny systémy se na prvním skladu převedly v průběhu jedné noci, čímž došlo jen k minimálnímu omezení provozu. Dobrý systém zvyšuje produktivitu, snižuje chybovost a to celé se pak už přímo promítá do lepší dostupnosti zboží na našich prodejnách.\nOd 2019 využíváme v našich skladech hlasové vychystávání. I v tomto případě proběhla implementace podle plánu velmi rychle. Třetí měsíc po podepsání smlouvy odstartoval pilotní provoz. Začátek rolloutu na posledním skladu jsme pak uspíšili dokonce o celý kvartál. Naši zaměstnanci novou technologii, která jim usnadňuje vychystávání, velmi pozitivně přijali. Odpadá držení terminálu, zvýšila se efektivita i produktivita a také se urychlilo zaškolení nových zaměstnanců, které se zkrátilo na jednotky hodin.",
+      "name": "Albert Česká republika, s.r.o."
+    },
+    "second": {
+      "logo": "images/usluno/05_21/tamda_foods.png",
+      "description": "Hlasem řízený sklad nám pomohl výrazně zvýšit produktivitu vychystávání. Nejunikátnější pro naši společnost je řešení implementované společností U&SLUNO, které bylo absolutně vhodné pro náš nadnárodní tým, včetně vietnamského jazyka, který je k dispozici ve všech aplikacích WMS. Jsme rádi, že máme spolehlivého partnera jako je U&SLUNO.",
+      "name": "TAMDA FOODS s.r.o."
+    }
+  }
+}
