@@ -19,6 +19,20 @@
   border-bottom: 1px solid rgba(229,29,41,.2);
 }
 
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(10,0,83,.8);
+  background: transparent;
+  border: 7px solid #007bff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
 .video-wrapper {
   display: flex;
   justify-content: center;
@@ -63,4 +77,31 @@
   transform: translate(-50%,-50%);
   height: 100%;
   width: 100%;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden !important;
+  }
+
+  .video-wrapper {
+    left: 0;
+    right: 0;
+    width: 600px !important;
+    height: 700px;
+    overflow-x: hidden !important;
+  }
+
+  .video-wrapper video {
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    width: 100%;
+  }
+
+  .video-content {
+    padding: 0 3rem;
+  }
 }
