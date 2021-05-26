@@ -1,19 +1,62 @@
+/* ------- CUSTOM -------- */
+
+.circle {
+  @apply rounded-full bg-transparent font-bold text-lg text-center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(10,0,83,.8);
+  border: 7px solid #007bff;
+  width: 80px;
+  height: 80px;
+  transition: all .2s ease-in-out !important;
+}
+
+/* ------- Special buttons -------- */
+
+.btn {
+  @apply px-24 rounded-lg border-none text-center text-white leading-loose;
+  background-color: #4f8aff !important;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
+  transition: all .2s ease-in-out !important;
+}
+
+.btn:hover {
+  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, 1) !important;
+}
+
+.btn-light {
+  @apply p-24 rounded-lg border-none text-center text-xs text-white uppercase leading-8;
+  background: rgba(0,0,0,.2) !important;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
+  transition: all .2s ease-in-out !important;
+}
+
+/* ------- Background / text -------- */
+
+.btn-light:hover {
+  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, 1) !important;
+}
+
 .bg-opac {
   background: rgba(0, 0, 0, .5) !important;
 }
+
 .bg-gradient-dark {
   background: linear-gradient(54deg, #4f8aff, #4f8aff) !important;
 }
+
 .bg-gradient-light {
   background: linear-gradient(180deg, #4f8aff, #fff) !important;
 }
+
 .text-opac {
   color: rgba(255, 255, 255, .6) !important;
 }
-.video-shadow {
-  @apply rounded border-none text-center text-white;
-  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
-}
+
+/* ------- Border -------- */
 
 .border-bottom {
   border-bottom: 1px solid rgba(229,29,41,.2);
@@ -29,18 +72,11 @@
   padding-right: 1rem;
 }
 
-.circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: rgba(10,0,83,.8);
-  background: transparent;
-  border: 7px solid #007bff;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
+/* ------- Video -------- */
+
+.video-shadow {
+  @apply rounded border-none text-center text-white;
+  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
 }
 
 .video-wrapper {
@@ -67,14 +103,14 @@
 }
 
 .video-content h1 {
-  text-align: left;
+  @apply text-left;
   padding-left: 2rem;
   border-left: 10px solid #007bff;
   max-width: 600px;
 }
 
 .video-content p {
-  text-align: center;
+  @apply text-center;
   max-width: 600px;
 }
 

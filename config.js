@@ -64,6 +64,13 @@ module.exports = {
       css: 'src/assets/css/main.css',
     },
 
+    posthtml: {
+      fetch: {
+        tags: ['get'],
+        attribute: 'resource'
+      }
+    },
+
     templates: {
       root: 'src/templates',
     },
