@@ -1,0 +1,41 @@
+<table class="w-full sm:w-full pt-64">
+  <tr>
+    <td align="center">
+      <table class="w-600 sm:px-32">
+        <tr class="text-right sm:text-left">
+          <td>
+            <h2 class="{{ page.primaryColor }} text-3xl font-bold" style="border-right: 10px solid #007bff; padding-right: 1rem;">
+              Poslechněte si podcasty o&#160;autonomních robotech
+            </h2>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-600 py-32 sm:px-32">
+        <tr class="text-center">
+          <td align="center">
+            <each loop="item in {{ page.newsletter_06_21.podcasts.items }}">
+              <iframe src="{{ item.link }}"
+                      height="100px"
+                      width="100%"
+                      class="shadow-lg my-16"
+                      frameborder="0"
+                      scrolling="no">
+              </iframe>
+            </each>
+          </td>
+        </tr>
+      </table>
+
+      <div style="transform: translate(8rem, -3rem); height: 7rem; z-index: 0;">
+        <img src="images/usluno/06_21/spotify_illustration_02.png"
+             class="mobile-hide"
+             alt="U&Sluno">
+      </div>
+
+      <table class="w-full">
+        <component src="../../spacers/spacer_64.html"></component>
+      </table>
+    </td>
+  </tr>
+</table>
