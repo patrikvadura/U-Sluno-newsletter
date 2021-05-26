@@ -6,8 +6,8 @@ preheader: "{{ page.HeaderText }}"
 tableReset: "w-600 sm:w-full"
 smReset: "sm:px-32"
 bodyClass: "bg-white"
-primaryBg: "bg-indigo-900"
-primaryColor: "text-indigo-900"
+primaryBg: "bg-indigo-800"
+primaryColor: "text-indigo-800"
 secondaryBg: "bg-blue-800"
 secondaryColor: "text-blue-800"
 googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
@@ -20,74 +20,98 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
 ------------------------------------------------------------------------------------------------------>
 <if condition="page.env === 'mailchimp'">
   <extends src="src/layouts/mailchimp.html">
-    <block align="center" class="bg-blue-100" name="template">
+    <block align="center" name="template">
       <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
         <component src="topbar.html"></component>
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <component src="spacers/spacer_32.html"></component>
+      <table class="{{ page.tableReset }} bg-center bg-no-repeat bg-cover"
+             style="background-image: url('images/usluno/06_21/hero_video_mailchimp.png'); margin-bottom: -1px;">
+        <tr>
+          <td align="center" class="px-32">
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+
+            <a href="{{ page.global.usluno.links.PrimaryLink }}"
+               class="no-underline text-center"
+               target="_blank">
+              <img src="{{ page.global.images.brand.logo_negative }}"
+                   class="align-top"
+                   width="250"
+                   alt="U&Sluno">
+            </a>
+
+            <a href="{{ page.newsletter_06_21.link }}"
+               class="no-underline text-left"
+               target="_blank">
+              <h1 class="text-left text-white text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm" style="border-left: 10px solid #007bff; padding-left: 2rem;">
+                {{ page.newsletter_06_21.title }}
+              </h1>
+            </a>
+
+            <p class="text-center text-white font-light leading-sm sm:leading-sm">
+              {{ page.newsletter_06_21.post }}
+            </p>
+
+            <a href="{{ page.newsletter_06_21.link }}"
+               class="{{ page.secondaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+               target="_blank">
+               <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
+                 <span style="mso-text-raise: 13pt;">
+                   {{ page.newsletter_06_21.read_post }}
+                 </span>
+               <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
+            </a>
+
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+          </td>
+        </tr>
       </table>
 
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <tr>
-          <td align="center" class="{{ page.smReset }} px-32 text-center">
-            <a href="{{ page.global.usluno.links.PrimaryLink }}"
-               class="no-underline"
-               target="_blank">
-              <img src="{{ page.global.images.brand.logo }}"
-                   class="align-top"
-                   width="200"
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td align="center" class="px-32">
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+
+            <a href="https://www.youtube.com/watch?v=Wv6OkMzz2-0" target="_blank">
+              <img src="images/usluno/06_21/video_mailchimp.png"
                    alt="U&Sluno">
             </a>
           </td>
         </tr>
       </table>
 
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <tr>
-          <td align="center" class="{{ page.smReset }} px-32 text-center">
-            <a href="{{ page.newsletter_06_21.link }}"
-               class="no-underline text-center font-black"
-               target="_blank">
-              <h1 class="text-blue-900 text-center text-4xl font-bold uppercase leading-sm sm:leading-sm ">
-                {{ page.newsletter_06_21.title }}
-              </h1>
-            </a>
-          </td>
-        </tr>
-      </table>
-
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-
-      <!----------------------------------------------------------------------------------------------------->
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <tr>
-          <td align="center" class="text-center">
-            <img src="images/usluno/05_21/ilustrace.png"
-                 alt="U&Sluno">
-          </td>
-        </tr>
-      </table>
-
-
-      <!----------------------------------------------------------------------------------------------------->
       <table class="w-full">
-        <component src="spacers/spacer_64.html"></component>
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td class="text-left sm:text-center">
+            <h2 class="{{ page.primaryColor }} text-3xl font-bold border-left-10">
+              {{ page.newsletter_06_21.casestudie.title }}
+            </h2>
+          </td>
+        </tr>
       </table>
 
       <table class="{{ page.tableReset }} sm:px-32">
         <tr>
-          <td align="center" class="text-center">
-            <p class="{{ page.primaryColor }} font-light">
-              {{ page.newsletter_06_21.post }} <b>Produktivita práce z našich zkušeností poroste o 8–30&nbsp;%.</b>
+          <td class="text-left sm:text-center">
+            <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
+              {{ page.newsletter_06_21.casestudie.first.top }}
+            </p>
+
+            <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
+              {{ page.newsletter_06_21.casestudie.first.title }}
             </p>
           </td>
         </tr>
@@ -97,138 +121,210 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
         <component src="spacers/spacer_16.html"></component>
       </table>
 
+      <table class="{{ page.tableReset }} bg-gray-100 rounded-medium sm:rounded-none">
+        <tr class="text-center">
+          <td align="center" class="p-32 w-4/12 align-top">
+            <div class="circle">
+              {{ page.newsletter_06_21.casestudie.first.first.number }}
+            </div>
+
+            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+              {{ page.newsletter_06_21.casestudie.first.first.title }}
+            </p>
+          </td>
+
+          <td align="center" class="p-32 w-4/12 align-top">
+            <div class="circle">
+              {{ page.newsletter_06_21.casestudie.first.second.number }}
+            </div>
+
+            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+              {{ page.newsletter_06_21.casestudie.first.second.title }}
+            </p>
+          </td>
+
+          <td align="center" class="p-32 w-4/12 align-top">
+            <div class="circle">
+              {{ page.newsletter_06_21.casestudie.first.third.number }}
+            </div>
+
+            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+              {{ page.newsletter_06_21.casestudie.first.third.title }}
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacers/spacer_32_noMobile.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td align="center">
+            <img src="images/usluno/06_21/image_robot_mailchimp_02.jpg"
+                 alt="U&Sluno">
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
       <table class="{{ page.tableReset }} sm:px-32">
         <tr>
-          <td align="center" class="text-center">
-            <a
-              href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/"
-              class="{{ page.primaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-              target="_blank">
+          <td class="text--left sm:text-center">
+            <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
+              {{ page.newsletter_06_21.casestudie.second.top }}
+            </p>
+
+            <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
+              {{ page.newsletter_06_21.casestudie.second.title }}
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacers/spacer_16.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-gray-100 rounded-medium sm:rounded-none">
+        <tr class="text-center">
+          <td align="center" class="p-32 w-4/12 align-top">
+            <div class="circle">
+              {{ page.newsletter_06_21.casestudie.second.first.number }}
+            </div>
+
+            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+              {{ page.newsletter_06_21.casestudie.second.first.title }}
+            </p>
+          </td>
+
+          <td align="center" class="p-32 w-4/12 align-top">
+            <div class="circle">
+              {{ page.newsletter_06_21.casestudie.second.second.number }}
+            </div>
+
+            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+              {{ page.newsletter_06_21.casestudie.second.second.title }}
+            </p>
+          </td>
+
+          <td align="center" class="p-32 w-4/12 align-top">
+            <div class="circle">
+              {{ page.newsletter_06_21.casestudie.second.third.number }}
+            </div>
+
+            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+              {{ page.newsletter_06_21.casestudie.second.third.title }}
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacers/spacer_32_noMobile.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td align="center">
+            <img src="images/usluno/06_21/image_robot_mailchimp_01.jpg"
+                 alt="U&Sluno">
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full">
+        <tr>
+          <td align="center">
+            <table class="{{ page.tableReset }} sm:px-32">
+              <tr>
+                <td class="text-left sm:text-center">
+                  <h2 class="{{ page.primaryColor }} text-3xl font-bold border-left-10">
+                    Poslechněte si podcasty o&#160;autonomních robotech
+                  </h2>
+                </td>
+              </tr>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
+
+            <table class="{{ page.tableReset }} sm:px-32">
+              <tr class="text-center">
+                <td align="center">
+                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-1-Co-to-znamen--kdy-je-robot-autonomn-el7jq4"
+                     target="_blank">
+                    <img src="images/usluno/06_21/spotify_mailchimp_01.png">
+                  </a>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_16.html"></component>
+                  </table>
+
+                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-2-Typy-kolaborativnch-robot-elhs7o"
+                     target="_blank">
+                    <img src="images/usluno/06_21/spotify_mailchimp_02.png">
+                  </a>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_16.html"></component>
+                  </table>
+
+                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-3-Jak-probh-ukzka-robota-elsr7f"
+                     target="_blank">
+                    <img src="images/usluno/06_21/spotify_mailchimp_03.png">
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <tr class="text-center">
+          <td align="center">
+            <h3 class="font-bold">
+              Více informací najdete na
+            </h3>
+
+            <a href="https://www.uslunorobotics.eu/cs"
+               class="{{ page.secondaryBg }} hover:bg-white text-white hover:text-gray-800 rounded inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
+               target="_blank">
               <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
               <span style="mso-text-raise: 13pt;">
-                  {{ page.newsletter_06_21.read_post }}
-                </span>
+                   www.uslunorobotics.eu
+                 </span>
               <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
             </a>
           </td>
         </tr>
       </table>
 
-      <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-
-      <!----------------------------------------------------------------------------------------------------->
-      <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }}">
-        <tr>
-          <td align="center" class="text-center">
-            <a href="https://www.youtube.com/watch?v=f6bgiNYgEnQ" target="_blank">
-              <img src="images/usluno/05_21/ilustrace_04.png"
-                   alt="U&Sluno">
-            </a>
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
+      <table class="{{ page.tableReset }} bg-blue-100">
         <component src="spacers/spacer_64.html"></component>
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-      <table class="{{ page.tableReset }} sm:px-32">
-        <tr class="text-center">
-          <td align="center" class="text-center">
-            <h2 class="{{ page.primaryColor }} font-bold text-center">
-              Reference
-            </h2>
-          </td>
-        </tr>
-      </table>
-
-        <table class="w-full">
-          <component src="spacers/spacer_16.html"></component>
-        </table>
-
-        <table class="{{ page.tableReset }} bg-blue-100 px-32">
-          <tr class="text-center">
-            <td align="center" class="p-32 w-4/12 align-top">
-              <img src="{{ page.newsletter_06_21.reference.first.logo }}"
-                   class="align-top mb-20"
-                   width="100"
-                   alt="DHL">
-
-              <p class="{{ page.primaryColor }} text-sm font-light leading-24">
-                WMS běží v nepřetržitém režimu v našich skladech o velikosti přes 100 000 metrů čtverečních už od roku 1999.
-                Denně připravíme zhruba 15 000 palet pro více jak 300 prodejen. Na jedné směně se na tom podílí na 400 zaměstnanců.
-                Vlastní implementace WMS proběhla díky dobrému plánu velmi rychle. Všechny systémy se na prvním skladu převedly v průběhu jedné noci,
-                čímž došlo jen k minimálnímu omezení provozu. Dobrý systém zvyšuje produktivitu, snižuje chybovost a to celé se pak už přímo promítá do lepší dostupnosti zboží na našich prodejnách.
-                Od 2019 využíváme v našich skladech hlasové vychystávání. I v tomto případě proběhla implementace podle plánu velmi rychle.
-                Třetí měsíc po podepsání smlouvy odstartoval pilotní provoz. Začátek rolloutu na posledním skladu jsme pak uspíšili dokonce o celý kvartál.
-                Naši zaměstnanci novou technologii, která jim usnadňuje vychystávání, velmi pozitivně přijali. Odpadá držení terminálu, zvýšila se efektivita
-                i produktivita a také se urychlilo zaškolení nových zaměstnanců, které se zkrátilo na jednotky hodin.
-
-              </p>
-
-              <hr class="border-0 bg-gray-300 text-gray-500 h-px">
-
-              <p class="{{ page.primaryColor }} text-sm font-bold leading-24">
-                {{ page.newsletter_06_21.reference.first.name }}
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table class="w-full">
-          <component src="spacers/spacer_32.html"></component>
-        </table>
-
-        <table class="{{ page.tableReset }} bg-blue-100 px-32">
-          <tr class="text-center">
-            <td align="center" class="p-32 w-4/12 align-top">
-              <img src="{{ page.newsletter_06_21.reference.second.logo }}"
-                   class="align-top mb-20"
-                   width="100"
-                   alt="DHL">
-
-              <p class="{{ page.primaryColor }} text-sm font-light leading-24">
-                Hlasem řízený sklad nám pomohl výrazně zvýšit produktivitu vychystávání. Nejunikátnější pro naši společnost je řešení implementované společností U&SLUNO,
-                které bylo absolutně vhodné pro náš nadnárodní tým, včetně vietnamského jazyka, který je k dispozici ve všech aplikacích WMS.
-                Jsme rádi, že máme spolehlivého partnera jako je U&SLUNO.
-              </p>
-
-              <hr class="border-0 bg-gray-300 text-gray-500 h-px">
-
-              <p class="{{ page.primaryColor }} text-sm font-bold leading-24">
-                {{ page.newsletter_06_21.reference.second.name }}
-              </p>
-            </td>
-          </tr>
-        </table>
-
-        <table class="w-full">
-          <component src="spacers/spacer_64.html"></component>
-        </table>
-
-      <!----------------------------------------------------------------------------------------------------->
-        <component src="_mailchimp/footer_plain.html"></component>
-
-      <!----------------------------------------------------------------------------------------------------->
-        <table class="w-full">
-          <component src="spacers/spacer_64.html"></component>
-        </table>
-
-        <table class="{{ page.tableReset }}">
-          <tr class="text-center">
-            <td align="center">
-              <img src="images/usluno/05_21/ilustrace_03.png"
-                   alt="U&Sluno">
-            </td>
-          </tr>
-        </table>
+      <component src="_mailchimp/footer.html"></component>
     </block>
   </extends>
 </if>
@@ -437,7 +533,7 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
           <td align="center">
             <table class="w-600 sm:px-32">
               <tr class="text-right sm:text-left">
-                <td align="center">
+                <td>
                   <h2 class="{{ page.primaryColor }} text-3xl font-bold" style="border-right: 10px solid #007bff; padding-right: 1rem;">
                     Poslechněte si podcasty o&#160;autonomních robotech
                   </h2>
@@ -448,26 +544,29 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
             <table class="w-600 py-32 sm:px-32">
               <tr class="text-center">
                 <td align="center">
-                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-1-Co-to-znamen--kdy-je-robot-autonomn-el7jq4"
-                     target="_blank">
-                    <img src="images/usluno/06_21/spotify_01.png"
-                         class="py-16 mobile-hide"
-                         alt="U&Sluno">
-                  </a>
+                  <iframe src="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-1-Co-to-znamen--kdy-je-robot-autonomn-el7jq4"
+                          height="100px"
+                          width="100%"
+                          class="shadow-lg my-16"
+                          frameborder="0"
+                          scrolling="no">
+                  </iframe>
 
-                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-2-Typy-kolaborativnch-robot-elhs7o"
-                     target="_blank">
-                    <img src="images/usluno/06_21/spotify_02.png"
-                         class="py-16 mobile-hide"
-                         alt="U&Sluno">
-                  </a>
+                  <iframe src="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-2-Typy-kolaborativnch-robot-elhs7o"
+                          height="100px"
+                          width="100%"
+                          class="shadow-lg my-16"
+                          frameborder="0"
+                          scrolling="no">
+                  </iframe>
 
-                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-3-Jak-probh-ukzka-robota-elsr7f"
-                     target="_blank">
-                    <img src="images/usluno/06_21/spotify_03.png"
-                         class="py-16 mobile-hide"
-                         alt="U&Sluno">
-                  </a>
+                  <iframe src="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-3-Jak-probh-ukzka-robota-elsr7f"
+                          height="100px"
+                          width="100%"
+                          class="shadow-lg my-16"
+                          frameborder="0"
+                          scrolling="no">
+                  </iframe>
                 </td>
               </tr>
             </table>
@@ -486,7 +585,7 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-        <table class="w-full sm:w-full {{ page.secondaryBg }} text-left py-64 flex justify-center align-middle">
+        <table class="w-full sm:w-full {{ page.primaryBg }} text-left py-64 flex justify-center align-middle">
           <component src="footer.html"></component>
         </table>
     </block>
