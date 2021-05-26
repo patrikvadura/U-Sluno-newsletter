@@ -12,6 +12,8 @@ secondaryBg: "bg-blue-800"
 secondaryColor: "text-blue-800"
 googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 
+href: "https://www.youtube.com/embed/Wv6OkMzz2-0"
+
 YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
 ---
 
@@ -34,14 +36,14 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
               <component src="spacers/spacer_64.html"></component>
             </table>
 
-            <a href="{{ page.global.usluno.links.PrimaryLink }}"
-               class="no-underline text-center"
-               target="_blank">
-              <img src="{{ page.global.images.brand.logo_negative }}"
-                   class="align-top"
-                   width="250"
-                   alt="U&Sluno">
-            </a>
+            <component
+              src="brand/logo-center.html"
+              locals='{
+                "logo": "{{ page.global.images.brand.logo_negative }}",
+                "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                "class": "",
+                "width": "250"
+                }'></component>
 
             <a href="{{ page.newsletter_06_21.link }}"
                class="no-underline text-left"
@@ -55,15 +57,13 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
               {{ page.newsletter_06_21.post }}
             </p>
 
-            <a href="{{ page.newsletter_06_21.link }}"
-               class="{{ page.secondaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-               target="_blank">
-               <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-                 <span style="mso-text-raise: 13pt;">
-                   {{ page.newsletter_06_21.read_post }}
-                 </span>
-               <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-            </a>
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "{{ page.newsletter_06_21.read_post }}",
+              "url": "{{ page.newsletter_06_21.link }}",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
 
             <table class="w-full">
               <component src="spacers/spacer_64.html"></component>
@@ -93,228 +93,25 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-      <table class="{{ page.tableReset }} sm:px-32">
-        <tr>
-          <td class="text-left sm:text-center">
-            <h2 class="{{ page.primaryColor }} text-3xl font-bold border-left-10">
-              {{ page.newsletter_06_21.casestudie.title }}
-            </h2>
-          </td>
-        </tr>
-      </table>
-
-      <table class="{{ page.tableReset }} sm:px-32">
-        <tr>
-          <td class="text-left sm:text-center">
-            <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
-              {{ page.newsletter_06_21.casestudie.first.top }}
-            </p>
-
-            <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
-              {{ page.newsletter_06_21.casestudie.first.title }}
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_16.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }} bg-gray-100 rounded-medium sm:rounded-none">
-        <tr class="text-center">
-          <td align="center" class="p-32 w-4/12 align-top">
-            <div class="circle">
-              {{ page.newsletter_06_21.casestudie.first.first.number }}
-            </div>
-
-            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-              {{ page.newsletter_06_21.casestudie.first.first.title }}
-            </p>
-          </td>
-
-          <td align="center" class="p-32 w-4/12 align-top">
-            <div class="circle">
-              {{ page.newsletter_06_21.casestudie.first.second.number }}
-            </div>
-
-            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-              {{ page.newsletter_06_21.casestudie.first.second.title }}
-            </p>
-          </td>
-
-          <td align="center" class="p-32 w-4/12 align-top">
-            <div class="circle">
-              {{ page.newsletter_06_21.casestudie.first.third.number }}
-            </div>
-
-            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-              {{ page.newsletter_06_21.casestudie.first.third.title }}
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_32_noMobile.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }}">
-        <tr class="text-center">
-          <td align="center">
-            <img src="images/usluno/06_21/image_robot_mailchimp_02.jpg"
-                 alt="U&Sluno">
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }} sm:px-32">
-        <tr>
-          <td class="text--left sm:text-center">
-            <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
-              {{ page.newsletter_06_21.casestudie.second.top }}
-            </p>
-
-            <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
-              {{ page.newsletter_06_21.casestudie.second.title }}
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_16.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }} bg-gray-100 rounded-medium sm:rounded-none">
-        <tr class="text-center">
-          <td align="center" class="p-32 w-4/12 align-top">
-            <div class="circle">
-              {{ page.newsletter_06_21.casestudie.second.first.number }}
-            </div>
-
-            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-              {{ page.newsletter_06_21.casestudie.second.first.title }}
-            </p>
-          </td>
-
-          <td align="center" class="p-32 w-4/12 align-top">
-            <div class="circle">
-              {{ page.newsletter_06_21.casestudie.second.second.number }}
-            </div>
-
-            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-              {{ page.newsletter_06_21.casestudie.second.second.title }}
-            </p>
-          </td>
-
-          <td align="center" class="p-32 w-4/12 align-top">
-            <div class="circle">
-              {{ page.newsletter_06_21.casestudie.second.third.number }}
-            </div>
-
-            <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-              {{ page.newsletter_06_21.casestudie.second.third.title }}
-            </p>
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_32_noMobile.html"></component>
-      </table>
-
-      <table class="{{ page.tableReset }}">
-        <tr class="text-center">
-          <td align="center">
-            <img src="images/usluno/06_21/image_robot_mailchimp_01.jpg"
-                 alt="U&Sluno">
-          </td>
-        </tr>
-      </table>
-
-      <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
+      <component src="_individual/06_21/_mailchimp/caseStudie.html"></component>
 
       <!----------------------------------------------------------------------------------------------------->
-      <table class="w-full sm:w-full">
-        <tr>
-          <td align="center">
-            <table class="{{ page.tableReset }} sm:px-32">
-              <tr>
-                <td class="text-left sm:text-center">
-                  <h2 class="{{ page.primaryColor }} text-3xl font-bold border-left-10">
-                    Poslechněte si podcasty o&#160;autonomních robotech
-                  </h2>
-                </td>
-              </tr>
-            </table>
-
-            <table class="w-full">
-              <component src="spacers/spacer_16.html"></component>
-            </table>
-
-            <table class="{{ page.tableReset }} sm:px-32">
-              <tr class="text-center">
-                <td align="center">
-                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-1-Co-to-znamen--kdy-je-robot-autonomn-el7jq4"
-                     target="_blank">
-                    <img src="images/usluno/06_21/spotify_mailchimp_01.png">
-                  </a>
-
-                  <table class="w-full">
-                    <component src="spacers/spacer_16.html"></component>
-                  </table>
-
-                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-2-Typy-kolaborativnch-robot-elhs7o"
-                     target="_blank">
-                    <img src="images/usluno/06_21/spotify_mailchimp_02.png">
-                  </a>
-
-                  <table class="w-full">
-                    <component src="spacers/spacer_16.html"></component>
-                  </table>
-
-                  <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-3-Jak-probh-ukzka-robota-elsr7f"
-                     target="_blank">
-                    <img src="images/usluno/06_21/spotify_mailchimp_03.png">
-                  </a>
-                </td>
-              </tr>
-            </table>
-
-            <table class="w-full">
-              <component src="spacers/spacer_64.html"></component>
-            </table>
-          </td>
-        </tr>
-      </table>
-
-      <table class="{{ page.tableReset }} bg-blue-100">
-        <component src="spacers/spacer_32.html"></component>
-      </table>
+      <component src="_individual/06_21/_mailchimp/podcasts.html"></component>
 
       <table class="{{ page.tableReset }} bg-blue-100">
         <tr class="text-center">
           <td align="center">
             <h3 class="font-bold">
-              Více informací najdete na
+              {{ page.newsletter_06_21.moreInfo }}
             </h3>
 
-            <a href="https://www.uslunorobotics.eu/cs"
-               class="{{ page.secondaryBg }} hover:bg-white text-white hover:text-gray-800 rounded inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-               target="_blank">
-              <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-              <span style="mso-text-raise: 13pt;">
-                   www.uslunorobotics.eu
-                 </span>
-              <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-            </a>
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "www.uslunorobotics.eu",
+              "url": "https://www.uslunorobotics.eu/cs",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
           </td>
         </tr>
       </table>
@@ -344,28 +141,18 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
         <table class="{{ page.tableReset }} sm:px-32"
                style="margin-bottom: -1px;">
           <tr>
-            <td>
-
-            </td>
-            <script>
-              document.getElementById('vid').play();
-            </script>
-
-            <div class="video-wrapper">
-              <video autoplay loop muted style="object-fit: cover;">
-                <source src="images/usluno/06_21/hero_video.mp4" type="video/mp4">
-              </video>
-            </div>
+            <component src="_individual/06_21/video-section.html"></component>
 
             <div class="video-content">
-              <a href="{{ page.global.usluno.links.PrimaryLink }}"
-                 class="no-underline"
-                 target="_blank">
-                <img src="{{ page.global.images.brand.logo_negative }}"
-                     class="align-top"
-                     width="250"
-                     alt="U&Sluno">
-              </a>
+              <component
+                src="brand/logo-center.html"
+                locals='{
+                "logo": "{{ page.global.images.brand.logo_negative }}",
+                "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                "class": "",
+                "width": "250"
+                }'></component>
+
               <a href="{{ page.newsletter_06_21.link }}"
                  class="no-underline"
                  target="_blank">
@@ -373,221 +160,66 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
                   {{ page.newsletter_06_21.title }}
                 </h1>
               </a>
+
               <p class="text-white font-light leading-sm sm:leading-sm">
                 {{ page.newsletter_06_21.post }}
               </p>
 
-              <a
-                href="{{ page.newsletter_06_21.link }}"
-                class="{{ page.secondaryBg }} hover:bg-white text-white hover:text-gray-800 rounded mt-20 inline-block text-center sm:mx-0 py-16 px-24 text-sm leading-none no-underline font-semibold"
-                target="_blank">
-                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i><![endif]-->
-                <span style="mso-text-raise: 13pt;">
-                  {{ page.newsletter_06_21.read_post }}
-                </span>
-                <!--[if mso]><i style="letter-spacing: 27px; mso-font-width: -100%;">&nbsp;</i><![endif]-->
-              </a>
+              <component
+                src="buttons/btnFilled.html"
+                locals='{
+                "content": "{{ page.newsletter_06_21.read_post }}",
+                "url": "https://www.u-sluno.eu/autonomni-roboti-eliminuji-az-70-neproduktivni-prace-skladniku/",
+                "class": "{{ page.secondaryBg }}"
+                }'></component>
             </div>
           </tr>
         </table>
 
       <!----------------------------------------------------------------------------------------------------->
-        <table class="w-full sm:w-full bg-blue-100">
-          <tr class="text-center">
-            <td align="center">
-              <table class="py-48 flex justify-center align-middle">
-                <component src="videoYT_larger.html"></component>
-              </table>
-            </td>
-          </tr>
-        </table>
-
-      <!----------------------------------------------------------------------------------------------------->
-        <table class="w-full sm:w-full pt-64">
-          <tr>
-            <td align="center">
-              <table class="{{ page.tableReset }} sm:px-32">
-                <tr>
-                  <td>
-                    <h2 class="{{ page.primaryColor }} text-3xl font-bold" style="border-left: 10px solid #007bff; padding-left: 1rem;">
-                      {{ page.newsletter_06_21.casestudie.title }}
-                    </h2>
-                  </td>
-                </tr>
-              </table>
-
-              <table class="{{ page.tableReset }} bg-gray-100 rounded-medium mb-20">
-                <div class="w-600 text-left sm:text-center">
-                  <div class="p-32">
-                    <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
-                      {{ page.newsletter_06_21.casestudie.first.top }}
-                    </p>
-                    <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
-                      {{ page.newsletter_06_21.casestudie.first.title }}
-                    </p>
-                  </div>
-                </div>
-
-                <tr class="text-center">
-                  <td align="center" class="p-32 w-3/12 align-top">
-                    <div class="circle">
-                      {{ page.newsletter_06_21.casestudie.first.first.number }}
-                    </div>
-
-                    <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-                      {{ page.newsletter_06_21.casestudie.first.first.title }}
-                    </p>
-                  </td>
-
-                  <td align="center" class="p-32 w-3/12 align-top">
-                    <div class="circle">
-                      {{ page.newsletter_06_21.casestudie.first.second.number }}
-                    </div>
-
-                    <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-                      {{ page.newsletter_06_21.casestudie.first.second.title }}
-                    </p>
-                  </td>
-
-                  <td align="center" class="p-32 w-3/12 align-top">
-                    <div class="circle">
-                      {{ page.newsletter_06_21.casestudie.first.third.number }}
-                    </div>
-
-                    <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-                      {{ page.newsletter_06_21.casestudie.first.third.title }}
-                    </p>
-                  </td>
-
-                  <td align="center" class="p-32 w-3/12 align-top mobile-hide" />
-                </tr>
-
-                <div style="transform: translate(16rem, -8rem); height: 0;">
-                  <img src="images/usluno/06_21/image_robot_02.png"
-                       width="180"
-                       class="align-top mobile-hide"
-                       alt="U&Sluno">
-                </div>
-              </table>
-
-              <table class="{{ page.tableReset }} bg-gray-100 rounded-medium mb-20">
-                <div class="w-600 text-right sm:text-center">
-                  <div class="p-32 mt-64 sm:mt-0">
-                    <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
-                      {{ page.newsletter_06_21.casestudie.second.top }}
-                    </p>
-                    <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
-                      {{ page.newsletter_06_21.casestudie.second.title }}
-                    </p>
-                  </div>
-                </div>
-
-                <div style="transform: translate(-19rem, -2rem); height: 0;">
-                  <img src="images/usluno/06_21/image_robot_01.png"
-                       width="700"
-                       class="align-top mobile-hide"
-                       alt="U&Sluno">
-                </div>
-
-                <tr class="text-center">
-                  <td align="center" class="p-32 w-3/12 align-top mobile-hide" />
-
-                  <td align="center" class="p-32 w-3/12 align-top">
-                    <div class="circle">
-                      {{ page.newsletter_06_21.casestudie.second.first.number }}
-                    </div>
-
-                    <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-                      {{ page.newsletter_06_21.casestudie.second.first.title }}
-                    </p>
-                  </td>
-
-                  <td align="center" class="p-32 w-3/12 align-top">
-                    <div class="circle">
-                      {{ page.newsletter_06_21.casestudie.second.second.number }}
-                    </div>
-
-                    <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-                      {{ page.newsletter_06_21.casestudie.second.second.title }}
-                    </p>
-                  </td>
-
-                  <td align="center" class="p-32 w-3/12 align-top">
-                    <div class="circle">
-                      {{ page.newsletter_06_21.casestudie.second.third.number }}
-                    </div>
-
-                    <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
-                      {{ page.newsletter_06_21.casestudie.second.third.title }}
-                    </p>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-
-      <!----------------------------------------------------------------------------------------------------->
-      <table class="w-full sm:w-full pt-64">
-        <tr>
+      <table class="w-full sm:w-full bg-blue-100">
+        <tr class="text-center">
           <td align="center">
-            <table class="w-600 sm:px-32">
-              <tr class="text-right sm:text-left">
-                <td>
-                  <h2 class="{{ page.primaryColor }} text-3xl font-bold" style="border-right: 10px solid #007bff; padding-right: 1rem;">
-                    Poslechněte si podcasty o&#160;autonomních robotech
-                  </h2>
-                </td>
-              </tr>
-            </table>
-
-            <table class="w-600 py-32 sm:px-32">
-              <tr class="text-center">
-                <td align="center">
-                  <iframe src="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-1-Co-to-znamen--kdy-je-robot-autonomn-el7jq4"
-                          height="100px"
-                          width="100%"
-                          class="shadow-lg my-16"
-                          frameborder="0"
-                          scrolling="no">
-                  </iframe>
-
-                  <iframe src="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-2-Typy-kolaborativnch-robot-elhs7o"
-                          height="100px"
-                          width="100%"
-                          class="shadow-lg my-16"
-                          frameborder="0"
-                          scrolling="no">
-                  </iframe>
-
-                  <iframe src="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-3-Jak-probh-ukzka-robota-elsr7f"
-                          height="100px"
-                          width="100%"
-                          class="shadow-lg my-16"
-                          frameborder="0"
-                          scrolling="no">
-                  </iframe>
-                </td>
-              </tr>
-            </table>
-
-            <div style="transform: translate(8rem, -3rem); height: 7rem; z-index: 0;">
-              <img src="images/usluno/06_21/spotify_illustration_02.png"
-                   class="mobile-hide"
-                   alt="U&Sluno">
-            </div>
-
-            <table class="w-full">
-              <component src="spacers/spacer_64.html"></component>
+            <table class="py-48 flex justify-center align-middle">
+              <component src="videoYT_larger.html"></component>
             </table>
           </td>
         </tr>
       </table>
 
+      <table class="{{ page.tableReset }}">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
       <!----------------------------------------------------------------------------------------------------->
-        <table class="w-full sm:w-full {{ page.primaryBg }} text-left py-64 flex justify-center align-middle">
-          <component src="footer.html"></component>
-        </table>
+      <component src="_individual/06_21/caseStudie.html"></component>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="_individual/06_21/podcasts.html"></component>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full bg-blue-100">
+        <tr class="text-center">
+          <td align="center" class="py-64">
+            <h3 class="font-bold">
+              {{ page.newsletter_06_21.moreInfo }}
+            </h3>
+
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "www.uslunorobotics.eu",
+              "url": "https://www.uslunorobotics.eu/cs",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full {{ page.primaryBg }} text-left py-64 flex justify-center align-middle">
+        <component src="footer.html"></component>
+      </table>
     </block>
   </extends>
 </else>

@@ -252,7 +252,13 @@ phone: "+420 596 134 157"
       </tr>
     </table>
     <table class="w-full sm:w-full {{ page.secondaryBg }}">
-      <component src="buttons/btnNoRounded.html"></component>
+      <component
+        src="buttons/btnNoRounded.html"
+        locals='{
+                "content": "Zobrazit více",
+                "url": "",
+                "style": "{{ page.secondaryBg }}"
+                }'></component>
     </table>
     <table class="w-full {{ page.primaryBg }} p-32 sm:w-full">
       <component src="footer.html"></component>
