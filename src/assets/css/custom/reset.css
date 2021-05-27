@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   @apply m-0 p-0 w-full;
   word-break: break-word;
