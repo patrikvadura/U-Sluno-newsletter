@@ -12,7 +12,7 @@ secondaryBg: "bg-blue-800"
 secondaryColor: "text-blue-800"
 googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 
-YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
+YouTube: "https://www.youtube.com/embed/TZW7IlC-AoM"
 ---
 
 <!-----------------------------------------------------------------------------------------------------
@@ -82,12 +82,24 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
               <img src="images/usluno/06_21/video_mailchimp.png"
                    alt="U&Sluno">
             </a>
+
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "Kontaktujte nás",
+              "url": "mailto:robotics@u-sluno.cz;",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
           </td>
         </tr>
       </table>
 
       <table class="w-full">
-        <component src="spacers/spacer_32.html"></component>
+        <component src="spacers/spacer_64.html"></component>
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
@@ -180,6 +192,18 @@ YouTube: "https://www.youtube.com/embed/Wv6OkMzz2-0"
           <td align="center">
             <table class="py-48 flex justify-center align-middle">
               <component src="videoYT_larger.html"></component>
+            </table>
+
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "Kontaktujte nás",
+              "url": "mailto:robotics@u-sluno.cz;",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
+
+            <table class="{{ page.tableReset }} bg-blue-100">
+              <component src="spacers/spacer_64.html"></component>
             </table>
           </td>
         </tr>
