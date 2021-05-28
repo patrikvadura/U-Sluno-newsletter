@@ -1,7 +1,7 @@
 <table class="{{ page.tableReset }} sm:px-32">
   <tr>
-    <td class="px-32 text-left sm:text-center">
-      <h2 class="{{ page.primaryColor }} text-3xl font-bold border-left-10">
+    <td class="px-32 text-center">
+      <h2 class="{{ page.primaryColor }} text-3xl font-bold">
         {{ page.newsletter_06_21.casestudie.title }}
       </h2>
     </td>
@@ -16,7 +16,7 @@
 
 <table class="{{ page.tableReset }} sm:px-32">
   <tr>
-    <td class="px-32 text-left sm:text-center">
+    <td class="px-32 text-center">
       <p class="{{ page.secondaryColor }} text-xl font-bold">
         {{ page.newsletter_06_21.casestudie.first.top }}
       </p>
@@ -38,9 +38,9 @@
   <tr class="text-center">
     <each loop="item in {{ page.newsletter_06_21.casestudie.first.items }}">
       <td align="center" class="p-32 w-4/12 align-top">
-        <div class="circle">
+        <h3 class="{{ page.secondaryColor }} text-center text-lg font-bold">
           {{ item.number }}
-        </div>
+        </h3>
 
         <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
           {{ item.title }}
@@ -69,7 +69,7 @@
 
 <table class="{{ page.tableReset }} sm:px-32">
   <tr>
-    <td class="px-32 text--left sm:text-center">
+    <td class="px-32 text-center">
       <p class="{{ page.secondaryColor }} text-xl font-bold">
         {{ page.newsletter_06_21.casestudie.second.top }}
       </p>
@@ -91,9 +91,9 @@
   <tr class="text-center">
     <each loop="item in {{ page.newsletter_06_21.casestudie.second.items }}">
       <td align="center" class="p-32 w-4/12 align-top">
-        <div class="circle">
+        <h3 class="{{ page.secondaryColor }} text-center text-lg font-bold">
           {{ item.number }}
-        </div>
+        </h3>
 
         <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
           {{ item.title }}
