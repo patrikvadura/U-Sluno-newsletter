@@ -26,63 +26,69 @@ YouTube: "https://www.youtube.com/embed/TZW7IlC-AoM"
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-      <table class="{{ page.tableReset }} bg-center bg-no-repeat bg-cover"
-             style="background-image: url('images/usluno/06_21/hero_video_mailchimp.png'); margin-bottom: -1px;">
+      <table background="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/hero_video_mailchimp.png"
+             bgcolor="#0b0057"
+             valign="top"
+             class="{{ page.tableReset }} bg-center bg-no-repeat bg-cover">
 
         <!--[if gte mso 9]>
-        <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-          <v:fill type="tile" src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/hero_video_mailchimp.png" color="#0b0057"/>
-        </v:background>
+        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+          <v:fill type="tile" src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/hero_video_mailchimp.png" color="#0b0057" />
+          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+            <![endif]-->
+            <tr>
+              <td align="center" class="px-32">
+                <table class="w-full">
+                  <component src="spacers/spacer_64.html"></component>
+                </table>
+
+                <component
+                  src="brand/logo-center.html"
+                  locals='{
+                    "logo": "{{ page.global.images.brand.logo_negative }}",
+                    "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                    "class": "",
+                    "width": "250"
+                    }'></component>
+
+                <a href="{{ page.newsletter_06_21.link }}"
+                   class="no-underline text-left"
+                   target="_blank">
+                  <h1 class="text-center text-white text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+                    {{ page.newsletter_06_21.title }}
+                  </h1>
+                </a>
+
+                <table class="w-full">
+                  <component src="spacers/spacer_32.html"></component>
+                </table>
+
+                <p class="text-center text-white font-light leading-sm sm:leading-sm">
+                  {{ page.newsletter_06_21.post }}
+                </p>
+
+                <table class="w-full">
+                  <component src="spacers/spacer_32.html"></component>
+                </table>
+
+                <component
+                  src="buttons/btnFilled.html"
+                  locals='{
+                  "content": "{{ page.newsletter_06_21.read_post }}",
+                  "url": "{{ page.newsletter_06_21.link }}",
+                  "class": "{{ page.secondaryBg }}"
+                  }'></component>
+
+                <table class="w-full">
+                  <component src="spacers/spacer_64.html"></component>
+                </table>
+              </td>
+            </tr>
+
+        <!--[if gte mso 9]>
+        </v:textbox>
+        </v:rect>
         <![endif]-->
-
-        <tr>
-          <td align="center" class="px-32">
-            <table class="w-full">
-              <component src="spacers/spacer_64.html"></component>
-            </table>
-
-            <component
-              src="brand/logo-center.html"
-              locals='{
-                "logo": "{{ page.global.images.brand.logo_negative }}",
-                "url": "{{ page.global.usluno.links.PrimaryLink }}",
-                "class": "",
-                "width": "250"
-                }'></component>
-
-            <a href="{{ page.newsletter_06_21.link }}"
-               class="no-underline text-left"
-               target="_blank">
-              <h1 class="text-center text-white text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm">
-                {{ page.newsletter_06_21.title }}
-              </h1>
-            </a>
-
-            <table class="w-full">
-              <component src="spacers/spacer_32.html"></component>
-            </table>
-
-            <p class="text-center text-white font-light leading-sm sm:leading-sm">
-              {{ page.newsletter_06_21.post }}
-            </p>
-
-            <table class="w-full">
-              <component src="spacers/spacer_32.html"></component>
-            </table>
-
-            <component
-              src="buttons/btnFilled.html"
-              locals='{
-              "content": "{{ page.newsletter_06_21.read_post }}",
-              "url": "{{ page.newsletter_06_21.link }}",
-              "class": "{{ page.secondaryBg }}"
-              }'></component>
-
-            <table class="w-full">
-              <component src="spacers/spacer_64.html"></component>
-            </table>
-          </td>
-        </tr>
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
