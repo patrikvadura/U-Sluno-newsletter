@@ -1,489 +1,279 @@
-<!DOCTYPE html>
-<html lang="cs-cz" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; overflow-x: hidden;">
+---
+ReleaseN: "06_21"
+title: "Newsletter {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-    <!--[if mso]>
-  <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
-  <style>
-    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
-  </style>
-  <![endif]-->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" media="screen">
-    <style>
-      .hover-bg-white:hover {
-        background-color: #ffffff !important;
-      }
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-indigo-800"
+primaryColor: "text-indigo-800"
+secondaryBg: "bg-blue-800"
+secondaryColor: "text-blue-800"
+googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
 
-      .hover-font-bold:hover {
-        font-weight: 700 !important;
-      }
+YouTube: "https://www.youtube.com/embed/TZW7IlC-AoM"
+---
 
-      .hover-shadow-lg:hover {
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
-      }
+<!-----------------------------------------------------------------------------------------------------
+--- MAILCHIMP ---
+------------------------------------------------------------------------------------------------------>
+<if condition="page.env === 'mailchimp'">
+  <extends src="src/layouts/mailchimp.html">
+    <block align="center" name="template">
+      <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
+        <component src="topbar.html"></component>
+      </table>
 
-      .hover-text-gray-800:hover {
-        color: #252525 !important;
-      }
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} bg-center bg-no-repeat bg-cover"
+             style="background-image: url('images/usluno/06_21/hero_video_mailchimp.png'); margin-bottom: -1px;">
+        <tr>
+          <td align="center" class="px-32">
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
 
-      .hover-underline:hover {
-        text-decoration: underline !important;
-      }
+            <component
+              src="brand/logo-center.html"
+              locals='{
+                "logo": "{{ page.global.images.brand.logo_negative }}",
+                "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                "class": "",
+                "width": "250"
+                }'></component>
 
-      @media screen and (max-width: 600px) {
-        .border-left-10 {
-          border-left: none;
-          padding-left: 0;
-        }
-      }
+            <a href="{{ page.newsletter_06_21.link }}"
+               class="no-underline text-left"
+               target="_blank">
+              <h1 class="text-left text-white text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm" style="border-left: 10px solid #007bff; padding-left: 2rem;">
+                {{ page.newsletter_06_21.title }}
+              </h1>
+            </a>
 
-      @media (max-width: 600px) {
-        .sm-rounded-none {
-          border-radius: 0 !important;
-        }
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
 
-        .sm-leading-0 {
-          line-height: 0 !important;
-        }
+            <p class="text-center text-white font-light leading-sm sm:leading-sm">
+              {{ page.newsletter_06_21.post }}
+            </p>
 
-        .sm-px-32 {
-          padding-left: 32px !important;
-          padding-right: 32px !important;
-        }
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
 
-        .sm-text-center {
-          text-align: center !important;
-        }
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "{{ page.newsletter_06_21.read_post }}",
+              "url": "{{ page.newsletter_06_21.link }}",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
 
-        .sm-w-full {
-          width: 100% !important;
-        }
-      }
-    </style>
-    <block name="head" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;"></block>
-  </head>
-
-  <body style="mso-line-height-rule: exactly; margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased; font-family: 'Open Sans', sans-serif; background-color: #ffffff;">
-    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; display: none;">undefined</div>
-    <div role="article" aria-roledescription="email" aria-label="Newsletter 06_21" lang="en" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-      <table align="center" class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-          <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-            <block name="template" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #4f8aff; width: 600px;" width="600" bgcolor="#4f8aff" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <th class="sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 12px; text-align: center;" align="center">
-                    <a href="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-06_21.html" class="hover-underline hover-font-bold" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 500; font-size: 14px; color: #ffffff; text-decoration: none;">
-                      Zobrazit newsletter v prohlížeči
-                    </a>
-                  </th>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; background-image: url('https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/hero_video_mailchimp.png'); margin-bottom: -1px; font-family: 'Open Sans', sans-serif; background-position: center; background-repeat: no-repeat; background-size: cover; width: 600px;" width="600" background="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/hero_video_mailchimp.png" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding-left: 32px; padding-right: 32px;">
-                    <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 64px;">&zwnj;</td>
-                      </tr>
-                    </table>
-                    <a href="https://www.u-sluno.eu/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-decoration: none;">
-                      <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/logo-negative.png" width="250" alt="U&Sluno" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; border-style: none; font-family: 'Open Sans', sans-serif; vertical-align: top;">
-                    </a>
-                    <a href="https://www.u-sluno.eu/autonomni-roboti-eliminuji-az-70-neproduktivni-prace-skladniku/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: left; text-decoration: none;">
-                      <h1 style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-left: 10px solid #007bff; padding-left: 2rem; font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 30px; margin-top: 32px; text-align: left; color: #ffffff; text-transform: uppercase;">
-                        Autonomní roboti eliminují až 70 % neproduktivní práce skladníků
-                      </h1>
-                    </a>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 300; text-align: center; color: #ffffff;">
-                      Přeprava materiálu je základem každého skladu prodejního či výrobního řetězce. Dochází zde ale zároveň k prostojům, neefektivně využitému času a časté fluktuaci pracovníků. Jak tyto problémy eliminovat? Inovativní řešení do provozu přináší technologie autonomních robotů, kteří zvládnou zboží přepravovat bez pomoci nebo dlouhého zaškolování.
-                    </p>
-                    <a href="https://www.u-sluno.eu/autonomni-roboti-eliminuji-az-70-neproduktivni-prace-skladniku/" target="_blank" class="hover-bg-white hover-text-gray-800 hover-shadow-lg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #4f8aff; border-radius: 4px; display: inline-block; font-weight: 600; font-size: 14px; line-height: 1; padding: 16px 24px; color: #ffffff; text-decoration: none;">
-                      <!--[if mso]>
-    <i style="mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i>
-  <![endif]-->
-                      <span style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; mso-text-raise: 13pt; font-family: 'Open Sans', sans-serif;">
-    Přečíst celý článek
-  </span>
-                      <!--[if mso]>
-    <i style="mso-font-width: -100%;">&nbsp;</i>
-  <![endif]-->
-                    </a>
-                    <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 64px;">&zwnj;</td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center;" align="center">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding-left: 32px; padding-right: 32px;">
-                    <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 64px;">&zwnj;</td>
-                      </tr>
-                    </table>
-                    <h1 style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 800; font-size: 30px; margin-top: 32px; color: #11006b; text-transform: uppercase;">
-                      Ukázka z webináře
-                    </h1>
-                    <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                      </tr>
-                    </table>
-                    <a href="https://www.youtube.com/watch?v=Wv6OkMzz2-0" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                      <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/video_mailchimp.png" alt="U&Sluno" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif;">
-                    </a>
-                    <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                      </tr>
-                    </table>
-                    <a href="mailto:robotics@u-sluno.cz;" target="_blank" class="hover-bg-white hover-text-gray-800 hover-shadow-lg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #4f8aff; border-radius: 4px; display: inline-block; font-weight: 600; font-size: 14px; line-height: 1; padding: 16px 24px; color: #ffffff; text-decoration: none;">
-                      <!--[if mso]>
-    <i style="mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i>
-  <![endif]-->
-                      <span style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; mso-text-raise: 13pt; font-family: 'Open Sans', sans-serif;">
-    Kontaktujte nás
-  </span>
-                      <!--[if mso]>
-    <i style="mso-font-width: -100%;">&nbsp;</i>
-  <![endif]-->
-                    </a>
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 64px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td class="sm-text-center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding-left: 32px; padding-right: 32px; text-align: left;" align="left">
-                    <h2 class="border-left-10" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-left: 10px solid #007bff; padding-left: 1rem; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 30px; color: #11006b;">
-                      CASE STUDY
-                    </h2>
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td class="sm-leading-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td class="sm-text-center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding-left: 32px; padding-right: 32px; text-align: left;" align="left">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 20px; color: #4f8aff;">
-                      TOP 10
-                    </p>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 24px; color: #11006b;">
-                      Distributor elektroniky
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 16px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-rounded-none" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #f4f5f7; border-radius: 2vw; width: 600px;" width="600" bgcolor="#f4f5f7" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center;" align="center">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 32px; vertical-align: top; width: 33.333333%;" width="33.333333%" valign="top">
-                    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-radius: 9999px; background-color: transparent; font-weight: 700; font-size: 18px; text-align: center; display: flex; justify-content: center; align-items: center; color: rgba(10,0,83,.8); border: 7px solid #007bff; width: 80px; height: 80px; font-family: 'Open Sans', sans-serif; transition: all .2s ease-in-out;">
-                      39 %
-                    </div>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 14px; color: #11006b;">
-                      Zkrácení délky cyklů
-                    </p>
-                  </td>
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 32px; vertical-align: top; width: 33.333333%;" width="33.333333%" valign="top">
-                    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-radius: 9999px; background-color: transparent; font-weight: 700; font-size: 18px; text-align: center; display: flex; justify-content: center; align-items: center; color: rgba(10,0,83,.8); border: 7px solid #007bff; width: 80px; height: 80px; font-family: 'Open Sans', sans-serif; transition: all .2s ease-in-out;">
-                      35 000
-                    </div>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 14px; color: #11006b;">
-                      Úspora pracovních hodin za rok
-                    </p>
-                  </td>
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 32px; vertical-align: top; width: 33.333333%;" width="33.333333%" valign="top">
-                    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-radius: 9999px; background-color: transparent; font-weight: 700; font-size: 18px; text-align: center; display: flex; justify-content: center; align-items: center; color: rgba(10,0,83,.8); border: 7px solid #007bff; width: 80px; height: 80px; font-family: 'Open Sans', sans-serif; transition: all .2s ease-in-out;">
-                      375
-                    </div>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 14px; color: #11006b;">
-                      Dodávky za den
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td class="sm-leading-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center;" align="center">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/image_robot_mailchimp_02.jpg" alt="U&Sluno" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif;">
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 64px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td class="sm-text-center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 20px; color: #4f8aff;">
-                      TOP 12
-                    </p>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 24px; color: #11006b;">
-                      Výrobce automobilů
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 16px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-rounded-none" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #f4f5f7; border-radius: 2vw; width: 600px;" width="600" bgcolor="#f4f5f7" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center;" align="center">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 32px; vertical-align: top; width: 33.333333%;" width="33.333333%" valign="top">
-                    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-radius: 9999px; background-color: transparent; font-weight: 700; font-size: 18px; text-align: center; display: flex; justify-content: center; align-items: center; color: rgba(10,0,83,.8); border: 7px solid #007bff; width: 80px; height: 80px; font-family: 'Open Sans', sans-serif; transition: all .2s ease-in-out;">
-                      100 %
-                    </div>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 14px; color: #11006b;">
-                      Snížení přesčasů
-                    </p>
-                  </td>
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 32px; vertical-align: top; width: 33.333333%;" width="33.333333%" valign="top">
-                    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-radius: 9999px; background-color: transparent; font-weight: 700; font-size: 18px; text-align: center; display: flex; justify-content: center; align-items: center; color: rgba(10,0,83,.8); border: 7px solid #007bff; width: 80px; height: 80px; font-family: 'Open Sans', sans-serif; transition: all .2s ease-in-out;">
-                      1,3 mil. Kč
-                    </div>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 14px; color: #11006b;">
-                      Přímé snížení nákladů
-                    </p>
-                  </td>
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 32px; vertical-align: top; width: 33.333333%;" width="33.333333%" valign="top">
-                    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-radius: 9999px; background-color: transparent; font-weight: 700; font-size: 18px; text-align: center; display: flex; justify-content: center; align-items: center; color: rgba(10,0,83,.8); border: 7px solid #007bff; width: 80px; height: 80px; font-family: 'Open Sans', sans-serif; transition: all .2s ease-in-out;">
-                      204 %
-                    </div>
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 14px; color: #11006b;">
-                      Zvýšení počtu dodaných položek za den
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td class="sm-leading-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center;" align="center">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/image_robot_mailchimp_01.jpg" alt="U&Sluno" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif;">
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td class="sm-text-center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding-left: 32px; padding-right: 32px; text-align: left;" align="left">
-                          <h2 class="border-left-10" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; border-left: 10px solid #007bff; padding-left: 1rem; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 30px; color: #11006b;">
-                            Poslechněte si podcasty o&#160;autonomních robotech
-                          </h2>
-                        </td>
-                      </tr>
-                    </table>
-                    <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 64px;">&zwnj;</td>
-                      </tr>
-                    </table>
-                    <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center;" align="center">
-                        <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                          <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-1-Co-to-znamen--kdy-je-robot-autonomn-el7jq4" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                            <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/spotify_mailchimp_01.png" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif;" alt="">
-                          </a>
-                          <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                              <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 16px;">&zwnj;</td>
-                            </tr>
-                          </table>
-                          <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-2-Typy-kolaborativnch-robot-elhs7o" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                            <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/spotify_mailchimp_02.png" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif;" alt="">
-                          </a>
-                          <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                              <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 16px;">&zwnj;</td>
-                            </tr>
-                          </table>
-                          <a href="https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-3-Jak-probh-ukzka-robota-elsr7f" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                            <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/06_21/spotify_mailchimp_03.png" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif;" alt="">
-                          </a>
-                          <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                            <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                              <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 16px;">&zwnj;</td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                        <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #ebf3fa; width: 600px;" width="600" bgcolor="#ebf3fa" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #ebf3fa; width: 600px;" width="600" bgcolor="#ebf3fa" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center;" align="center">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <h3 style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; text-align: center;">
-                      Více informací najdete na
-                    </h3>
-                    <a href="https://www.uslunorobotics.eu/cs" target="_blank" class="hover-bg-white hover-text-gray-800 hover-shadow-lg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #4f8aff; border-radius: 4px; display: inline-block; font-weight: 600; font-size: 14px; line-height: 1; padding: 16px 24px; color: #ffffff; text-decoration: none;">
-                      <!--[if mso]>
-    <i style="mso-font-width: -100%; mso-text-raise: 26pt;">&nbsp;</i>
-  <![endif]-->
-                      <span style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; mso-text-raise: 13pt; font-family: 'Open Sans', sans-serif;">
-    www.uslunorobotics.eu
-  </span>
-                      <!--[if mso]>
-    <i style="mso-font-width: -100%;">&nbsp;</i>
-  <![endif]-->
-                    </a>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #ebf3fa; width: 600px;" width="600" bgcolor="#ebf3fa" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 64px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/logo-negative.png" width="100" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif; display: block; padding: 8px; text-align: center;">
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 8px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <a href="https://www.u-sluno.eu/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 18px; text-align: center; color: #ffffff; text-decoration: none;">
-                      <h4 style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; text-align: center; color: #ffffff;">
-                        www.u-sluno.eu
-                      </h4>
-                    </a>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 8px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; display: block; font-weight: 700; font-size: 14px; text-align: center; color: #ffffff; text-decoration: none;">
-                      <a href="mailto:u-sluno@u-sluno.cz
-              ?subject=Ukázka dema
-              &cc=
-              &body=Dobrý den, přečetl jsem si váš newsletter a měl bych zájem o ukázku dema vašeho e-shopu GRANDeSHOP." style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; color: #ffffff; text-decoration: none;">
-                        u-sluno@u-sluno.cz
-                      </a>
-                      | +420 596 134 157
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; padding: 8px;">
-                    <a href="https://www.facebook.com/slunocz/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                      <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/facebook-negative.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif; padding-right: 8px;">
-                    </a>
-                    <a href="https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                      <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/youtube-negative.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif; padding-right: 8px;">
-                    </a>
-                    <a href="https://www.linkedin.com/company/354076/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                      <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/linkedin-negative.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif; padding-right: 8px;">
-                    </a>
-                    <a href="https://anchor.fm/usluno" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                      <img src="https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/spotify-negative.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Open Sans', sans-serif;">
-                    </a>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 16px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-size: 10px; text-align: center; color: #ffffff;">
-                      Nechcete dostávat naše newslettery?
-                      <span style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; display: block;">
-          Klikněte na
-          <a href="https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734bf3e2&amp;id=ef1d76ea37&amp;e=&amp;c=2bec3fc9ba" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; font-weight: 700; color: #ffffff; text-decoration: none;">
-            odhlásit.
-          </a>
-        </span>
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; background-color: #11006b; width: 600px;" width="600" bgcolor="#11006b" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Open Sans', sans-serif; line-height: 32px;">&zwnj;</td>
-                </tr>
-              </table>
-            </block>
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
           </td>
         </tr>
       </table>
-    </div>
-  </body>
 
-</html>
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td align="center" class="px-32">
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <h1 class="{{ page.primaryColor }} text-center text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+              {{ page.newsletter_06_21.webinair }}
+            </h1>
+
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <a href="https://www.youtube.com/watch?v=Wv6OkMzz2-0" target="_blank">
+              <img src="images/usluno/06_21/video_mailchimp.png"
+                   alt="U&Sluno">
+            </a>
+
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "Kontaktujte nás",
+              "url": "mailto:robotics@u-sluno.cz;",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="_individual/06_21/_mailchimp/caseStudie.html"></component>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="_individual/06_21/_mailchimp/podcasts.html"></component>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <tr class="text-center">
+          <td align="center">
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <h3 class="font-bold text-center">
+              {{ page.newsletter_06_21.moreInfo }}
+            </h3>
+
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "www.uslunorobotics.eu",
+              "url": "https://www.uslunorobotics.eu/cs",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
+          </td>
+        </tr>
+      </table>
+
+      <table class="{{ page.tableReset }} bg-blue-100">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="_mailchimp/footer.html"></component>
+    </block>
+  </extends>
+</if>
+
+<!-----------------------------------------------------------------------------------------------------
+--- DESKTOP (FULL VERSION) ---
+------------------------------------------------------------------------------------------------------>
+
+<else>
+  <extends src="src/layouts/master.html">
+    <block align="center" class="bg-blue-100" name="template">
+        <table class="w-full sm:w-full {{ page.tableReset }} {{ page.secondaryBg }}">
+          <component src="topbar.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+        <table class="{{ page.tableReset }} sm:px-32"
+               style="margin-bottom: -1px;">
+          <tr>
+            <component src="_individual/06_21/video-section.html"></component>
+
+            <div class="video-content">
+              <component
+                src="brand/logo-center.html"
+                locals='{
+                "logo": "{{ page.global.images.brand.logo_negative }}",
+                "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                "class": "",
+                "width": "250"
+                }'></component>
+
+              <a href="{{ page.newsletter_06_21.link }}"
+                 class="no-underline"
+                 target="_blank">
+                <h1 class="text-white text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+                  {{ page.newsletter_06_21.title }}
+                </h1>
+              </a>
+
+              <p class="text-white font-light leading-sm sm:leading-sm">
+                {{ page.newsletter_06_21.post }}
+              </p>
+
+              <component
+                src="buttons/btnFilled.html"
+                locals='{
+                "content": "{{ page.newsletter_06_21.read_post }}",
+                "url": "https://www.u-sluno.eu/autonomni-roboti-eliminuji-az-70-neproduktivni-prace-skladniku/",
+                "class": "{{ page.secondaryBg }}"
+                }'></component>
+            </div>
+          </tr>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full bg-blue-100">
+        <tr class="text-center">
+          <td align="center">
+            <table class="{{ page.tableReset }} bg-blue-100">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <h1 class="{{ page.primaryColor }} text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+              {{ page.newsletter_06_21.webinair }}
+            </h1>
+
+            <table class="py-48 flex justify-center align-middle">
+              <component src="videoYT_larger.html"></component>
+            </table>
+
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "Kontaktujte nás",
+              "url": "mailto:robotics@u-sluno.cz;",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
+
+            <table class="{{ page.tableReset }} bg-blue-100">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <table class="{{ page.tableReset }}">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="_individual/06_21/caseStudie.html"></component>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="_individual/06_21/podcasts.html"></component>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full bg-blue-100">
+        <tr class="text-center">
+          <td align="center" class="py-64">
+            <h3 class="font-bold">
+              {{ page.newsletter_06_21.moreInfo }}
+            </h3>
+
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "www.uslunorobotics.eu",
+              "url": "https://www.uslunorobotics.eu/cs",
+              "class": "{{ page.secondaryBg }}"
+              }'></component>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full {{ page.primaryBg }} text-left py-64 flex justify-center align-middle">
+        <component src="footer.html"></component>
+      </table>
+    </block>
+  </extends>
+</else>
