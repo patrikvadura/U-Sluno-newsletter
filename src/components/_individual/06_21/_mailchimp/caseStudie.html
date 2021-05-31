@@ -1,0 +1,119 @@
+<table class="{{ page.tableReset }} sm:px-32">
+  <tr class="text-center">
+    <td class="px-32 text-center">
+      <h2 class="{{ page.primaryColor }} text-center text-3xl font-bold">
+        {{ page.newsletter_06_21.casestudie.title }}
+      </h2>
+    </td>
+  </tr>
+</table>
+
+<table class="w-full">
+  <component src="../../../spacers/spacer_32_noMobile.html"></component>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }} sm:px-32">
+  <tr>
+    <td class="px-32 text-center">
+      <p class="{{ page.secondaryColor }} text-xl font-bold">
+        {{ page.newsletter_06_21.casestudie.first.top }}
+      </p>
+
+      <p class="{{ page.primaryColor }} text-2xl font-bold">
+        {{ page.newsletter_06_21.casestudie.first.title }}
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table class="w-full">
+  <component src="../../../spacers/spacer_16.html"></component>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }} bg-gray-100">
+  <tr class="text-center">
+    <each loop="item in {{ page.newsletter_06_21.casestudie.first.items }}">
+      <td align="center" class="p-32 w-4/12 align-top">
+        <h3 class="{{ page.secondaryColor }} text-center text-lg font-bold">
+          {{ item.number }}
+        </h3>
+
+        <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+          {{ item.title }}
+        </p>
+      </td>
+    </each>
+  </tr>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }}">
+  <tr class="text-center">
+    <td align="center">
+      <img src="images/usluno/06_21/image_robot_mailchimp_02.jpg"
+           alt="U&Sluno">
+    </td>
+  </tr>
+</table>
+
+<table class="w-full">
+  <component src="../../../spacers/spacer_64.html"></component>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }} sm:px-32">
+  <tr>
+    <td class="px-32 text-center">
+      <p class="{{ page.secondaryColor }} text-xl font-bold">
+        {{ page.newsletter_06_21.casestudie.second.top }}
+      </p>
+
+      <p class="{{ page.primaryColor }} text-2xl font-bold">
+        {{ page.newsletter_06_21.casestudie.second.title }}
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table class="w-full">
+  <component src="../../../spacers/spacer_16.html"></component>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }} bg-gray-100">
+  <tr class="text-center">
+    <each loop="item in {{ page.newsletter_06_21.casestudie.second.items }}">
+      <td align="center" class="p-32 w-4/12 align-top">
+        <h3 class="{{ page.secondaryColor }} text-center text-lg font-bold">
+          {{ item.number }}
+        </h3>
+
+        <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+          {{ item.title }}
+        </p>
+      </td>
+    </each>
+  </tr>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }}">
+  <tr class="text-center">
+    <td align="center">
+      <img src="images/usluno/06_21/image_robot_mailchimp_01.jpg"
+           alt="U&Sluno">
+    </td>
+  </tr>
+</table>
+
+<table class="w-full">
+  <component src="../../../spacers/spacer_32.html"></component>
+</table>

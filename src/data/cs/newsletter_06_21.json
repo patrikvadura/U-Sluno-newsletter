@@ -1,0 +1,87 @@
+{
+  "title": "AMR eliminují 70 % neproduktivní práce skladníků",
+  "link": "https://www.u-sluno.eu/autonomni-roboti-eliminuji-az-70-neproduktivni-prace-skladniku/",
+  "post": "Přeprava materiálu je základem skladu. Dochází k prostojům, neefektivně využitému času a časté fluktuaci pracovníků. Jak problémy eliminovat? Inovaci přináší Autonomní Mobilní Roboti, kteří zboží přepravují bez pomoci vodících čar nebo dlouhého programování.",
+  "read_post": "Přečíst celý článek",
+  "moreInfo": "Více informací najdete na",
+  "webinair": "Ukázka z webináře",
+  "webinairCTA": "Mám zájem o ukázku",
+  "casestudie": {
+    "title": "CASE STUDY",
+    "first": {
+      "top": "TOP 10",
+      "title": "Distributor elektroniky",
+      "items": [
+        {
+          "number": "39 %",
+          "title": "Zkrácení délky cyklů"
+        },
+        {
+          "number": "35 000",
+          "title": "Úspora pracovních hodin za rok"
+        },
+        {
+          "number": "375",
+          "title": "Dodávky za den"
+        }
+      ],
+      "gallery": [
+        {
+          "img": "images/usluno/06_21/gallery/image_robot_gallery_01-01.jpg"
+        },
+        {
+          "img": "images/usluno/06_21/gallery/image_robot_gallery_01-02.jpg"
+        },
+        {
+          "img": "images/usluno/06_21/gallery/image_robot_gallery_01-03.jpg"
+        }
+      ]
+    },
+    "second": {
+      "top": "TOP 12",
+      "title": "Výrobce automobilů",
+      "items": [
+        {
+          "number": "100 %",
+          "title": "Snížení přesčasů"
+        },
+        {
+          "number": "1,3 mil. Kč",
+          "title": "Přímé snížení nákladů"
+        },
+        {
+          "number": "204 %",
+          "title": "Zvýšení počtu dodaných položek za den"
+        }
+      ],
+      "gallery": [
+        {
+          "img": "images/usluno/06_21/gallery/image_robot_gallery_02-01.jpg"
+        },
+        {
+          "img": "images/usluno/06_21/gallery/image_robot_gallery_02-02.jpg"
+        },
+        {
+          "img": "images/usluno/06_21/gallery/image_robot_gallery_02-03.jpg"
+        }
+      ]
+    }
+  },
+  "podcasts": {
+    "title": "Poslechněte si podcasty o autonomních robotech",
+    "items": [
+      {
+        "link": "https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-1-Co-to-znamen--kdy-je-robot-autonomn-el7jq4",
+        "mailchimp": "images/usluno/06_21/spotify_mailchimp_01.png"
+      },
+      {
+        "link": "https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-2-Typy-kolaborativnch-robot-elhs7o",
+        "mailchimp": "images/usluno/06_21/spotify_mailchimp_02.png"
+      },
+      {
+        "link": "https://anchor.fm/usluno/embed/episodes/Autonomn-roboti-3-Jak-probh-ukzka-robota-elsr7f",
+        "mailchimp": "images/usluno/06_21/spotify_mailchimp_03.png"
+      }
+    ]
+  }
+}

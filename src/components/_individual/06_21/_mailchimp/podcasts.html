@@ -1,0 +1,48 @@
+<table class="w-full">
+  <component src="../../../spacers/spacer_32.html"></component>
+</table>
+
+<table class="w-full sm:w-full">
+  <tr>
+    <td align="center">
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr class="text-center">
+          <td class="px-32 text-center">
+            <h2 class="{{ page.primaryColor }} text-center text-3xl font-bold">
+              Poslechněte si podcasty o&#160;autonomních robotech
+            </h2>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="../../../spacers/spacer_64.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr class="text-center">
+          <td align="center">
+            <each loop="item in {{ page.newsletter_06_21.podcasts.items }}">
+              <a href="{{ item.link }}"
+                 target="_blank">
+                <img src="{{ item.mailchimp }}">
+              </a>
+
+              <table class="w-full">
+                <component src="../../../spacers/spacer_16.html"></component>
+              </table>
+            </each>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="../../../spacers/spacer_32.html"></component>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table class="{{ page.tableReset }} bg-blue-100">
+  <component src="../../../spacers/spacer_32.html"></component>
+</table>

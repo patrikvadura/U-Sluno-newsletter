@@ -1,5 +1,6 @@
 ## Releases
 ### Desktop (full verison)
+[Newsletter 06/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-06_21.html)<br>
 [Newsletter 05/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-05_21.html)<br>
 [Newsletter 04/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-04_21.html)<br>
 [Newsletter 03/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-03_21.html)<br>
@@ -11,7 +12,9 @@
 [Newsletter 07/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-07.html)<br>
 [Newsletter 05/20](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-05.html)
 
+
 ### Mailchimp
+[Newsletter 06/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-06_21.html)<br>
 [Newsletter 05/21](https://studio-5-v-o-s.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-05_21.html)<br>
 
 ## Projekt
@@ -19,7 +22,16 @@
 Emailový newsletter pro firmu U&Sluno, vyvíjený v emailovém frameworku Maizzle.
 
 ## Setup
-npm install<br>
-maizzle serve<br>
-maizzle build<br>
-maizzle build production
+```bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ maizzle serve
+
+# build for production and launch server
+$ maizzle build
+
+# generate static project
+$ maizzle build production
+```

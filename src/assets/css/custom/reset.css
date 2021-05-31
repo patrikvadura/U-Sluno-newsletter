@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden !important;
+}
+
 body {
   @apply m-0 p-0 w-full;
   word-break: break-word;
@@ -13,34 +17,4 @@ body {
 
 img {
   @apply max-w-full leading-full align-middle border-none;
-}
-
-.circle {
-  @apply rounded-full border-none bg-white text-center;
-  box-shadow: 0 17px 24px 0 rgba(0, 0, 0, .07) !important;
-  transition: all .2s ease-in-out !important;
-}
-
-.btn {
-  @apply px-24 rounded-lg border-none text-center text-white leading-loose;
-  background-color: #4f8aff !important;
-  letter-spacing: 0.05em;
-  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
-  transition: all .2s ease-in-out !important;
-}
-
-.btn:hover {
-  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, 1) !important;
-}
-
-.btn-light {
-  @apply p-24 rounded-lg border-none text-center text-xs text-white uppercase leading-8;
-  background: rgba(0,0,0,.2) !important;
-  letter-spacing: 0.05em;
-  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, .62) !important;
-  transition: all .2s ease-in-out !important;
-}
-
-.btn-light:hover {
-  box-shadow: 0 2px 24px 0 rgba(79, 138, 255, 1) !important;
 }

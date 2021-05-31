@@ -1,0 +1,109 @@
+<table class="{{ page.tableReset }} sm:px-32">
+  <tr>
+    <td>
+      <h2 class="{{ page.primaryColor }} text-3xl font-bold" style="border-left: 10px solid #007bff; padding-left: 1rem;">
+        {{ page.newsletter_06_21.casestudie.title }}
+      </h2>
+    </td>
+  </tr>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }} bg-gray-100 rounded-medium mb-20">
+  <div class="w-600 text-left sm:text-center">
+    <div class="p-32">
+      <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
+        {{ page.newsletter_06_21.casestudie.first.top }}
+      </p>
+      <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
+        {{ page.newsletter_06_21.casestudie.first.title }}
+      </p>
+    </div>
+  </div>
+
+  <tr class="text-center">
+    <each loop="item in {{ page.newsletter_06_21.casestudie.first.items }}">
+      <td align="center" class="p-32 w-3/12 align-top">
+        <div class="circle">
+          {{ item.number }}
+        </div>
+
+        <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+          {{ item.title }}
+        </p>
+      </td>
+    </each>
+
+    <td align="center" class="p-32 w-3/12 align-top mobile-hide" />
+  </tr>
+
+  <div style="transform: translate(16rem, -9rem); height: 0;">
+    <img src="images/usluno/06_21/image_robot_02.png"
+         width="220"
+         class="align-top mobile-hide"
+         alt="U&Sluno">
+  </div>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }}">
+  <tr class="text-center">
+    <each loop="item in {{ page.newsletter_06_21.casestudie.first.gallery }}">
+      <td align="center" class="4/12 px-6">
+        <img src="{{ item.img }}">
+      </td>
+    </each>
+  </tr>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }} bg-gray-100 rounded-medium mb-20">
+  <div class="w-600 text-right sm:text-center">
+    <div class="p-32 mt-64 sm:mt-0">
+      <p class="{{ page.secondaryColor }} text-xl font-bold leading-8">
+        {{ page.newsletter_06_21.casestudie.second.top }}
+      </p>
+      <p class="{{ page.primaryColor }} text-2xl font-bold leading-8">
+        {{ page.newsletter_06_21.casestudie.second.title }}
+      </p>
+    </div>
+  </div>
+
+  <div style="transform: translate(-19rem, -2rem); height: 0;">
+    <img src="images/usluno/06_21/image_robot_01.png"
+         width="700"
+         class="align-top mobile-hide"
+         alt="U&Sluno">
+  </div>
+
+  <tr class="text-center" style="display: flex; flex-direction: row-reverse;">
+    <each loop="item in {{ page.newsletter_06_21.casestudie.second.items }}">
+      <td align="center" class="p-32 w-3/12 align-top">
+        <div class="circle">
+          {{ item.number }}
+        </div>
+
+        <p class="{{ page.primaryColor }} text-sm font-bold leading-18">
+          {{ item.title }}
+        </p>
+      </td>
+    </each>
+
+    <td align="center" class="p-32 w-3/12 align-top mobile-hide" />
+  </tr>
+</table>
+
+<!-------------------------------------------->
+
+<table class="{{ page.tableReset }}">
+  <tr class="text-center">
+    <each loop="item in {{ page.newsletter_06_21.casestudie.second.gallery }}">
+      <td align="center" class="4/12 px-6">
+        <img src="{{ item.img }}">
+      </td>
+    </each>
+  </tr>
+</table>
