@@ -1,0 +1,47 @@
+<table class="w-full sm:w-full pt-64">
+  <tr>
+    <td align="center">
+      <table class="w-600 sm:px-32">
+        <tr class="text-center">
+          <td>
+            <h2 class="{{ page.primaryColor }} text-3xl font-bold">
+              {{ page.newsletter_08_21.podcasts.title }}
+            </h2>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-600 py-32 sm:px-32">
+        <tr class="text-center">
+          <td align="center">
+            <each loop="item in {{ page.newsletter_08_21.podcasts.items }}">
+              <if condition="page.env === 'mailchimp'">
+                <a href="{{ item.link }}">
+                  <img src="{{ item.mailchimp }}">
+                </a>
+
+                <table class="{{ page.tableReset }}">
+                  <component src="../../spacers/spacer_16.html"></component>
+                </table>
+              </if>
+
+              <else>
+                <iframe src="{{ item.link }}"
+                        height="100px"
+                        width="100%"
+                        class="shadow-lg my-16"
+                        frameborder="0"
+                        scrolling="no">
+                </iframe>
+              </else>
+            </each>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="../../spacers/spacer_64.html"></component>
+      </table>
+    </td>
+  </tr>
+</table>

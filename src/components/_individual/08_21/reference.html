@@ -1,0 +1,27 @@
+<h1 class="{{ page.primaryColor }} text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+  {{ page.newsletter_08_21.reference.title }}
+</h1>
+
+<p class="w-600 bg-gray-100 p-32 rounded-medium border-bottom border-b-4 border-primary text-black font-light leading-sm sm:leading-sm">
+  {{ page.newsletter_08_21.reference.items.description }}
+</p>
+
+<p class="w-600 text-black font-light leading-sm sm:leading-sm">
+  <span class="text-primary font-bold">{{ page.newsletter_08_21.reference.items.name }}</span>, {{ page.newsletter_08_21.reference.items.role }}
+</p>
+
+<p class="w-600 text-secondary font-bold leading-sm sm:leading-sm">
+  {{ page.newsletter_08_21.reference.items.corporation }}
+</p>
+
+<table class="{{ page.tableReset }}">
+  <component src="../../spacers/spacer_64.html"></component>
+</table>
+
+<component
+  src="../../buttons/btnFilled.html"
+  locals='{
+  "content": "Přečíst celý článek",
+  "url": "https://www.u-sluno.eu/skryte-informace-ve-vasich-datech-objevi-business-intelligence",
+  "class": "{{ page.secondaryBg }}"
+  }'></component>
