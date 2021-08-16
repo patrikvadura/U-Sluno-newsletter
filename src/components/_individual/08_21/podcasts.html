@@ -16,8 +16,8 @@
           <td align="center">
             <each loop="item in {{ page.newsletter_08_21.podcasts.items }}">
               <if condition="page.env === 'mailchimp'">
-                <a href="{{ item.link }}">
-                  <img src="{{ item.mailchimp }}">
+                <a href="{{ item.link }}" target="_blank">
+                  <img src="{{ item.mailchimp }}" width="65%">
                 </a>
 
                 <table class="{{ page.tableReset }}">
