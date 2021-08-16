@@ -34,6 +34,7 @@ $ maizzle serve
 # build for production and launch server
 $ maizzle build
 
-# generate static project
+# generate static project (different environments)
 $ maizzle build production
+$ maizzle build mailchimp
 ```
