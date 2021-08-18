@@ -3,7 +3,7 @@
   "link": "https://www.u-sluno.eu/skryte-informace-ve-vasich-datech-objevi-business-intelligence",
   "perex": "Manažeři musí denně provádět mnoho rozhodnutí, proto roste poptávka po aplikacích, které rozhodování usnadňují. Business Intelligence zpracovává data z centrálního systému firmy, ERP, skladů nebo e-shopů. Vše převádí na jedno místo, kde mnohdy těžko uchopitelná čísla přetváří do přehledného výstupu o vybrané oblasti ve firmě.",
   "demo": {
-    "title": "Ukázka z prostředí",
+    "title": "Ukázka BI v praxi",
     "link": "https://youtu.be/H0lUpEi4sSA",
     "description": "Kdo pro vás má větší cenu, zákazník ve věrnostním programu nebo mimo něj? BI ukáže podíl věrnostních zákazníků na celkové tržbě prodejny, nejprodávanější a nejméně prodávané produkty na prodejně nebo v rámci celého řetězce, srovnání prodejen podle tržeb, marže i počtu nákupů kdykoli, přehledně a online."
   },
@@ -15,7 +15,8 @@
       "description_01": "Řešení nám poskytuje dobře a jednoduše zvládnutelné uživatelské funkce a rozhraní. Implementovaná analytika nám také pomáhá s lepším zacílením marketingových akcí na vybranou zákaznickou skupinu, vyhodnocovat promoce s dopadem na řízení zásob, sledovat a vyhodnocovat promoční akce s přidělováním věrnostních bodů. Informační systém, nám také poskytuje souhrnné manažerské reporty a přehledy, které dokážou srovnávat aktuální a plánovaná data, což využívá hlavně nákupní a marketingové oddělení.",
       "name": "Lenka Novotná",
       "role": "marketing manager",
-      "corporation": "TRAVEL FREE, s.r.o."
+      "corporation": "TRAVEL FREE, s.r.o.",
+      "logo": "images/usluno/08_21/reference_logo.jpg"
     }
   },
   "podcasts": {

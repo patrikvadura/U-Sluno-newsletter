@@ -11,6 +11,8 @@
 <if condition="page.env === 'mailchimp'">
   <p class="w-600 p-32 border-bottom border-b-4 border-primary text-black font-base leading-sm sm:leading-sm">
     {{ page.newsletter_08_21.reference.items.description }}
+    <br><br>
+    {{ page.newsletter_08_21.reference.items.description_01 }}
   </p>
 </if>
 
@@ -27,6 +29,8 @@
 <p class="w-600 text-black font-light leading-sm sm:leading-sm">
   <span class="text-primary font-bold">{{ page.newsletter_08_21.reference.items.name }}</span>, {{ page.newsletter_08_21.reference.items.role }}
 </p>
+
+<img src="{{ page.newsletter_08_21.reference.items.logo }}" width="75px">
 
 <p class="w-600 text-secondary font-bold leading-sm sm:leading-sm">
   {{ page.newsletter_08_21.reference.items.corporation }}
