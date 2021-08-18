@@ -1,0 +1,49 @@
+<h1 class="{{ page.primaryColor }} text-3xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+  {{ page.newsletter_08_21.reference.title }}
+</h1>
+
+<table class="{{ page.tableReset }}">
+  <component src="../../spacers/spacer_16.html"></component>
+</table>
+
+<!----------------------------------------------------------------------------------------------------->
+
+<if condition="page.env === 'mailchimp'">
+  <p class="w-600 p-32 border-bottom border-b-4 border-primary text-black font-base leading-sm sm:leading-sm">
+    {{ page.newsletter_08_21.reference.items.description }}
+    <br><br>
+    {{ page.newsletter_08_21.reference.items.description_01 }}
+  </p>
+</if>
+
+<else>
+  <p class="w-600 bg-gray-100 p-32 rounded-medium border-bottom border-b-4 border-primary text-black font-base leading-sm sm:leading-sm">
+    {{ page.newsletter_08_21.reference.items.description }}
+    <br><br>
+    {{ page.newsletter_08_21.reference.items.description_01 }}
+  </p>
+</else>
+
+<!----------------------------------------------------------------------------------------------------->
+
+<p class="w-600 text-black font-light leading-sm sm:leading-sm">
+  <span class="text-primary font-bold">{{ page.newsletter_08_21.reference.items.name }}</span>, {{ page.newsletter_08_21.reference.items.role }}
+</p>
+
+<img src="{{ page.newsletter_08_21.reference.items.logo }}" width="75px">
+
+<p class="w-600 text-secondary font-bold leading-sm sm:leading-sm">
+  {{ page.newsletter_08_21.reference.items.corporation }}
+</p>
+
+<table class="{{ page.tableReset }}">
+  <component src="../../spacers/spacer_32.html"></component>
+</table>
+
+<component
+  src="../../buttons/btnFilledWide.html"
+  locals='{
+  "content": "Článek Business Intelligece",
+  "url": "https://www.u-sluno.eu/skryte-informace-ve-vasich-datech-objevi-business-intelligence",
+  "class": "{{ page.secondaryBg }}"
+  }'></component>

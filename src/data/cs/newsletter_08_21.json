@@ -1,0 +1,52 @@
+{
+  "title": "Skryté informace objeví Business Intelligence",
+  "link": "https://www.u-sluno.eu/skryte-informace-ve-vasich-datech-objevi-business-intelligence",
+  "perex": "Manažeři musí denně provádět mnoho rozhodnutí, proto roste poptávka po aplikacích, které rozhodování usnadňují. Business Intelligence zpracovává data z centrálního systému firmy, ERP, skladů nebo e-shopů. Vše převádí na jedno místo, kde mnohdy těžko uchopitelná čísla přetváří do přehledného výstupu o vybrané oblasti ve firmě.",
+  "demo": {
+    "title": "Ukázka BI v praxi",
+    "link": "https://youtu.be/H0lUpEi4sSA",
+    "description": "Kdo pro vás má větší cenu, zákazník ve věrnostním programu nebo mimo něj? BI ukáže podíl věrnostních zákazníků na celkové tržbě prodejny, nejprodávanější a nejméně prodávané produkty na prodejně nebo v rámci celého řetězce, srovnání prodejen podle tržeb, marže i počtu nákupů kdykoli, přehledně a online."
+  },
+  "reference": {
+    "title": "Reference",
+    "link": "https://youtu.be/H0lUpEi4sSA",
+    "items": {
+      "description": "Díky manažerskému informačnímu nástroji Business Intelligence implementovanému společností U&SLUNO dokážeme prakticky ihned analyzovat a vyhodnocovat data z databáze zákazníků zapojených do našeho věrnostního systému. Nejen při spuštění nástroje nám byla poskytována perfektní odborná pomoc ze strany zaměstnanců firmy U&SLUNO.",
+      "description_01": "Řešení nám poskytuje dobře a jednoduše zvládnutelné uživatelské funkce a rozhraní. Implementovaná analytika nám také pomáhá s lepším zacílením marketingových akcí na vybranou zákaznickou skupinu, vyhodnocovat promoce s dopadem na řízení zásob, sledovat a vyhodnocovat promoční akce s přidělováním věrnostních bodů. Informační systém, nám také poskytuje souhrnné manažerské reporty a přehledy, které dokážou srovnávat aktuální a plánovaná data, což využívá hlavně nákupní a marketingové oddělení.",
+      "name": "Lenka Novotná",
+      "role": "marketing manager",
+      "corporation": "TRAVEL FREE, s.r.o.",
+      "logo": "images/usluno/08_21/reference_logo.jpg"
+    }
+  },
+  "podcasts": {
+    "title": "Poslechněte si",
+    "items": [
+      {
+        "id": "1",
+        "link": "https://anchor.fm/usluno/embed/episodes/Business-Intelligence-1-Co-um-Business-Intelligence-eidakf",
+        "mailchimp": "images/usluno/08_21/podcast_mailchimp_01.png"
+      },
+      {
+        "id": "2",
+        "link": "https://anchor.fm/usluno/embed/episodes/Business-Intelligence-2-BI-odhaluje-podvody-i-konkurenn-vhody-ejbn1f",
+        "mailchimp": "images/usluno/08_21/podcast_mailchimp_02.png"
+      },
+      {
+        "id": "3",
+        "link": "https://anchor.fm/usluno/embed/episodes/Business-Intelligence-3-BI-ve-spojen-s-vrnostnmi-systmy-ejjom7",
+        "mailchimp": "images/usluno/08_21/podcast_mailchimp_03.png"
+      },
+      {
+        "id": "4",
+        "link": "https://anchor.fm/usluno/embed/episodes/Business-Intelligence-4-Analza-promoc-ek0ihb",
+        "mailchimp": "images/usluno/08_21/podcast_mailchimp_04.png"
+      },
+      {
+        "id": "5",
+        "link": "https://anchor.fm/usluno/embed/episodes/Business-Intelligence-5-Postehy-z-praxe-ekcuto",
+        "mailchimp": "images/usluno/08_21/podcast_mailchimp_05.png"
+      }
+    ]
+  }
+}

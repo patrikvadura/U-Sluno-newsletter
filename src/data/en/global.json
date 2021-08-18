@@ -33,8 +33,12 @@
   "images": {
     "brand": {
       "logo" : "images/usluno/logo.png",
+      "logo_2021" : "images/usluno/logo_2021.png",
       "logo_negative": "images/usluno/logo-negative.png",
-      "logo_alt": "images/usluno/logo-alt.png"
+      "logo_alt": "images/usluno/logo-alt.png",
+      "logo_alt_neg": "images/usluno/logo_alt-neg.png",
+      "logo_blue": "images/usluno/logo_blue.png",
+      "logo_blue_alt": "images/usluno/logo_blue_alt.png"
     },
     "ampersand": {
       "blue": "images/usluno/ampersand_blue.png",

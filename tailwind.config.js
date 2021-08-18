@@ -14,6 +14,8 @@ module.exports = {
       white: '#ffffff',
       gradient: 'linear-gradient(54.11deg,#4f8aff,#4f8aff)',
       gradient_green: 'linear-gradient(90deg,#2D864D,#18552D)',
+      primary: '#F37815',
+      secondary: '#00294D',
 
       gray: {
         '50': '#f9fafb',
