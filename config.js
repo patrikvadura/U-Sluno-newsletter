@@ -20,6 +20,9 @@ let global_en = JSON.parse(rawdata_en);
 let rawdata_1 = fs.readFileSync('src/data/cs/components.json');
 let components = JSON.parse(rawdata_1);
 
+let rawdata_webinair = fs.readFileSync('src/data/cs/webinair.json');
+let webinair = JSON.parse(rawdata_webinair);
+
 let rawdata_2 = fs.readFileSync('src/data/cs/newsletter_12.json');
 let newsletter_12 = JSON.parse(rawdata_2);
 
@@ -46,6 +49,7 @@ module.exports = {
   global: global,
   global_en: global_en,
   components: components,
+  webinair: webinair,
   newsletter_12: newsletter_12,
   newsletter_12_en: newsletter_12_en,
   newsletter_03_21: newsletter_03_21,
