@@ -125,6 +125,14 @@
   width: 100%;
 }
 
+.timeline:nth-child(even) {
+  direction: rtl !important;
+}
+
+.timeline:nth-child(even) .noafect {
+  direction: ltr !important;
+}
+
 /* ------- Responsive -------- */
 
 @media screen and (max-width: 600px) {
@@ -155,5 +163,22 @@
 
   .video-content {
     padding: 0 3rem;
+  }
+
+  .timeline tr {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .timeline tr td {
+    width: 100% !important;
+  }
+
+  .timeline:nth-child(even) {
+    direction: inherit !important;
+  }
+
+  .timeline:nth-child(even) .noafect {
+    direction: inherit !important;
   }
 }
