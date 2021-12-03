@@ -250,7 +250,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        '"Open Sans"',
+        'Source Sans Pro',
         'sans-serif',
       ],
       serif: [
