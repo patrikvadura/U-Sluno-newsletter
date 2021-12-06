@@ -10,6 +10,7 @@
 */
 
 const fs = require('fs');
+
 let global = JSON.parse(fs.readFileSync('src/data/cs/global.json'));
 let global_en = JSON.parse(fs.readFileSync('src/data/en/global.json'));
 let components = JSON.parse(fs.readFileSync('src/data/cs/components.json'));
@@ -26,6 +27,7 @@ module.exports = {
   global: global,
   global_en: global_en,
   components: components,
+  webinair: webinair,
   newsletter_12: newsletter_12,
   newsletter_12_en: newsletter_12_en,
   newsletter_03_21: newsletter_03_21,

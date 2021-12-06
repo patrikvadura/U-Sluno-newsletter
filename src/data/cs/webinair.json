@@ -1,0 +1,43 @@
+{
+  "link": "https://us06web.zoom.us/webinar/register/6116242721986/WN_nKD5yJYdSuymS9ogxds3Ww",
+  "header": {
+    "text": "Zveme vás na webinář",
+    "span": "Hlasem řízený sklad"
+  },
+  "button": {
+    "title": "Registrace zdarma",
+    "link": "https://us06web.zoom.us/webinar/register/6116242721986/WN_nKD5yJYdSuymS9ogxds3Ww"
+  },
+  "content": {
+    "perex": "Zvyšte produktivitu práce skladníků a ušetřete stovky tisíc až milionů korun za rok.",
+    "h2": "Dozvíte se:",
+    "h3": "Termín",
+    "date": "středa 20. října, 09:30 – 11:00",
+    "items": [
+      {
+        "title": "Historie hlasem ovládaných procesů"
+      },
+      {
+        "title": "Jakým způsobem hlasem ovládané procesy ovlivňují produktivitu"
+      },
+      {
+        "title": "Existují široké možnosti nastavení dialogů dle specifických požadavků"
+      },
+      {
+        "title": "Které procesy jsou vhodné pro hlasové ovládání?"
+      },
+      {
+        "title": "Řešení různých jazykových mutací"
+      },
+      {
+        "title": "Jaké jsou možnosti napojení na externí systémy"
+      },
+      {
+        "title": "Reference"
+      },
+      {
+        "title": "Ukázka hlasového vychystávání"
+      }
+    ]
+  }
+}
