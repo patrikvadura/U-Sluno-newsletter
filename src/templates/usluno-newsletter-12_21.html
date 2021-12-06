@@ -10,11 +10,9 @@ primaryBg: "bg-blue-900"
 primaryColor: "text-secondary"
 secondaryBg: "bg-orange-900"
 secondaryColor: "text-orange-900"
-googleFonts: "Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,300;1,400&display=swap"
 
-header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg"
-
-YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638521566/USLUNO/newsletter_12_21/header_desktop_jlcqjn.jpg"
+headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg"
 ---
 
 <!-----------------------------------------------------------------------------------------------------
@@ -31,7 +29,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
       <table class="{{ page.tableReset }}">
         <tr class="text-center">
           <td
-            background="https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg"
+            background="{{ page.headerMailchimp }}"
             bgcolor="#0b0057"
             align="center"
             width="600"
@@ -40,7 +38,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
           >
             <!--[if gte mso 9]>
             <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height: 500px;">
-              <v:fill type="tile" src="https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg" color="#0b0057" />
+              <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#0b0057" />
               <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
             <![endif]-->
             <div class="text-center">
@@ -154,7 +152,7 @@ YouTube: "https://www.youtube.com/embed/f6bgiNYgEnQ"
 
       <!----------------------------------------------------------------------------------------------------->
       <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover py-64 flex justify-center"
-             style="background-image: url('https://res.cloudinary.com/patrik-vadura/image/upload/v1638521566/USLUNO/newsletter_12_21/header_desktop_jlcqjn.jpg');">
+             style="background-image: url('{{ page.header }}');">
 
         <tr>
           <td>
