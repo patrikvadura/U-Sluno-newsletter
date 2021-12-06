@@ -1,9 +1,11 @@
 {
   "private": true,
   "scripts": {
+    "develope": "maizzle serve",
     "local": "maizzle build",
     "production": "maizzle build production",
-    "watch": "maizzle serve"
+    "mailchimp": "maizzle build mailchimp",
+    "productionAll": "maizzle build production && maizzle build mailchimp"
   },
   "dependencies": {
     "@maizzle/framework": "^1.1.1"
