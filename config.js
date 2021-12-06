@@ -14,6 +14,7 @@ const fs = require('fs');
 let global = JSON.parse(fs.readFileSync('src/data/cs/global.json'));
 let global_en = JSON.parse(fs.readFileSync('src/data/en/global.json'));
 let components = JSON.parse(fs.readFileSync('src/data/cs/components.json'));
+let webinair = JSON.parse(fs.readFileSync('src/data/cs/webinair.json'));
 let newsletter_12 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_12.json'));
 let newsletter_12_en = JSON.parse(fs.readFileSync('src/data/en/newsletter_12.json'));
 let newsletter_03_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_03_21.json'));
