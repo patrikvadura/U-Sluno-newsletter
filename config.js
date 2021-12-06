@@ -10,42 +10,19 @@
 */
 
 const fs = require('fs');
-
-let rawdata = fs.readFileSync('src/data/cs/global.json');
-let global = JSON.parse(rawdata);
-
-let rawdata_en = fs.readFileSync('src/data/en/global.json');
-let global_en = JSON.parse(rawdata_en);
-
-let rawdata_1 = fs.readFileSync('src/data/cs/components.json');
-let components = JSON.parse(rawdata_1);
-
-let rawdata_2 = fs.readFileSync('src/data/cs/newsletter_12.json');
-let newsletter_12 = JSON.parse(rawdata_2);
-
-let rawdata_2_en = fs.readFileSync('src/data/en/newsletter_12.json');
-let newsletter_12_en = JSON.parse(rawdata_2_en);
-
-let rawdata_3 = fs.readFileSync('src/data/cs/newsletter_03_21.json');
-let newsletter_03_21 = JSON.parse(rawdata_3);
-
-let rawdata_4 = fs.readFileSync('src/data/cs/newsletter_04_21.json');
-let newsletter_04_21 = JSON.parse(rawdata_4);
-
-let rawdata_5 = fs.readFileSync('src/data/cs/newsletter_05_21.json');
-let newsletter_05_21 = JSON.parse(rawdata_5);
-
-let rawdata_6 = fs.readFileSync('src/data/cs/newsletter_06_21.json');
-let newsletter_06_21 = JSON.parse(rawdata_6);
-
-let rawdata_8 = fs.readFileSync('src/data/cs/newsletter_08_21.json');
-let newsletter_08_21 = JSON.parse(rawdata_8);
-
-let rawdata_9 = fs.readFileSync('src/data/cs/newsletter_12_21.json');
-let newsletter_12_21 = JSON.parse(rawdata_9);
+let global = JSON.parse(fs.readFileSync('src/data/cs/global.json'));
+let global_en = JSON.parse(fs.readFileSync('src/data/en/global.json'));
+let components = JSON.parse(fs.readFileSync('src/data/cs/components.json'));
+let newsletter_12 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_12.json'));
+let newsletter_12_en = JSON.parse(fs.readFileSync('src/data/en/newsletter_12.json'));
+let newsletter_03_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_03_21.json'));
+let newsletter_04_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_04_21.json'));
+let newsletter_05_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_05_21.json'));
+let newsletter_06_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_06_21.json'));
+let newsletter_08_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_08_21.json'));
+let newsletter_12_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_12_21.json'));
 
 module.exports = {
-
   global: global,
   global_en: global_en,
   components: components,
