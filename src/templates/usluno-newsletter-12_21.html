@@ -34,10 +34,10 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522
             align="center"
             width="600"
             class="w-600 text-center bg-center bg-no-repeat bg-cover"
-            style="height: 500px;"
+            style="height: 500px; object-fit: cover;"
           >
             <!--[if gte mso 9]>
-            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height: 500px;">
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; height: 500px; object-fit: cover;">
               <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#ffffff" />
               <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
             <![endif]-->
@@ -47,7 +47,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522
                 <component src="spacers/spacer_64.html"></component>
               </table>
 
-              <table class="w-full bg-white">
+              <table class="w-600 bg-white">
                 <tr class="text-center">
                   <td align="center" class="text-center">
                     <component
@@ -80,7 +80,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522
                 </tr>
               </table>
 
-              <table class="w-full">
+              <table class="w-600">
                 <component src="spacers/spacer_64.html"></component>
               </table>
               <!----------------------------------------------------------------------------------------------------->
@@ -94,39 +94,45 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-      <table class="w-full">
+      <table class="w-600">
         <component src="spacers/spacer_64.html"></component>
       </table>
 
       <each loop="item in {{ page.newsletter_12_21.timeline }}">
-        <table class="timeline {{ page.tableReset }} py-16 sm:px-32">
+        <table class="{{ page.tableReset }} py-16 sm:px-32">
           <tr>
-            <td class="w-6/12 px-16 sm:px-0">
-              <p class="{{ page.primaryColor }} font-normal noafect">
-                {{ item.title }}
-              </p>
-            </td>
-
-            <td class="w-6/12">
+            <td class="w-600">
               <a href="{{ item.link }}" target="_blank">
                 <img src="{{ item.image }}">
               </a>
             </td>
           </tr>
+
+          <tr>
+            <td class="w-600 sm:px-0">
+              <p class="{{ page.primaryColor }} font-normal">
+                {{ item.title }}
+              </p>
+            </td>
+          </tr>
         </table>
       </each>
 
-      <table class="w-full">
+      <table class="w-600">
         <component src="spacers/spacer_64.html"></component>
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
       <table class="{{ page.tableReset }} sm:px-32">
         <tr>
-          <td>
-            <img src="images/usluno/12_21/pf2022.jpg">
+          <td class="w-600">
+            <img src="images/usluno/12_21/pf2022.jpg" width="600" style="width: 600px;">
           </td>
         </tr>
+      </table>
+
+      <table class="w-600">
+        <component src="spacers/spacer_64.html"></component>
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
