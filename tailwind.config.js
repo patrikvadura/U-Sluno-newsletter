@@ -38,7 +38,7 @@ module.exports = {
         '500': '#64748b',
         '600': '#475569',
         '700': '#364152',
-        '800': 'rgb (0,0,0,.3)',
+        '800': 'rgb(0,0,0,.3)',
         '900': '#1a202e',
       },
       red: {
@@ -250,7 +250,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        '"Open Sans"',
+        'Source Sans Pro',
         'sans-serif',
       ],
       serif: [

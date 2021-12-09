@@ -1,0 +1,245 @@
+---
+ReleaseN: "12_21"
+title: "Newsletter {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-blue-900"
+primaryColor: "text-secondary"
+secondaryBg: "bg-orange-900"
+secondaryColor: "text-orange-900"
+
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638521566/USLUNO/newsletter_12_21/header_desktop_jlcqjn.jpg"
+headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg"
+---
+
+<!-----------------------------------------------------------------------------------------------------
+--- MAILCHIMP ---
+------------------------------------------------------------------------------------------------------>
+<if condition="page.env === 'mailchimp'">
+  <extends src="src/layouts/mailchimp.html">
+    <block align="center" class="bg-blue-100" name="template">
+      <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
+        <component src="topbar.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td
+            background="{{ page.headerMailchimp }}"
+            bgcolor="#ffffff"
+            align="center"
+            width="600"
+            class="w-600 text-center bg-center bg-no-repeat bg-cover"
+            style="height: 500px; object-fit: cover;"
+          >
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; height: 500px; object-fit: cover;">
+              <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#ffffff" />
+              <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+            <![endif]-->
+            <div class="text-center">
+              <!----------------------------------------------------------------------------------------------------->
+              <table class="w-full">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+
+              <table class="w-600 bg-white">
+                <tr class="text-center">
+                  <td align="center" class="text-center">
+                    <component
+                      src="brand/logo-center.html"
+                      locals='{
+                      "logo": "{{ page.global.images.brand.logo_new }}",
+                      "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                      "class": "",
+                      "width": "250"
+                      }'></component>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="{{ page.tableReset }} bg-white">
+                <component src="spacers/spacer_16.html"></component>
+              </table>
+
+              <table class="{{ page.tableReset }} bg-white">
+                <tr>
+                  <td align="center" class="{{ page.smReset }} px-32 text-center">
+                    <a href="{{ page.newsletter_05_21.link }}"
+                       class="no-underline text-center font-black"
+                       target="_blank">
+                      <h1 class="text-secondary text-center text-4xl font-black uppercase leading-sm sm:leading-sm ">
+                        {{ page.newsletter_12_21.title }}
+                      </h1>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+              <!----------------------------------------------------------------------------------------------------->
+            </div>
+            <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <each loop="item in {{ page.newsletter_12_21.timeline }}">
+        <table class="{{ page.tableReset }} py-16 sm:px-32">
+          <tr>
+            <td class="w-600">
+              <a href="{{ item.link }}" target="_blank">
+                <img src="{{ item.image }}">
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="w-600 sm:px-0">
+              <p class="{{ page.primaryColor }} font-normal">
+                {{ item.title }}
+              </p>
+            </td>
+          </tr>
+        </table>
+      </each>
+
+      <table class="w-600">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td class="w-600">
+            <img src="images/usluno/12_21/pf2022.jpg" width="600" style="width: 600px;">
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-600">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="footer_dekujeme30.html"></component>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+    </block>
+  </extends>
+</if>
+
+<!-----------------------------------------------------------------------------------------------------
+--- DESKTOP (FULL VERSION) ---
+------------------------------------------------------------------------------------------------------>
+
+<else>
+  <extends src="src/layouts/master.html">
+    <block align="center" name="template">
+        <table class="w-full sm:w-full {{ page.tableReset }} {{ page.secondaryBg }}">
+          <component src="topbar.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover py-64 flex justify-center"
+             style="background-image: url('{{ page.header }}');">
+
+        <tr>
+          <td>
+            <table class="{{ page.tableReset }} py-64">
+              <th>
+                <td class="w-full {{ page.smReset }} px-32 text-center bg-white">
+                  <component
+                    src="brand/logo-center.html"
+                    locals='{
+                      "logo": "{{ page.global.images.brand.logo_new }}",
+                      "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                      "class": "",
+                      "width": "250"
+                      }'></component>
+
+                  <a href="{{ page.newsletter_12_21.link }}"
+                     class="no-underline"
+                     target="_blank">
+                    <h1 class="text-secondary text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+                      {{ page.newsletter_12_21.title }}
+                    </h1>
+                  </a>
+                </td>
+              </th>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <each loop="item in {{ page.newsletter_12_21.timeline }}">
+        <table class="timeline {{ page.tableReset }} py-16 sm:px-32">
+          <tr>
+            <td class="w-6/12 px-16 sm:px-0">
+              <p class="{{ page.primaryColor }} font-normal noafect whitespace-pre-line">
+                {{ item.title }}
+
+                <div class="block mt-16 noafect sm:hidden">
+                  <component
+                    src="buttons/btnFilled.html"
+                    locals='{
+                          "content": "Zobrazit více",
+                          "url": "{{ item.link }}",
+                          "class": "{{ page.secondaryBg }}"
+                          }'></component>
+                </div>
+              </p>
+            </td>
+
+            <td class="w-6/12">
+              <a href="{{ item.link }}" target="_blank">
+                <img src="{{ item.image }}">
+              </a>
+            </td>
+          </tr>
+        </table>
+      </each>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td>
+            <img src="images/usluno/12_21/pf2022.jpg">
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="footer_dekujeme30.html"></component>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+    </block>
+  </extends>
+</else>
