@@ -1,385 +1,245 @@
-<!DOCTYPE html>
-<html lang="cs-cz" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; overflow-x: hidden;">
+---
+ReleaseN: "12_21"
+title: "Newsletter {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="x-apple-disable-message-reformatting">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-    <!--[if mso]>
-  <xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml>
-  <style>
-    td,th,div,p,a,h1,h2,h3,h4,h5,h6 {font-family: "Segoe UI", sans-serif; mso-line-height-rule: exactly;}
-  </style>
-  <![endif]-->
-    <style>
-      .hover-font-bold:hover {
-        font-weight: 700 !important;
-      }
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-blue-900"
+primaryColor: "text-secondary"
+secondaryBg: "bg-orange-900"
+secondaryColor: "text-orange-900"
 
-      .hover-underline:hover {
-        text-decoration: underline !important;
-      }
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638521566/USLUNO/newsletter_12_21/header_desktop_jlcqjn.jpg"
+headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg"
+---
 
-      @media (max-width: 600px) {
-        .sm-px-0 {
-          padding-left: 0 !important;
-          padding-right: 0 !important;
-        }
+<!-----------------------------------------------------------------------------------------------------
+--- MAILCHIMP ---
+------------------------------------------------------------------------------------------------------>
+<if condition="page.env === 'mailchimp'">
+  <extends src="src/layouts/mailchimp.html">
+    <block align="center" class="bg-blue-100" name="template">
+      <table class="{{ page.tableReset }} {{ page.secondaryBg }}">
+        <component src="topbar.html"></component>
+      </table>
 
-        .sm-px-32 {
-          padding-left: 32px !important;
-          padding-right: 32px !important;
-        }
-
-        .sm-w-full {
-          width: 100% !important;
-        }
-      }
-    </style>
-    <block name="head" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;"></block>
-  </head>
-
-  <body style="mso-line-height-rule: exactly; margin: 0; padding: 0; width: 100%; word-break: break-word; -webkit-font-smoothing: antialiased; font-family: 'Source Sans Pro', sans-serif; background-color: #ffffff;">
-    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; display: none;">undefined</div>
-    <div role="article" aria-roledescription="email" aria-label="Newsletter 12_21" lang="en" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-      <table align="center" class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-          <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-            <block name="template" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; background-color: #f5821f; width: 600px;" width="600" bgcolor="#f5821f" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <th class="sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding: 12px; text-align: center;" align="center">
-                    <a href="https://patrikvadura.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-12_21.html" class="hover-underline hover-font-bold" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 500; font-size: 14px; color: #ffffff; text-decoration: none;">
-                      Zobrazit newsletter v prohlížeči
-                    </a>
-                  </th>
-                </tr>
-              </table>
-              <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; text-align: center;" align="center">
-                  <td background="https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg" bgcolor="#ffffff" align="center" width="600" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; height: 500px; object-fit: cover; font-family: 'Source Sans Pro', sans-serif; background-position: center; background-repeat: no-repeat; background-size: cover; text-align: center; width: 600px;" height="500">
-                    <!--[if gte mso 9]>
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td
+            background="{{ page.headerMailchimp }}"
+            bgcolor="#ffffff"
+            align="center"
+            width="600"
+            class="w-600 text-center bg-center bg-no-repeat bg-cover"
+            style="height: 500px; object-fit: cover;"
+          >
+            <!--[if gte mso 9]>
             <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; height: 500px; object-fit: cover;">
-              <v:fill type="tile" src="https://res.cloudinary.com/patrik-vadura/image/upload/v1638522343/USLUNO/newsletter_12_21/header_mailchimp_01_x1yitl.jpg" color="#ffffff" />
+              <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#ffffff" />
               <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
             <![endif]-->
-                    <div style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; text-align: center;">
-                      <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-                        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                          <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; line-height: 64px;">&zwnj;</td>
-                        </tr>
-                      </table>
-                      <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; background-color: #ffffff; width: 600px;" width="600" bgcolor="#ffffff" cellpadding="0" cellspacing="0" role="presentation">
-                        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; text-align: center;" align="center">
-                          <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; text-align: center;">
-                            <a href="https://www.u-sluno.eu/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; text-align: center; text-decoration: none;">
-                              <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/usluno_logo_new.png" width="250" alt="U&Sluno" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; border-style: none; font-family: 'Source Sans Pro', sans-serif; text-align: center; vertical-align: top;">
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                      <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; background-color: #ffffff; width: 600px;" width="600" bgcolor="#ffffff" cellpadding="0" cellspacing="0" role="presentation">
-                        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                          <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; line-height: 16px;">&zwnj;</td>
-                        </tr>
-                      </table>
-                      <table class="sm-w-full" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; background-color: #ffffff; width: 600px;" width="600" bgcolor="#ffffff" cellpadding="0" cellspacing="0" role="presentation">
-                        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                          <td align="center" class="sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-left: 32px; padding-right: 32px; text-align: center;">
-                            <a href="https://www.u-sluno.eu/hlasem-rizeny-sklad-zvedne-produktivitu-az-o-30/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 800; text-align: center; text-decoration: none;">
-                              <h1 style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 800; font-size: 36px; text-align: center; color: #00294d; text-transform: uppercase;">
-                                To nejlepší z roku 2021
-                              </h1>
-                            </a>
-                          </td>
-                        </tr>
-                      </table>
-                      <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                          <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; line-height: 64px;">&zwnj;</td>
-                        </tr>
-                      </table>
-                    </div>
-                    <!--[if gte mso 9]>
+            <div class="text-center">
+              <!----------------------------------------------------------------------------------------------------->
+              <table class="w-full">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+
+              <table class="w-600 bg-white">
+                <tr class="text-center">
+                  <td align="center" class="text-center">
+                    <component
+                      src="brand/logo-center.html"
+                      locals='{
+                      "logo": "{{ page.global.images.brand.logo_new }}",
+                      "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                      "class": "",
+                      "width": "250"
+                      }'></component>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="{{ page.tableReset }} bg-white">
+                <component src="spacers/spacer_16.html"></component>
+              </table>
+
+              <table class="{{ page.tableReset }} bg-white">
+                <tr>
+                  <td align="center" class="{{ page.smReset }} px-32 text-center">
+                    <a href="{{ page.newsletter_05_21.link }}"
+                       class="no-underline text-center font-black"
+                       target="_blank">
+                      <h1 class="text-secondary text-center text-4xl font-black uppercase leading-sm sm:leading-sm ">
+                        {{ page.newsletter_12_21.title }}
+                      </h1>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+              <!----------------------------------------------------------------------------------------------------->
+            </div>
+            <!--[if gte mso 9]>
             </v:textbox>
             </v:rect>
             <![endif]-->
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; line-height: 64px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.facebook.com/slunocz/photos/pcb.4406523389440206/4406459826113229/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_01.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Oslavili jsme 30 let se zákazníky
-                      a partnery na Retail Summitu
-                      v Praze a Bratislavě.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6856850378131034113" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_02.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      100% vlastníkem naší firmy se stal syn Marty, Jiří Novák.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://youtu.be/Tdvif3qR4c0" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_03.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Nejoblíbenější webinář tohoto roku natočila Petra Tylová o řízeném skladu.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6815929259446546432" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_04.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Jaký byl první rok v U&amp;SLUNO prozradil slovenský obchodník Peter Machlica.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6833668731961401345" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_05.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      V Hornbachu softwarový robot zautomatizoval informování zákazníka o stavu objednávky.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.facebook.com/slunocz/videos/147786557296706" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_06.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Rádi darujeme krev, hračky, granule
-                      i peníze. A podporujeme e-sport.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6813059266010861569" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_07.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Fotili jsme se na nový web a tuhle fotku máme nejradši.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.facebook.com/slunocz/videos/221920699660795" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_08.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Nejlepší referenci o Hlasem řízeném skladu nám natočila Miroslava Jechoux z DLC Napajedla.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6846707999948476416" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_09.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      CEO Miroslav Krupa vystoupil na Retail Summitu na téma Connected Commerce.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.facebook.com/slunocz/photos/pcb.4373576462734899/4373489439410268/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_10.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Kulatiny jsme oslavili i s našimi zaměstnanci na All Staff Meetingu.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6864530398534234114" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_11_01.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Sortovací roboti - novinka pro příští rok. Pracovat je uvidíte u nás v Ostravě.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 16px; padding-bottom: 16px; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <a href="" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                      <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/foto_12.jpg" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                    </a>
-                  </td>
-                </tr>
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td class="sm-px-0" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; font-weight: 400; color: #00294d;">
-                      Příští rok se máme na co těšit.
-                      Budeme mít nový web.
-                    </p>
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; line-height: 64px;">&zwnj;</td>
-                </tr>
-              </table>
-              <table class="sm-w-full sm-px-32" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600">
-                    <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/12_21/pf2022.jpg" width="600" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; width: 600px; font-family: 'Source Sans Pro', sans-serif;" alt="">
-                  </td>
-                </tr>
-              </table>
-              <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 600px;" width="600" cellpadding="0" cellspacing="0" role="presentation">
-                <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                  <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; line-height: 64px;">&zwnj;</td>
-                </tr>
-              </table>
-        <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-          <td align="center" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding-top: 32px; padding-bottom: 32px;">
-            <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/usluno_logo_dekujeme30.png" width="150" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif; display: block; padding: 64px 8px 8px; text-align: center;">
-            <a href="https://www.u-sluno.eu/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; display: block; font-weight: 700; font-size: 18px; text-align: center; color: #00294d; text-decoration: none;">
-              <h4 style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; text-align: center;">
-                www.u-sluno.eu
-              </h4>
-            </a>
-            <p style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; display: block; font-weight: 700; font-size: 14px; text-align: center; color: #00294d; text-decoration: none;">
-              <a href="mailto:u-sluno@u-sluno.cz
-              ?subject=Ukázka dema
-              &cc=
-              &body=Dobrý den, přečetl jsem si váš newsletter a měl bych zájem o ukázku dema vašeho e-shopu GRANDeSHOP." style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; color: #00294d; text-decoration: none;">
-                u-sluno@u-sluno.cz
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <each loop="item in {{ page.newsletter_12_21.timeline }}">
+        <table class="{{ page.tableReset }} py-16 sm:px-32">
+          <tr>
+            <td class="w-600">
+              <a href="{{ item.link }}" target="_blank">
+                <img src="{{ item.image }}">
               </a>
-              | +420 596 134 157
-            </p>
-            <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;" cellpadding="0" cellspacing="0" role="presentation">
-              <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding: 8px;">
-                  <a href="https://www.facebook.com/slunocz/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                    <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/facebook-orange.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="w-600 sm:px-0">
+              <p class="{{ page.primaryColor }} font-normal">
+                {{ item.title }}
+              </p>
+            </td>
+          </tr>
+        </table>
+      </each>
+
+      <table class="w-600">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td class="w-600">
+            <img src="images/usluno/12_21/pf2022.jpg" width="600" style="width: 600px;">
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-600">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="footer_dekujeme30.html"></component>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+    </block>
+  </extends>
+</if>
+
+<!-----------------------------------------------------------------------------------------------------
+--- DESKTOP (FULL VERSION) ---
+------------------------------------------------------------------------------------------------------>
+
+<else>
+  <extends src="src/layouts/master.html">
+    <block align="center" name="template">
+        <table class="w-full sm:w-full {{ page.tableReset }} {{ page.secondaryBg }}">
+          <component src="topbar.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover py-64 flex justify-center"
+             style="background-image: url('{{ page.header }}');">
+
+        <tr>
+          <td>
+            <table class="{{ page.tableReset }} py-64">
+              <th>
+                <td class="w-full {{ page.smReset }} px-32 text-center bg-white">
+                  <component
+                    src="brand/logo-center.html"
+                    locals='{
+                      "logo": "{{ page.global.images.brand.logo_new }}",
+                      "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                      "class": "",
+                      "width": "250"
+                      }'></component>
+
+                  <a href="{{ page.newsletter_12_21.link }}"
+                     class="no-underline"
+                     target="_blank">
+                    <h1 class="text-secondary text-4xl font-black uppercase mt-32 leading-sm sm:leading-sm">
+                      {{ page.newsletter_12_21.title }}
+                    </h1>
                   </a>
                 </td>
-                <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding: 8px;">
-                  <a href="https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                    <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/youtube-orange.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;">
-                  </a>
-                </td>
-                <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding: 8px;">
-                  <a href="https://www.linkedin.com/company/354076/" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                    <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/linkedin-orange.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;">
-                  </a>
-                </td>
-                <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; padding: 8px;">
-                  <a href="https://anchor.fm/usluno" target="_blank" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-                    <img src="https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/images/usluno/spotify-orange.png" width="15" alt="" style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; max-width: 100%; line-height: 100%; vertical-align: middle; border-style: none; font-family: 'Source Sans Pro', sans-serif;">
-                  </a>
-                </td>
-              </tr>
+              </th>
             </table>
           </td>
         </tr>
-        <table style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; width: 100%;" width="100%" cellpadding="0" cellspacing="0" role="presentation">
-          <tr style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif;">
-            <td style="-webkit-font-smoothing: antialiased; mso-line-height-rule: exactly; font-family: 'Source Sans Pro', sans-serif; line-height: 64px;">&zwnj;</td>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <each loop="item in {{ page.newsletter_12_21.timeline }}">
+        <table class="timeline {{ page.tableReset }} py-16 sm:px-32">
+          <tr>
+            <td class="w-6/12 px-16 sm:px-0">
+              <p class="{{ page.primaryColor }} font-normal noafect whitespace-pre-line">
+                {{ item.title }}
+
+                <div class="block mt-16 noafect sm:hidden">
+                  <component
+                    src="buttons/btnFilled.html"
+                    locals='{
+                          "content": "Zobrazit více",
+                          "url": "{{ item.link }}",
+                          "class": "{{ page.secondaryBg }}"
+                          }'></component>
+                </div>
+              </p>
+            </td>
+
+            <td class="w-6/12">
+              <a href="{{ item.link }}" target="_blank">
+                <img src="{{ item.image }}">
+              </a>
+            </td>
           </tr>
         </table>
-        </block>
-        </td>
+      </each>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td>
+            <img src="images/usluno/12_21/pf2022.jpg">
+          </td>
         </tr>
       </table>
-    </div>
-  </body>
 
-</html>
+      <!----------------------------------------------------------------------------------------------------->
+      <component src="footer_dekujeme30.html"></component>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+    </block>
+  </extends>
+</else>

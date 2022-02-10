@@ -26,16 +26,15 @@
       "link": "https://www.facebook.com/slunocz/photos/pcb.4406523389440206/4406459826113229/",
       "image": "",
       "cta": "Zjistit více"
-    },
-    {
-      "id": "4",
-      "title": "Všechny podcasty na jednom místě",
-      "description": "Upravte sortiment podle nároků trhu a zbavte se produktů, které zabírají místo ve skladu.",
-      "link": "https://www.facebook.com/slunocz/photos/pcb.4406523389440206/4406459826113229/",
-      "image": "images/usluno/03_22/item-image_03_01.jpg",
-      "cta": "Zjistit více"
     }
   ],
+  "podcast": {
+    "title": "Poslechněte si podcast ze světa retailu",
+    "description": "Poznejte nejnovější trendy očima našich expertů.",
+    "link": "https://www.facebook.com/slunocz/photos/pcb.4406523389440206/4406459826113229/",
+    "image": "https://res.cloudinary.com/patrik-vadura/image/upload/v1644484091/USLUNO/newsletter_03_22/podcast-background_01_rqw0jt.jpg",
+    "cta": "Poslechnout"
+  },
   "portfolio": {
     "title": "Portfolio",
     "subtitle": "Web jsme zaplnili \nnovými fotkami našich \nkolegů, ať nás lépe \npoznáte",

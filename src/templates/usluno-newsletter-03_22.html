@@ -5,7 +5,7 @@ preheader: "{{ page.HeaderText }}"
 
 tableReset: "w-600 sm:w-full"
 smReset: "sm:px-32"
-bodyClass: "bg-white"
+bodyClass: "bg-gray-100"
 primaryBg: "bg-blue-900"
 primaryColor: "text-white"
 secondaryBg: "bg-orange-900"
@@ -152,8 +152,8 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
 <else>
   <extends src="src/layouts/master.html">
     <block align="center" name="template">
-        <table class="w-full sm:w-full {{ page.tableReset }} bg-blue-900">
-          <component src="topbar.html"></component>
+        <table class="w-full sm:w-full {{ page.tableReset }} bg-white">
+          <component src="topbar_white.html"></component>
         </table>
 
       <!----------------------------------------------------------------------------------------------------->
@@ -189,7 +189,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
                   <a href="{{ page.newsletter_12_21.link }}"
                      class="no-underline"
                      target="_blank">
-                    <h1 class="text-white text-4xl font-black mt-32 leading-sm sm:leading-sm">
+                    <h1 class="text-white text-6xl font-semibold mt-32 leading-sm sm:leading-sm">
                       Řídíme sklady. <br />
                       Tvoříme e-shopy. <br />
                       Nasazujeme roboty.
@@ -205,7 +205,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
                     locals='{
                               "content": "Prozkoumat web",
                               "url": "/",
-                              "class": "bg-white {{ page.secondaryColor }}"
+                              "class": "bg-white text-indigo-800"
                               }'></component>
 
                   <table class="w-full">
@@ -238,7 +238,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
       </table>
 
       <each loop="item in {{ page.newsletter_03_22.news }}">
-        <table class="timeline {{ page.tableReset }} py-16 sm:px-32">
+        <table class="timeline {{ page.tableReset }} bg-white rounded-medium my-32 p-16 sm:px-32 hover:shadow-outline">
           <tr>
             <td class="w-6/12 px-16 sm:px-0">
               <h2 class="text-blue-900 font-bold noafect">
@@ -261,7 +261,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
             </td>
 
             <td class="w-6/12 px-16 sm:px-0">
-              <img src="{{ item.image }}">
+              <img src="{{ item.image }}" class="rounded-medium">
             </td>
           </tr>
         </table>
@@ -271,6 +271,50 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
         <component src="spacers/spacer_64.html"></component>
       </table>
 
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover py-32 flex justify-center"
+             style="background-image: url('{{ page.newsletter_03_22.podcast.image }}');">
+
+        <tr>
+          <td>
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <table class="{{ page.tableReset }}">
+              <th>
+                <td class="w-full {{ page.smReset }} px-32">
+                  <h2 class="text-white font-bold text-5xl">
+                    {{ page.newsletter_03_22.podcast.title }}
+                  </h2>
+
+                  <p class="text-white font-normal">
+                    {{ page.newsletter_03_22.podcast.description }}
+                  </p>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_32.html"></component>
+                  </table>
+
+                  <component
+                    src="buttons/btnFilled.html"
+                    locals='{
+                          "content": "{{ page.newsletter_03_22.podcast.cta }}",
+                          "url": "{{ page.newsletter_03_22.podcast.link }}",
+                          "class": "bg-white text-indigo-800"
+                          }'></component>
+                </td>
+              </th>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
       <table class="w-full {{ page.tableReset }} flex justify-center bg-gray-100 py-16 sm:px-32">
         <tr>
           <td>
@@ -295,7 +339,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
                 </td>
 
                 <td class="w-6/12 text-center px-16 sm:px-0">
-                  <img src="{{ page.newsletter_03_22.portfolio.image }}" style="position: absolute; top: -4rem; right: -10rem;">
+                  <img src="{{ page.newsletter_03_22.portfolio.image }}" style="position: absolute; top: -6rem; right: -10rem;">
                 </td>
               </tr>
             </table>
@@ -304,7 +348,7 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244
       </table>
 
       <!----------------------------------------------------------------------------------------------------->
-      <table class="w-full bg-gray-100">
+      <table class="w-full bg-white">
         <component src="footer_plain_new.html"></component>
       </table>
     </block>

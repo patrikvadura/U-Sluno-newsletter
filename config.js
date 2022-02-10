@@ -69,6 +69,6 @@ module.exports = {
       root: 'src/components',
     },
 
-    googleFonts: 'Source+Sans+Pro:ital,wght@0,600;0,700;0,900;1,300;1,400&display=swap',
+    googleFonts: 'Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap',
   },
 }
