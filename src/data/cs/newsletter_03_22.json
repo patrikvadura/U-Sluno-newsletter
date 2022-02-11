@@ -6,7 +6,7 @@
     {
       "id": "1",
       "title": "Nové reference od zákazníků",
-      "description": "WMS běží v nepřetržitém režimu v našich skladech o velikosti přes 100 000 metrů čtverečních už od...",
+      "description": "WMS běží v nepřetržitém režimu \nv našich skladech o velikosti přes 100 000 metrů čtverečních už od...",
       "link": "https://www.u-sluno.eu/reference/",
       "image": "images/usluno/03_22/item-image_01_01.jpg",
       "cta": "Zjistit více"
@@ -33,6 +33,7 @@
     "description": "Poznejte nejnovější trendy očima našich expertů.",
     "link": "https://www.u-sluno.eu/podcast/",
     "image": "https://res.cloudinary.com/patrik-vadura/image/upload/v1644484091/USLUNO/newsletter_03_22/podcast-background_01_rqw0jt.jpg",
+    "imageMailchimp": "https://res.cloudinary.com/patrik-vadura/image/upload/v1644583448/USLUNO/newsletter_03_22/podcast-background_mailchimp_01_hssghq.jpg",
     "cta": "Poslechnout"
   },
   "portfolio": {
