@@ -1,0 +1,46 @@
+{
+  "title": "To nejlepší z roku 2021",
+  "link": "https://www.u-sluno.eu/",
+  "newsTitle": "Na novém webu najdete",
+  "news": [
+    {
+      "id": "1",
+      "title": "Nové reference od zákazníků",
+      "description": "WMS běží v nepřetržitém režimu \nv našich skladech o velikosti přes 100 000 metrů čtverečních už od...",
+      "link": "https://www.u-sluno.eu/reference/",
+      "image": "images/usluno/03_22/item-image_01_01.jpg",
+      "cta": "Zjistit více"
+    },
+    {
+      "id": "2",
+      "title": "Přehlednější řešení",
+      "description": "Začněte podnikat online. S našimi nástroji je to hračka.",
+      "link": "https://www.u-sluno.eu/reseni/",
+      "image": "images/usluno/03_22/item-image_02_01.jpg",
+      "cta": "Zjistit více"
+    },
+    {
+      "id": "3",
+      "title": "Blog",
+      "description": "Naše technologie posouváme kupředu. I proto se u nás\nneustále něco děje.",
+      "link": "https://www.u-sluno.eu/blog/",
+      "image": "images/usluno/03_22/item-image_04_01.jpg",
+      "cta": "Zjistit více"
+    }
+  ],
+  "podcast": {
+    "title": "Poslechněte si podcast ze světa retailu",
+    "description": "Poznejte nejnovější trendy očima našich expertů.",
+    "link": "https://www.u-sluno.eu/podcast/",
+    "image": "https://res.cloudinary.com/patrik-vadura/image/upload/v1644484091/USLUNO/newsletter_03_22/podcast-background_01_rqw0jt.jpg",
+    "imageMailchimp": "https://res.cloudinary.com/patrik-vadura/image/upload/v1644583448/USLUNO/newsletter_03_22/podcast-background_mailchimp_01_hssghq.jpg",
+    "cta": "Poslechnout"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Web jsme zaplnili \nnovými fotkami našich \nkolegů, ať nás lépe \npoznáte",
+    "link": "https://www.u-sluno.eu/",
+    "image": "images/usluno/03_22/kolega_01.png",
+    "imageMailchimp": "images/usluno/03_22/kolega_03.jpg"
+  }
+}

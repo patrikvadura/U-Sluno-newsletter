@@ -19,7 +19,7 @@ module.exports = {
 
       gray: {
         '50': '#f9fafb',
-        '100': '#f4f5f7',
+        '100': '#F2F2F2',
         '200': '#e5e7eb',
         '300': '#d2d6dc',
         '400': '#9fa6b2',
@@ -104,14 +104,14 @@ module.exports = {
       blue: {
         '50': '#ebf5ff',
         '100': '#EBF3FA',
-        '200': '#C4DBF7',
+        '200': '#619FF8',
         '300': '#2DA2E7',
         '400': '#009CDA',
         '500': '#3f83f8',
         '600': '#1c64f2',
         '700': '#1a56db',
         '800': '#4f8aff',
-        '900': '#004794',
+        '900': '#192A56',
       },
       indigo: {
         '50': '#f0f5ff',
@@ -122,7 +122,7 @@ module.exports = {
         '500': '#6875f5',
         '600': '#5850ec',
         '700': '#5145cd',
-        '800': '#11006b',
+        '800': '#192a56',
         '900': 'rgba(10,0,83,.8)',
       },
       purple: {
@@ -197,7 +197,7 @@ module.exports = {
       none: '0',
       sm: '2px',
       default: '4px',
-      medium: '2vw',
+      medium: '18px',
       lg: '6vw',
       full: '9999px',
     },
@@ -217,7 +217,7 @@ module.exports = {
       xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-      outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
+      outline: '0 0 0 8px rgba(210, 214, 220, 0.3)',
       none: 'none',
     },
     container: {},

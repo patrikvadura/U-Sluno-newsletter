@@ -1,0 +1,504 @@
+---
+ReleaseN: "03_22"
+title: "Newsletter {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-gray-100"
+primaryBg: "bg-blue-900"
+primaryColor: "text-white"
+secondaryBg: "bg-orange-900"
+secondaryColor: "text-blue-200"
+
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244245/USLUNO/newsletter_03_22/header_desktop_01_pumfwa.jpg"
+headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1644244245/USLUNO/newsletter_03_22/header_mailchimp_01_lcuqla.jpg"
+---
+
+<!-----------------------------------------------------------------------------------------------------
+--- MAILCHIMP ---
+------------------------------------------------------------------------------------------------------>
+<if condition="page.env === 'mailchimp'">
+  <extends src="src/layouts/mailchimp.html">
+    <block align="center" class="bg-blue-100" name="template">
+      <table class="{{ page.tableReset }} bg-white">
+        <component src="topbar_white.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td
+            background="{{ page.headerMailchimp }}"
+            bgcolor="#ffffff"
+            align="center"
+            width="600"
+            class="w-600 bg-center bg-no-repeat bg-cover"
+            style="object-fit: cover;"
+          >
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; object-fit: cover; background-repeat: no-repeat;">
+              <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#ffffff" />
+              <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+            <![endif]-->
+            <div>
+              <!----------------------------------------------------------------------------------------------------->
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+
+              <table class="w-600">
+                <tr>
+                  <td align="center" class="text-left px-32">
+                    <component
+                      src="brand/logo-center.html"
+                      locals='{
+                      "logo": "{{ page.global.images.brand.logo_new_alt }}",
+                      "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                      "class": "",
+                      "width": "250"
+                      }'></component>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-600 {{ page.tableReset }}">
+                <component src="spacers/spacer_16.html"></component>
+              </table>
+
+              <table class="w-600 {{ page.tableReset }}">
+                <tr>
+                  <td class="{{ page.smReset }} text-left px-32">
+                    <a href="{{ page.newsletter_03_22.link }}"
+                       class="no-underline"
+                       target="_blank">
+                      <h1 class="text-white text-6xl font-semibold mt-32 leading-sm sm:leading-sm">
+                        Řídíme sklady. <br />
+                        Tvoříme e-shopy. <br />
+                        Nasazujeme roboty.
+                      </h1>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="{{ page.tableReset }}">
+                <component src="spacers/spacer_16.html"></component>
+              </table>
+
+              <table class="{{ page.tableReset }}">
+                <tr>
+                  <td align="center" class="{{ page.smReset }} text-left px-32">
+                    <component
+                      src="buttons/btnFilled.html"
+                      locals='{
+                              "content": "Prozkoumat web",
+                              "url": "{{ page.newsletter_03_22.link }}",
+                              "class": "bg-white text-indigo-800"
+                              }'></component>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+              <!----------------------------------------------------------------------------------------------------->
+            </div>
+            <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <table class="w-600 {{ page.tableReset }} sm:px-32">
+        <tr>
+          <td class="w-6/12 px-16 sm:px-0">
+            <h1 class="text-gray-400 text-xl uppercase font-normal">
+              {{ page.newsletter_03_22.newsTitle }}
+            </h1>
+          </td>
+        </tr>
+      </table>
+
+      <each loop="item in {{ page.newsletter_03_22.news }}">
+        <table class="w-600 {{ page.tableReset }} bg-white rounded-medium p-16 sm:px-32 hover:shadow-outline">
+          <tr>
+            <td class="px-16 sm:px-0">
+              <img src="{{ item.image }}" class="rounded-medium">
+            </td>
+          </tr>
+
+          <tr>
+            <td class="px-16 sm:px-0">
+              <h2 class="text-blue-900 font-bold noafect">
+                {{ item.title }}
+              </h2>
+
+              <p class="text-gray-400 font-normal noafect pre-line">
+                {{ item.description }}
+              </p>
+
+              <div class="noafect">
+                <component
+                  src="buttons/btnPlain.html"
+                  locals='{
+                  "content": "{{ item.cta }}",
+                  "url": "{{ item.link }}",
+                  "class": "{{ page.secondaryColor }}"
+                  }'></component>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="w-600">
+          <component src="spacers/spacer_32.html"></component>
+        </table>
+      </each>
+
+      <table class="w-600">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td
+            background="{{ page.newsletter_03_22.podcast.image }}"
+            bgcolor="#ffffff"
+            align="center"
+            width="600"
+            class="w-600 bg-center bg-no-repeat bg-cover"
+            style="object-fit: cover;"
+          >
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; object-fit: cover; background-repeat: no-repeat;">
+              <v:fill type="tile" src="{{ page.newsletter_03_22.podcast.imageMailchimp }}" color="#ffffff" />
+              <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+            <![endif]-->
+            <div>
+              <!----------------------------------------------------------------------------------------------------->
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+
+              <table class="w-600">
+                <tr>
+                  <td align="center" class="text-left px-32">
+                    <h2 class="text-white font-bold text-5xl">
+                      {{ page.newsletter_03_22.podcast.title }}
+                    </h2>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-600">
+                <tr>
+                  <td align="center" class="text-left px-32">
+                    <p class="text-white font-normal">
+                      {{ page.newsletter_03_22.podcast.description }}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="{{ page.tableReset }}">
+                <component src="spacers/spacer_16.html"></component>
+              </table>
+
+              <table class="{{ page.tableReset }}">
+                <tr>
+                  <td align="center" class="{{ page.smReset }} text-left px-32">
+                    <component
+                      src="buttons/btnFilled.html"
+                      locals='{
+                            "content": "{{ page.newsletter_03_22.podcast.cta }}",
+                            "url": "{{ page.newsletter_03_22.podcast.link }}",
+                            "class": "bg-white text-indigo-800"
+                            }'></component>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+              <!----------------------------------------------------------------------------------------------------->
+            </div>
+            <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-600">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600 {{ page.tableReset }} bg-gray-100 py-16 sm:px-32">
+        <tr>
+          <td class="px-16 sm:px-0">
+            <h1 class="text-gray-400 text-xl uppercase font-normal">
+              {{ page.newsletter_03_22.portfolio.title }}
+            </h1>
+
+            <h2 class="text-blue-900 font-bold">
+              {{ page.newsletter_03_22.portfolio.subtitle }}
+            </h2>
+
+            <component
+              src="buttons/btnPlain.html"
+              locals='{
+                      "content": "Prozkoumat web",
+                      "url": "{{ page.newsletter_03_22.portfolio.link }}",
+                      "class": "{{ page.secondaryColor }}"
+                      }'></component>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600">
+        <tr>
+          <td class="text-center px-16 sm:px-0">
+            <img src="{{ page.newsletter_03_22.portfolio.imageMailchimp }}">
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600 bg-white">
+        <component src="footer_plain_new.html"></component>
+      </table>
+    </block>
+  </extends>
+</if>
+
+<!-----------------------------------------------------------------------------------------------------
+--- DESKTOP (FULL VERSION) ---
+------------------------------------------------------------------------------------------------------>
+
+<else>
+  <extends src="src/layouts/master.html">
+    <block align="center" name="template">
+        <table class="w-full sm:w-full {{ page.tableReset }} bg-white">
+          <component src="topbar_white.html"></component>
+        </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover py-64 flex justify-center"
+             style="background-image: url('{{ page.header }}');">
+
+        <tr>
+          <td>
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+
+            <table class="{{ page.tableReset }} py-64">
+              <th>
+                <td class="w-full {{ page.smReset }} px-32">
+                  <table class="w-full">
+                    <component src="spacers/spacer_64.html"></component>
+                  </table>
+
+                  <component
+                    src="brand/logo-center.html"
+                    locals='{
+                      "logo": "{{ page.global.images.brand.logo_new_alt }}",
+                      "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                      "class": "",
+                      "width": "250"
+                      }'></component>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_32.html"></component>
+                  </table>
+
+                  <a href="{{ page.newsletter_03_22.link }}"
+                     class="no-underline"
+                     target="_blank">
+                    <h1 class="text-white text-6xl font-semibold mt-32 leading-sm sm:leading-sm">
+                      Řídíme sklady. <br />
+                      Tvoříme e-shopy. <br />
+                      Nasazujeme roboty.
+                    </h1>
+                  </a>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_32.html"></component>
+                  </table>
+
+                  <component
+                    src="buttons/btnFilled.html"
+                    locals='{
+                              "content": "Prozkoumat web",
+                              "url": "{{ page.newsletter_03_22.link }}",
+                              "class": "bg-white text-indigo-800"
+                              }'></component>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_64.html"></component>
+                  </table>
+                </td>
+              </th>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} sm:px-32">
+        <tr>
+          <td class="w-6/12 px-16 sm:px-0">
+            <h1 class="text-gray-400 text-xl uppercase font-normal">
+              {{ page.newsletter_03_22.newsTitle }}
+            </h1>
+          </td>
+        </tr>
+      </table>
+
+      <each loop="item in {{ page.newsletter_03_22.news }}">
+        <table class="timeline {{ page.tableReset }} bg-white rounded-medium my-32 p-16 sm:px-32 hover:shadow-outline">
+          <tr>
+            <td class="w-6/12 px-16 sm:px-0">
+              <h2 class="text-blue-900 font-bold noafect">
+                {{ item.title }}
+              </h2>
+
+              <p class="text-gray-400 font-normal noafect">
+                {{ item.description }}
+              </p>
+
+              <div class="noafect">
+                <component
+                  src="buttons/btnPlain.html"
+                  locals='{
+                  "content": "{{ item.cta }}",
+                  "url": "{{ item.link }}",
+                  "class": "{{ page.secondaryColor }}"
+                  }'></component>
+              </div>
+            </td>
+
+            <td class="w-6/12 px-16 sm:px-0">
+              <img src="{{ item.image }}" class="rounded-medium">
+            </td>
+          </tr>
+        </table>
+      </each>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full sm:w-full bg-top bg-no-repeat bg-cover py-32 flex justify-center"
+             style="background-image: url('{{ page.newsletter_03_22.podcast.image }}');">
+
+        <tr>
+          <td>
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <table class="{{ page.tableReset }}">
+              <th>
+                <td class="w-full {{ page.smReset }} px-32">
+                  <h2 class="text-white font-bold text-5xl">
+                    {{ page.newsletter_03_22.podcast.title }}
+                  </h2>
+
+                  <p class="text-white font-normal">
+                    {{ page.newsletter_03_22.podcast.description }}
+                  </p>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_32.html"></component>
+                  </table>
+
+                  <component
+                    src="buttons/btnFilled.html"
+                    locals='{
+                          "content": "{{ page.newsletter_03_22.podcast.cta }}",
+                          "url": "{{ page.newsletter_03_22.podcast.link }}",
+                          "class": "bg-white text-indigo-800"
+                          }'></component>
+                </td>
+              </th>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full {{ page.tableReset }} flex justify-center bg-gray-100 py-16 sm:px-32">
+        <tr>
+          <td>
+            <table class="w-600" style="position: relative; height: 500px;">
+              <tr>
+                <td class="w-6/12 text-center px-16 sm:px-0">
+                  <img src="{{ page.newsletter_03_22.portfolio.image }}" style="position: absolute; top: 1rem; left: -2rem; height: 500px;">
+                </td>
+
+                <td class="w-6/12 px-16 sm:px-0">
+                  <h1 class="text-gray-400 text-xl uppercase font-normal">
+                    {{ page.newsletter_03_22.portfolio.title }}
+                  </h1>
+
+                  <h2 class="text-blue-900 font-bold">
+                    {{ page.newsletter_03_22.portfolio.subtitle }}
+                  </h2>
+
+                  <component
+                    src="buttons/btnPlain.html"
+                    locals='{
+                      "content": "Prozkoumat web",
+                      "url": "{{ page.newsletter_03_22.portfolio.link }}",
+                      "class": "{{ page.secondaryColor }}"
+                      }'></component>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full bg-white">
+        <component src="footer_plain_new.html"></component>
+      </table>
+    </block>
+  </extends>
+</else>
