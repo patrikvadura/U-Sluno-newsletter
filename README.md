@@ -21,7 +21,9 @@
 [Newsletter 12/21](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-12_21.html) <br>
 [Newsletter 08/21](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-08_21.html) <br>
 [Newsletter 06/21](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-06_21.html) <br>
-[Newsletter 05/21](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-05_21.html)
+[Newsletter 05/21](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-05_21.html) <br>
+[Newsletter Sortovaci roboti](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/sortovaci-roboti.html)
+
 
 ## Projekt
 
