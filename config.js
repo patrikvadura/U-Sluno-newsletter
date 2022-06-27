@@ -2,11 +2,6 @@
 |-------------------------------------------------------------------------------
 | Development config               https://maizzle.com/docs/environments/#local
 |-------------------------------------------------------------------------------
-|
-| The exported object contains the default Maizzle settings for development.
-| This is used when you run the `maizzle build` or `maizzle serve` and it
-| has the fastest build time, since most transformations are disabled.
-|
 */
 
 const fs = require('fs');
@@ -24,6 +19,7 @@ let newsletter_06_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_06_21.
 let newsletter_08_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_08_21.json'));
 let newsletter_12_21 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_12_21.json'));
 let newsletter_03_22 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_03_22.json'));
+let newsletter_07_22 = JSON.parse(fs.readFileSync('src/data/cs/newsletter_07_22.json'));
 
 module.exports = {
   global: global,
@@ -39,6 +35,7 @@ module.exports = {
   newsletter_08_21: newsletter_08_21,
   newsletter_12_21: newsletter_12_21,
   newsletter_03_22: newsletter_03_22,
+  newsletter_07_22: newsletter_07_22,
 
   build: {
     assets: {

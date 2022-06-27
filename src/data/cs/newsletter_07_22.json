@@ -1,0 +1,24 @@
+{
+  "title": "Ideální objem akčního zboží na skladě",
+  "description": "Na základě dat z promočních prodejů dokážete přesně určit, jaký produkt bude mít v nadcházejících akcích největší úspěch, a to s pomocí umělé inteligence.",
+  "cta": "Pokračujte na článek",
+  "website": {
+    "title": "Podívejte se na web",
+    "cta": "Promo Forecast AI"
+  },
+  "webinair": {
+    "title": "Pusťte si webinář",
+    "video": "https://www.youtube.com/watch?v=LttqQB1o3ug&feature=emb_title",
+    "video_image": "https://res.cloudinary.com/patrik-vadura/image/upload/v1656316166/USLUNO/newsletter_07_22/Sni%CC%81mek_obrazovky_2022-06-27_v_9.48.56_tteksm.png",
+    "description": "Ve čtvrtek 28. července se můžete na cokoli zeptat na dalším webináři. Tentokrát o praktickém využití PFAI.",
+    "cta": "Registrujte se zdarma"
+  },
+  "links": {
+    "title": "https://www.u-sluno.eu/jak-vyuzit-umelou-inteligenci-ke-zvyseni-prodeju/",
+    "website": "https://uslunoforecast.eu/",
+    "webinair": "",
+    "facebook": "",
+    "linkedin": "",
+    "youtube": ""
+  }
+}
