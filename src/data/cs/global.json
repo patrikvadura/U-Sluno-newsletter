@@ -9,7 +9,8 @@
     },
     "links": {
       "PrimaryLink": "https://www.u-sluno.eu/",
-      "unsub": "https://u-sluno.us17.list-manage.com/unsubscribe?u=6cd7e998e44d61d5b734bf3e2&id=ef1d76ea37&e=&c=2bec3fc9ba",
+      "unsub": "{{ unsubscribe }}",
+      "unsubDesktop": "{{ unsubscribe }}",
       "email_mailto": "u-sluno@u-sluno.cz",
       "email_subject": "Ukázka dema",
       "email_cc": "",
