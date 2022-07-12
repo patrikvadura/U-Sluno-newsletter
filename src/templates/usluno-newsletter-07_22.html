@@ -1,0 +1,285 @@
+---
+ReleaseN: "07_22"
+title: "Newsletter {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-green-400"
+primaryColor: "text-white"
+secondaryBg: "bg-blue-50"
+secondaryColor: "text-blue-700"
+
+logo: "https://res.cloudinary.com/patrik-vadura/image/upload/v1656314505/USLUNO/newsletter_07_22/logo_forecast_default_z1hzxb.png"
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1656314554/USLUNO/newsletter_07_22/header_gc3wpt.jpg"
+headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1657633324/USLUNO/newsletter_07_22/header_mailchimp_viucol.jpg"
+---
+
+<!-----------------------------------------------------------------------------------------------------
+--- MAILCHIMP ---
+------------------------------------------------------------------------------------------------------>
+<if condition="page.env === 'mailchimp'">
+  <extends src="src/layouts/mailchimp.html">
+    <block align="center" class="bg-blue-100" name="template">
+      <table class="{{ page.tableReset }} bg-white">
+        <component src="topbar_white.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }}">
+        <tr class="text-center">
+          <td
+            background="{{ page.headerMailchimp }}"
+            bgcolor="#ffffff"
+            align="center"
+            width="600"
+            class="w-600 bg-center bg-no-repeat bg-cover"
+            style="object-fit: cover;"
+          >
+            <!--[if gte mso 9]>
+            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width: 600px; object-fit: cover; background-repeat: no-repeat;">
+              <v:fill type="tile" src="{{ page.headerMailchimp }}" color="#ffffff" />
+              <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+            <![endif]-->
+            <div>
+              <!----------------------------------------------------------------------------------------------------->
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+
+              <table class="w-600 {{ page.tableReset }}">
+                <tr>
+                  <td class="{{ page.smReset }} text-center px-32">
+                    <a href="{{ page.newsletter_07_22.links.title }}"
+                       class="text-white text-5xl font-black uppercase leading-sm sm:leading-sm no-underline"
+                       target="_blank">
+                      <h1 class="text-white text-5xl font-black uppercase leading-sm sm:leading-sm">
+                        {{ page.newsletter_07_22.title }}
+                      </h1>
+                    </a>
+
+                    <p class="text-white font-semibold">
+                      {{ page.newsletter_07_22.description }}
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="{{ page.tableReset }}">
+                <component src="spacers/spacer_16.html"></component>
+              </table>
+
+              <table class="{{ page.tableReset }}">
+                <tr>
+                  <td align="center" class="{{ page.smReset }} text-center px-32">
+                    <component
+                      src="buttons/btnNoRoundedLarge.html"
+                      locals='{
+                        "content": "{{ page.newsletter_07_22.cta }}",
+                        "url": "{{ page.newsletter_07_22.links.title }}",
+                        "class": "{{ page.primaryBg }} {{ page.primaryColor }} mt-24"
+                        }'></component>
+                  </td>
+                </tr>
+              </table>
+
+              <table class="w-600">
+                <component src="spacers/spacer_64.html"></component>
+              </table>
+              <!----------------------------------------------------------------------------------------------------->
+            </div>
+            <!--[if gte mso 9]>
+            </v:textbox>
+            </v:rect>
+            <![endif]-->
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600 {{ page.tableReset }} {{ page.secondaryBg }} py-32 px-16 sm:px-32">
+        <tr>
+          <td align="center" class=" text-center px-16 sm:px-0">
+            <a href="{{ page.newsletter_07_22.webinair.video }}" target="_blank">
+              <img src="{{ page.newsletter_07_22.webinair.video_image }}" width="300" class="hover:shadow-outline" style="width: 300px; max-width: 300px;">
+            </a>
+
+            <table class=w-600">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
+
+            <component
+              src="buttons/btnNoRounded.html"
+              locals='{
+                  "content": "{{ page.newsletter_07_22.webinair.cta }}",
+                  "url": "{{ page.newsletter_07_22.links.webinair }}",
+                  "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
+              }'></component>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class=w-600">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <table class="w-600 {{ page.tableReset }} py-32 px-16 sm:px-32">
+        <tr>
+          <td class="w-6/12 text-center px-16 sm:px-0">
+            <component
+              src="brand/logo-center.html"
+              locals='{
+                "logo": "{{ page.logo }}",
+                "url": "{{ page.newsletter_07_22.links.website }}",
+                "class": "",
+                "width": "200"
+                }'></component>
+
+            <table class=w-600">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
+
+            <div>
+              <component
+                src="buttons/btnNoRounded.html"
+                locals='{
+                  "content": "{{ page.newsletter_07_22.website.cta }}",
+                  "url": "{{ page.newsletter_07_22.links.website }}",
+                  "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
+                  }'></component>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table class=w-600">
+        <component src="spacers/spacer_32.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-600 {{ page.primaryBg }} py-32">
+        <component src="footer_forecast.html"></component>
+      </table>
+    </block>
+  </extends>
+</if>
+
+<!-----------------------------------------------------------------------------------------------------
+--- DESKTOP (FULL VERSION) ---
+------------------------------------------------------------------------------------------------------>
+
+<else>
+  <extends src="src/layouts/master.html">
+    <block align="center" name="template">
+      <table class="w-full sm:w-full {{ page.tableReset }} bg-white">
+        <component src="topbar_white.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="{{ page.tableReset }} sm:px-32"
+             style="margin-bottom: -1px;">
+        <tr>
+          <component src="_individual/07_22/video-section.html"></component>
+
+          <div class="video-content-forecast">
+            <div class="video-content-forecast-inner">
+              <a href="{{ page.newsletter_07_22.links.title }}"
+                 class="no-underline"
+                 target="_blank">
+                <h1 class="text-white text-5xl font-black uppercase leading-sm sm:leading-sm">
+                  {{ page.newsletter_07_22.title }}
+                </h1>
+              </a>
+
+              <p class="text-white font-semibold">
+                {{ page.newsletter_07_22.description }}
+              </p>
+
+              <component
+                src="buttons/btnNoRoundedLarge.html"
+                locals='{
+                "content": "{{ page.newsletter_07_22.cta }}",
+                "url": "{{ page.newsletter_07_22.links.title }}",
+                "class": "{{ page.primaryBg }} {{ page.primaryColor }} mt-24"
+                }'></component>
+            </div>
+          </div>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full {{ page.secondaryBg }}">
+        <tr>
+          <td align="center">
+            <table class="{{ page.tableReset }} py-32 px-16 sm:px-32">
+              <tr>
+                <td align="center" class="text-center px-16 sm:px-0">
+                  <a href="{{ page.newsletter_07_22.webinair.video }}" target="_blank">
+                    <img src="{{ page.newsletter_07_22.webinair.video_image }}" width="300" class="hover:shadow-outline" style="width: 300px; max-width: 300px;">
+                  </a>
+
+                  <table class="w-full">
+                    <component src="spacers/spacer_16.html"></component>
+                  </table>
+
+                  <component
+                    src="buttons/btnNoRounded.html"
+                    locals='{
+                        "content": "{{ page.newsletter_07_22.webinair.cta }}",
+                        "url": "{{ page.newsletter_07_22.webinair.video }}",
+                        "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
+                        }'></component>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <table class="{{ page.tableReset }} py-32 px-16 sm:px-32">
+        <tr>
+          <td class="w-6/12 text-center px-16 sm:px-0">
+            <component
+              src="brand/logo-center.html"
+              locals='{
+                "logo": "{{ page.logo }}",
+                "url": "{{ page.newsletter_07_22.links.website }}",
+                "class": "",
+                "width": "200"
+                }'></component>
+
+            <table class="w-full">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
+
+            <div>
+              <component
+                src="buttons/btnNoRounded.html"
+                locals='{
+                  "content": "{{ page.newsletter_07_22.website.cta }}",
+                  "url": "{{ page.newsletter_07_22.links.website }}",
+                  "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
+                  }'></component>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table class="w-full">
+        <component src="spacers/spacer_64.html"></component>
+      </table>
+
+      <!----------------------------------------------------------------------------------------------------->
+      <table class="w-full {{ page.primaryBg }} py-32">
+        <component src="footer_forecast.html"></component>
+      </table>
+    </block>
+  </extends>
+</else>

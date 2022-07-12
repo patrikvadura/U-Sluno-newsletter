@@ -1,0 +1,24 @@
+{
+  "title": "Ideální objem akčního zboží na skladě",
+  "description": "S pomocí umělé inteligence dokážete přesně určit, kolikrát se zvedne prodej artiklu v následující promo akci.",
+  "cta": "Jak to funguje?",
+  "website": {
+    "title": "Podívejte se na web",
+    "cta": "www.uslunoforecast.eu"
+  },
+  "webinair": {
+    "title": "Pusťte si webinář",
+    "video": "https://www.youtube.com/watch?v=LttqQB1o3ug&feature=emb_title",
+    "video_image": "https://res.cloudinary.com/patrik-vadura/image/upload/v1657630854/USLUNO/newsletter_07_22/Sn%C3%ADmek_obrazovky_2022-07-12_v_14.59.19_rsnl1l.png",
+    "description": "Ve čtvrtek 28. července se můžete na cokoli zeptat na dalším webináři. Tentokrát o praktickém využití PFAI.",
+    "cta": "Pusťte si webinář"
+  },
+  "links": {
+    "title": "https://www.u-sluno.eu/jak-vyuzit-umelou-inteligenci-ke-zvyseni-prodeju/",
+    "website": "https://www.uslunoforecast.eu",
+    "webinair": "https://www.youtube.com/watch?v=LttqQB1o3ug&feature=emb_title",
+    "facebook": "https://www.facebook.com/slunocz/",
+    "linkedin": "https://www.linkedin.com/company/u&sluno",
+    "youtube": "https://www.youtube.com/channel/UC1ztuszn-Si95RalNja1Njw"
+  }
+}

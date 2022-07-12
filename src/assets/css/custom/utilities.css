@@ -102,6 +102,22 @@
   z-index: 10;
 }
 
+.video-content-forecast {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(200deg,rgba(120,190,32,0) 40%,rgba(120,190,32,.35) 100%);
+  height: 700px;
+  z-index: 10;
+}
+
+.video-content-forecast-inner {
+  max-width: 600px;
+}
+
 .video-content h1 {
   @apply text-left;
   padding-left: 2rem;
