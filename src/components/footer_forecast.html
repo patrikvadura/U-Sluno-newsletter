@@ -21,23 +21,5 @@
         </td>
       </tr>
     </table>
-
-    <if condition="page.env === 'mailchimp'"></if>
-
-    <else>
-      <p class="text-xxs text-white text-center">
-        {{ page.global.lang.footer.newsletter }}
-
-        <span class="block">
-        {{ page.global.lang.footer.newsletter_1 }}
-          <a
-            href="{{ page.global.usluno.links.unsub }}"
-            class="font-bold text-white no-underline hover:{{ page.secondaryColor }}"
-            target="_blank">
-            {{ page.global.lang.footer.newsletter_logout }}.
-          </a>
-      </span>
-      </p>
-    </else>
   </td>
 </tr>

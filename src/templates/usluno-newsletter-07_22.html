@@ -100,26 +100,22 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1656314
       <!----------------------------------------------------------------------------------------------------->
       <table class="w-600 {{ page.tableReset }} {{ page.secondaryBg }} py-32 px-16 sm:px-32">
         <tr>
-          <td class="w-6/12 px-16 sm:px-0">
-            <h2 class="text-black font-bold">
-              {{ page.newsletter_07_22.webinair.title }}
-            </h2>
-
-            <div>
-              <component
-                src="buttons/btnNoRounded.html"
-                locals='{
-                  "content": "{{ page.newsletter_07_22.webinair.cta }}",
-                  "url": "{{ page.newsletter_07_22.links.webinair }}",
-                  "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
-                  }'></component>
-            </div>
-          </td>
-
-          <td class="w-6/12 px-16 sm:px-0">
+          <td align="center" class=" text-center px-16 sm:px-0">
             <a href="{{ page.newsletter_07_22.webinair.video }}" target="_blank">
               <img src="{{ page.newsletter_07_22.webinair.video_image }}" width="300" class="hover:shadow-outline" style="width: 300px; max-width: 300px;">
             </a>
+
+            <table class=w-600">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
+
+            <component
+              src="buttons/btnNoRounded.html"
+              locals='{
+                  "content": "{{ page.newsletter_07_22.webinair.cta }}",
+                  "url": "{{ page.newsletter_07_22.links.webinair }}",
+                  "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
+              }'></component>
           </td>
         </tr>
       </table>
@@ -136,14 +132,14 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1656314
               src="brand/logo-center.html"
               locals='{
                 "logo": "{{ page.logo }}",
-                "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                "url": "{{ page.newsletter_07_22.links.website }}",
                 "class": "",
                 "width": "200"
                 }'></component>
 
-            <h2 class="text-black font-bold">
-              {{ page.newsletter_07_22.website.title }}
-            </h2>
+            <table class=w-600">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
 
             <div>
               <component
@@ -219,26 +215,22 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1656314
           <td align="center">
             <table class="{{ page.tableReset }} py-32 px-16 sm:px-32">
               <tr>
-                <td class="w-6/12 px-16 sm:px-0">
-                  <h2 class="text-black font-bold">
-                    {{ page.newsletter_07_22.webinair.title }}
-                  </h2>
+                <td align="center" class="text-center px-16 sm:px-0">
+                  <a href="{{ page.newsletter_07_22.webinair.video }}" target="_blank">
+                    <img src="{{ page.newsletter_07_22.webinair.video_image }}" width="300" class="hover:shadow-outline" style="width: 300px; max-width: 300px;">
+                  </a>
 
-                  <div>
-                    <component
-                      src="buttons/btnNoRounded.html"
-                      locals='{
+                  <table class="w-full">
+                    <component src="spacers/spacer_16.html"></component>
+                  </table>
+
+                  <component
+                    src="buttons/btnNoRounded.html"
+                    locals='{
                         "content": "{{ page.newsletter_07_22.webinair.cta }}",
                         "url": "{{ page.newsletter_07_22.webinair.video }}",
                         "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
                         }'></component>
-                  </div>
-                </td>
-
-                <td class="w-6/12 px-16 sm:px-0">
-                  <a href="{{ page.newsletter_07_22.webinair.video }}" target="_blank">
-                    <img src="{{ page.newsletter_07_22.webinair.video_image }}" width="300" class="hover:shadow-outline" style="width: 300px; max-width: 300px;">
-                  </a>
                 </td>
               </tr>
             </table>
@@ -258,21 +250,21 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1656314
               src="brand/logo-center.html"
               locals='{
                 "logo": "{{ page.logo }}",
-                "url": "{{ page.global.usluno.links.PrimaryLink }}",
+                "url": "{{ page.newsletter_07_22.links.website }}",
                 "class": "",
                 "width": "200"
                 }'></component>
 
-            <h2 class="text-black font-bold">
-              {{ page.newsletter_07_22.website.title }}
-            </h2>
+            <table class="w-full">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
 
             <div>
               <component
                 src="buttons/btnNoRounded.html"
                 locals='{
                   "content": "{{ page.newsletter_07_22.website.cta }}",
-                  "url": "{{ page.newsletter_07_22.links.webinair }}",
+                  "url": "{{ page.newsletter_07_22.links.website }}",
                   "class": "{{ page.primaryBg }} {{ page.primaryColor }}"
                   }'></component>
             </div>
