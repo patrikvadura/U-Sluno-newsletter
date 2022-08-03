@@ -17,7 +17,8 @@
 
 #### 2022
 [03/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-03_22.html) ,
-[07/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-07_22.html)
+[07/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-07_22.html) , 
+[08/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-08_22.html)
 
 #### Special
 [Sortovaci roboti](https://patrikvadura.github.io/U-Sluno-newsletter/build_production/usluno-newsletter-sort.html)
@@ -32,7 +33,8 @@
 
 #### 2022
 [03/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-03_22.html) ,
-[07/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-07_22.html)
+[07/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-07_22.html) , 
+[08/22](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-08_22.html)
 
 #### Special
 [Sortovaci roboti](https://patrikvadura.github.io/U-Sluno-newsletter/build_mailchimp/usluno-newsletter-sort.html)
