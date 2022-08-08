@@ -51,21 +51,6 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1659524
               <table class="w-600 {{ page.tableReset }}">
                 <tr>
                   <td class="{{ page.smReset }} text-center px-32">
-                    <a 
-                      href="{{ page.newsletter_08_22.links.title }}"
-                      class="text-center no-underline"
-                      target="_blank">
-                      <h1 class="text-white text-4xl font-light leading-sm sm:leading-sm sm:text-2xl">
-                        {{ page.newsletter_08_22.title }}
-                      </h1>
-                    </a>
-                  </td>
-                </tr>
-              </table>
-
-              <table class="w-600 {{ page.tableReset }}">
-                <tr>
-                  <td class="{{ page.smReset }} text-center px-32">
                     <component
                       src="brand/logo-center.html"
                       locals='{
@@ -86,16 +71,17 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1659524
                 <component src="spacers/spacer_16.html"></component>
               </table>
 
-              <table class="{{ page.tableReset }}">
+              <table class="{{ page.tableReset }} text-center">
                 <tr>
-                  <td class="{{ page.smReset }} text-center px-32">
-                    <component
-                      src="buttons/btnFilled.html"
-                      locals='{
-                      "content": "{{ page.newsletter_08_22.subscribe.title }}",
-                      "url": "{{ page.newsletter_08_22.links.subscribe }}",
-                      "class": "text-center bg-white hover:{{ page.primaryBg }} text-secondary mt-24"
-                      }'></component>
+                  <td align="center" class="text-center px-32 sm:px-0">
+                    <p class=" text-white text-center font-light">
+                      {{ page.newsletter_08_22.generalQuote.quote }}
+        
+                      <br><br>
+                      <span class="text-white font-black">
+                        {{ page.newsletter_08_22.generalQuote.name }}
+                      </span>
+                    </p>
                   </td>
                 </tr>
               </table>
@@ -116,15 +102,18 @@ headerMailchimp: "https://res.cloudinary.com/patrik-vadura/image/upload/v1659524
       <!----------------------------------------------------------------------------------------------------->
       <table class="w-600 {{ page.tableReset }} bg-white py-32 px-16 sm:px-32">
         <tr>
-          <td align="center" class="w-7/12 text-center px-16 sm:px-0">
-            <p class="text-left font-light">
-              {{ page.newsletter_08_22.generalQuote.quote }}
+          <td class="{{ page.smReset }} w-7/12 text-left px-32">
+            <h4 class="text-left text-lg font-light">
+              Aby vám nic neuniklo, <br>přihlaste se k odběru našeho newsletteru.
+            </h4>
 
-              <br><br>
-              <span class="font-black">
-                {{ page.newsletter_08_22.generalQuote.name }}
-              </span>
-            </p>
+            <component
+              src="buttons/btnFilled.html"
+              locals='{
+              "content": "{{ page.newsletter_08_22.subscribe.title }}",
+              "url": "{{ page.newsletter_08_22.links.subscribe }}",
+              "class": "text-center bg-primary hover:bg-white text-secondary mt-24"
+              }'></component>
           </td>
 
           <td align="center" class="w-5/12 text-center px-16 sm:px-0">
