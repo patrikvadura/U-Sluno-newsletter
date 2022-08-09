@@ -55,7 +55,10 @@
       "fb": "images/usluno/facebook-negative.png",
       "yt": "images/usluno/youtube-negative.png",
       "in": "images/usluno/linkedin-negative.png",
-      "spotify": "images/usluno/spotify-negative.png"
+      "spotify": "images/usluno/spotify-negative.png",
+      "fbGray": "images/usluno/facebook-gray.png",
+      "ytGray": "images/usluno/youtube-gray.png",
+      "inGray": "images/usluno/linkedin-gray.png"
     },
     "topbar": "Zobrazit newsletter v prohlížeči"
   }
