@@ -1,0 +1,144 @@
+---
+ReleaseN: "xx_21"
+title: "Webinair {{ page.ReleaseN }}"
+preheader: "{{ page.HeaderText }}"
+
+tableReset: "w-600 sm:w-full"
+smReset: "sm:px-32"
+bodyClass: "bg-white"
+primaryBg: "bg-primary"
+primaryColor: "text-primary"
+googleFonts: "Open+Sans:wght@300;400;600;700;800&display=swap"
+
+link: ""
+logo: "https://res.cloudinary.com/patrik-vadura/image/upload/v1663521334/USLUNO/logo/new%20logo%20%28SLUNO%29/logo_new_negative_vsdpji.png"
+header: "https://res.cloudinary.com/patrik-vadura/image/upload/v1659966021/USLUNO/newsletter_08_22/Sn%C3%ADmek_obrazovky_2022-08-08_v_15.34.52_rudjex.png"
+---
+
+<extends src="src/layouts/mailchimp.html">
+  <block align="center" name="template">
+    <!----------------------------------------------------------------------------------------------------->
+    <table class="{{ page.tableReset }}">
+      <tr class="text-center">
+        <td
+          background="{{ page.header }}"
+          bgcolor="#64B32E"
+          align="center"
+          width="600"
+          class="w-600 text-center bg-center bg-no-repeat bg-cover">
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;">
+            <v:fill type="tile" src="{{ page.header }}" color="#64B32E" />
+            <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+          <![endif]-->
+          <div class="text-center">
+            <!----------------------------------------------------------------------------------------------------->
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+
+            <table class="w-full">
+              <tr class="text-center">
+                <td align="center" class="text-center">
+                  <component
+                    src="brand/logo-center.html"
+                    locals='{
+                      "logo": "{{ page.logo }}",
+                      "url": "{{ page.webinair.link }}",
+                      "class": "",
+                      "width": "220"
+                      }'></component>
+                </td>
+              </tr>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_32.html"></component>
+            </table>
+
+            <table class="w-full">
+              <tr class="text-left">
+                <td align="center" class="text-left px-32">
+                  <a
+                    href="{{ page.link }}"
+                    class="no-underline text-left text-white mt-32 leading-sm sm:leading-sm"
+                    target="_blank">
+                    <h2 class="text-white text-xl font-medium mt-32">
+                      Zveme vás na webinář
+                    </h2>
+                  </a>
+
+                  <a
+                    href="{{ page.link }}"
+                    class="no-underline text-left text-white uppercase mt-32 leading-sm sm:leading-sm"
+                    target="_blank">
+                    <h1 class="text-white text-2xl font-black uppercase mt-16">
+                      WMS TRENDY a jak na výběrové řízení 
+                    </h1>
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_16.html"></component>
+            </table>
+
+            <table class="{{ page.tableReset }}">
+              <tr class="text-left">
+                <td align="left" class="px-32">
+                  <component
+                    src="buttons/btnFilled.html"
+                    locals='{
+                      "content": "Registrovat",
+                      "url": "{{ page.webinair.button.link }}",
+                      "class": "bg-white text-secondary uppercase"
+                      }'></component>
+                </td>
+              </tr>
+            </table>
+
+            <table class="w-full">
+              <component src="spacers/spacer_64.html"></component>
+            </table>
+            <!----------------------------------------------------------------------------------------------------->
+          </div>
+          <!--[if gte mso 9]>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+        </td>
+      </tr>
+    </table>
+
+    <table class="w-full">
+      <component src="spacers/spacer_32.html"></component>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+
+    <table class="{{ page.tableReset }}">
+      <tr>
+        <td class="px-32">
+          <h2 class="text-2xl font-bold {{ page.primaryColor }}">
+            Na webináři se dozvíte:
+          </h2>
+
+          <p>
+            <li>Splňuje vaše WMS trendy současného světa?</li>
+
+            <li>Co dnes umí moderní WMS a co vám to přinese?</li>
+
+            <li>Jak koncipovat výběrové řízení a na co se zaměřit při srovnání?</li>
+
+            <li>Co je to business analýza a jak souvisí s výběrovým řízením?</li>
+
+            <li>Jaké jsou naše zkušenosti z WMS projektů?</li>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!----------------------------------------------------------------------------------------------------->
+  </block>
+</extends>
